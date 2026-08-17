@@ -1,0 +1,2 @@
+Design direction researched from current catering website examples: full-width food-led hero, sticky navigation, clear menu/category scanning, strong inquiry CTA, warm luxury palette, serif headings + clean sans-serif body, generous spacing and mobile-first layout. Inspired by patterns discussed by SiteBuilderReport, Colorlib, Wix and current catering design roundups; not a copy of any one site.
+All food visuals selected for this version are intended to be vegetarian/Indian-food oriented.
