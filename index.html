@@ -1,83 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bhumi Caterers | Since 2003</title>
-<style>
-:root{--maroon:#4a080b;--deep:#240304;--gold:#c9952e;--cream:#fff8ea;--ink:#351516}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
-.top{background:var(--deep);color:#fff;padding:10px 5%;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px}
-header{position:sticky;top:0;z-index:20;background:var(--cream);border-bottom:3px solid var(--gold)}
-.nav{max-width:1250px;margin:auto;padding:13px 4%;display:flex;align-items:center;gap:22px}
-.logo{font:700 38px Georgia,serif;color:var(--maroon);line-height:.8}.logo small{display:block;color:var(--gold);font:700 18px Arial;letter-spacing:4px;margin-top:10px}
-.since{border:2px solid var(--gold);border-radius:8px;padding:8px 12px;text-align:center;color:var(--maroon);font-weight:700}
-nav{margin-left:auto;display:flex;gap:22px}nav a{text-decoration:none;color:#271010;font-weight:700}nav a:hover{color:var(--gold)}
-.enq{background:var(--maroon);color:#fff;text-decoration:none;padding:12px 18px;border-radius:24px;font-weight:700}
-.hero{background:linear-gradient(100deg,#320608,#650d10);color:#fff}
-.heroIn{max-width:1250px;margin:auto;padding:55px 5%;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
-h1{font:700 62px Georgia,serif;margin:0}.tag{color:#e5b44d;font:italic 39px Georgia,serif;margin:8px 0 22px}
-.hero p{font-size:18px;line-height:1.6}.hero img{width:100%;height:390px;object-fit:cover;border-radius:28px;border:4px solid var(--gold);box-shadow:0 15px 40px #0006}
-.btn{display:inline-block;background:var(--gold);color:#250405;padding:13px 23px;border-radius:24px;text-decoration:none;font-weight:700;margin-top:10px}
-section{max-width:1250px;margin:auto;padding:55px 5%}h2{text-align:center;color:var(--maroon);font:700 36px Georgia,serif;margin:0 0 12px}
-.line{width:85px;height:4px;background:var(--gold);margin:0 auto 30px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid #dfc58a;border-radius:15px;overflow:hidden;box-shadow:0 5px 18px #4a080b18}
-.card img{width:100%;height:170px;object-fit:cover}.card h3{margin:0;background:var(--maroon);color:#fff;text-align:center;padding:12px;font-size:18px}.card ul{line-height:1.8}
-.about{background:#fff0d5;max-width:none}.aboutIn{max-width:1250px;margin:auto;padding:55px 5%;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.aboutIn p{font-size:18px;line-height:1.8}
-.aboutIn img{width:100%;height:300px;object-fit:cover;border-radius:18px;border:3px solid var(--gold)}
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.service{background:#fff;border-top:4px solid var(--gold);padding:22px;border-radius:12px;text-align:center;font-weight:700}
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.gallery img{width:100%;height:180px;object-fit:cover;border-radius:12px}
-.contact{max-width:none;background:var(--maroon);color:#fff;text-align:center;padding:50px 5%}.contact h2{color:#fff}.contact p{line-height:1.8}
-footer{background:var(--deep);color:#fff;text-align:center;padding:22px}
-@media(max-width:850px){nav{display:none}.heroIn,.aboutIn{grid-template-columns:1fr}.cards,.services{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.hero img{height:300px}}
-@media(max-width:520px){.top{font-size:11px}.logo{font-size:28px}.since{display:none}.cards,.services{grid-template-columns:1fr}h1{font-size:42px}.tag{font-size:28px}.heroIn{padding:42px 6%}.hero img{height:260px}}
-</style>
+<meta name="description" content="Bhumi Caterers Rajkot - Kathiyawadi, Punjabi, Chinese and variety foods. Since 2003.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="top"><span>📍 Kakkad Brothers, Dharmendra Road, Thosa Gali, Rajkot</span><span>📞 Darshitbhai Kakkad: 98253 21216</span></div>
+<header class="topbar">
+  <div>📍 Kakkad Brothers, Dharmendra Road, Thosa Gali, Rajkot</div>
+  <a href="tel:+919825321216">☎ 98253 21216</a>
+</header>
 
-<header><div class="nav">
-<div class="logo">Bhumi<small>CATERERS</small></div>
-<div class="since">SINCE<br>2003</div>
-<nav><a href="#home">HOME</a><a href="#about">ABOUT US</a><a href="#menu">MENU</a><a href="#services">SERVICES</a><a href="#gallery">GALLERY</a><a href="#contact">CONTACT US</a></nav>
-<a class="enq" href="tel:9825321216">FOR ENQUIRY<br>98253 21216</a>
-</div></header>
+<nav class="nav">
+  <a class="brand" href="#home"><span>Bhumi</span><small>CATERERS</small></a>
+  <div class="links">
+    <a href="#home">Home</a><a href="#menu">Menu</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+  </div>
+  <a class="call" href="tel:+919825321216">Enquiry</a>
+</nav>
 
-<div id="home" class="hero"><div class="heroIn">
-<div><h1>Delicious Food</h1><div class="tag">for Every Occasion</div>
-<p>Specialist in all type of Kathiyawadi, Punjabi, Chinese Food &amp; Other Variety Foods.</p>
-<a class="btn" href="#menu">Explore Our Menu</a></div>
-<img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2026/2/10/5bf859d0-617e-4e26-81ad-acbe2db5829a_4039bed4-ef30-4402-b368-b0daae83e223.jpg" alt="Indian vegetarian catering food">
-</div></div>
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <div class="since">EST. 2003</div>
+    <h1>Delicious Food<br><em>for Every Occasion</em></h1>
+    <p>Specialist in Kathiyawadi, Punjabi, Chinese Food & Other Variety Foods.</p>
+    <div class="hero-actions">
+      <a class="btn gold" href="#menu">Explore Menu</a>
+      <a class="btn outline" href="tel:+919825321216">Call for Enquiry</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="dish-photo" style="background-image:url('https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85')"></div>
+    <div class="hero-card-text"><strong>Authentic Taste</strong><span>Made for memorable occasions</span></div>
+  </div>
+</section>
 
-<section id="menu"><h2>OUR MENU CATEGORIES</h2><div class="line"></div><div class="cards">
-<article class="card"><img src="https://royalcatererslucknow.com/img/create-top-indian-vegetarian.jpg"><h3>SABJI</h3><ul><li>Sabji</li><li>Desi Sabji</li><li>Punjabi Sabji</li></ul></article>
-<article class="card"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2026/2/10/5bf859d0-617e-4e26-81ad-acbe2db5829a_4039bed4-ef30-4402-b368-b0daae83e223.jpg"><h3>DAL / RICE / PULAO</h3><ul><li>Dal</li><li>Rice</li><li>Pulao</li></ul></article>
-<article class="card"><img src="https://www.khanakhazananj.com/_next/image?q=75&url=%2FCatering.jpg&w=828"><h3>SOUP</h3><ul><li>Hot Soup</li><li>Chinese Soup</li></ul></article>
-<article class="card"><img src="https://sukhsagaruae.com/cdn/shop/files/Untitled_design.png?v=1772775813&width=1500"><h3>STARTER</h3><ul><li>Starter</li><li>Veg Starter</li></ul></article>
-<article class="card"><img src="https://royalcatererslucknow.com/img/create-top-indian-vegetarian.jpg"><h3>ROTI AND PARATHA</h3><ul><li>Roti</li><li>Paratha</li></ul></article>
-<article class="card"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2026/2/10/5bf859d0-617e-4e26-81ad-acbe2db5829a_4039bed4-ef30-4402-b368-b0daae83e223.jpg"><h3>SWEET</h3><ul><li>Sweet</li><li>Ice Cream</li></ul></article>
-</div></section>
+<section class="intro">
+  <div><span class="eyebrow">BHUMI CATERERS</span><h2>Good Food. Great Hospitality.</h2></div>
+  <p>From intimate gatherings to grand celebrations, we bring rich flavours, quality ingredients and dependable service to your occasion.</p>
+</section>
 
-<div id="about" class="about"><div class="aboutIn">
-<div><h2>ABOUT BHUMI CATERERS</h2><p>Bhumi Caterers is a trusted catering name in Rajkot, serving memorable food experiences <b>since 2003</b>. We focus on delicious vegetarian food, quality ingredients, hygienic preparation and warm hospitality.</p></div>
-<img src="https://sukhsagaruae.com/cdn/shop/files/Untitled_design.png?v=1772775813&width=1500" alt="Vegetarian buffet catering">
-</div></div>
+<section id="menu" class="section">
+  <div class="section-head"><span class="eyebrow">OUR MENU</span><h2>A Taste for Every Guest</h2><p>Menu names are presented in English from the supplied menu pages. No original menu-book photographs are used here.</p></div>
+  <div class="menu-grid">
+    <article class="menu-card"><span class="num">01</span><h3>Soups</h3><p>Spinach Almond Soup · Spinach Palak Soup · Hot & Sour Soup · Mulligatawny Soup · Lemon Coriander Soup · Manchow Soup · Sweet Corn Soup · Garlic Soup · Tomato Soup · Veg. Clear Soup · Mexican Tomato Soup · Italian Style Tomato Soup · Cream of Tomato Soup · Minestrone Soup · Green Peas Soup</p></article>
+    <article class="menu-card"><span class="num">02</span><h3>Dal, Rice & Pulao</h3><p>Dal Fry · Punjabi Dal Tadka · Punjabi Dal Makhani · Dal Tadka · Dal Palak · Gujarati Dal · Moong Dal · Jeera Rice · Veg. Pulao · Peas Pulao · Kashmiri Pulao · Hyderabadi Biryani · Veg. Biryani · Paneer Biryani · Mexican Rice · Fried Rice</p></article>
+    <article class="menu-card"><span class="num">03</span><h3>Roti & Paratha</h3><p>Phulka Roti · Puri · Roti · Swaminarayan Roti · Dhaba Roti · Missi Roti · Methi Roti · Garlic Roti · Butter Roti · Butter Naan · Kashmiri Naan · Cheese Naan · Green Naan · Khakhra Naan · Kaju Masala Naan · Rajasthani Naan · Garlic Naan · Cheese Paratha · Veg. Paratha · Aloo Stuffed Paratha · Lachha Paratha · Palak Paratha</p></article>
+    <article class="menu-card"><span class="num">04</span><h3>Punjabi Sabji</h3><p>Paneer Sabji · Paneer Methi Malai · Paneer Mutter Masala · Paneer Tikka Masala · Paneer Butter Masala · Paneer Kaju · Paneer Patiala · Paneer Pasanda · Paneer Handi · Paneer Lababdar · Paneer Musallam · Paneer Angara · Paneer Tawa Masala · Kaju Masala · Kaju Curry · Veg. Kolhapuri · Veg. Handi · Veg. Jaipuri · Veg. Kadhai · Veg. Hyderabadi Green · Veg. Maharashtrian · Veg. Chinese</p></article>
+    <article class="menu-card"><span class="num">05</span><h3>Kathiyawadi Sabji</h3><p>Kathiyawadi Undhiyu · Sev Tameta · Ringan Bateta · Lasaniya Bateta · Bharela Ringan · Bhindi Masala · Lasaniya Sev · Sev Tameta · Tindora Bateta · Green Garlic Curry · Bajra Rotla · Kadhi · Khichdi</p></article>
+    <article class="menu-card"><span class="num">06</span><h3>Indian Sweets & Desserts</h3><p>Gajar Halwa · Moong Dal Halwa · Badam Halwa · Kaju Katli · Kaju Badam Tikki · Shahi Sheera · Coconut Halwa · 3-in-1 Halwa · Rasmalai · Gulab Jamun · Jalebi · Kheer · Ice Cream</p></article>
+    <article class="menu-card"><span class="num">07</span><h3>Starters</h3><p>Garlic Bread · Kachori · Jalapeno Potato · American Corn Cheese Balls · Beetroot Potato · Veg. Spring Roll · Paneer Chilli Dry · Paneer Tikka · Hara Bhara Kebab · Veg. Bullet · Italian Vol-au-vent · Roasted Paneer Barbecue · Veg. Seekh · Potato Wedges · Masala Cheese Pops · Veg. Basil Balls · Herbed Cheese Balls · Cottage Cheese Fritters · Thai Corn Fingers · Thai Corn Cakes · Indonesian Satay</p></article>
+    <article class="menu-card"><span class="num">08</span><h3>Chinese</h3><p>Veg. Chinese Samosa · Chinese Bhel · Veg. Chowmein · Hakka Noodles · Veg. Momos · Spring Roll · Chinese Noodles · Chinese Lasagne · Chilli Paneer · Chilli Manchurian · Paneer Chilli · American Chopsuey · Chinese Chopsuey · Mexican Chopsuey · Schezwan Noodles · Fried Rice · Manchurian · Mexican Fried Rice · American Fried Rice</p></article>
+    <article class="menu-card"><span class="num">09</span><h3>Live Counters</h3><p>Gujarati Live Counter · South Indian Counter · Dosa · Masala Dosa · Rava Dosa · Mysore Masala Dosa · Gunpowder Dosa · Palak Paneer Dosa · Dosa Fry · Idli · Kanchipuram Idli · Uttapam · Sambhar · Chutney · Live Chaat Counter · Mexican Items · Chinese Live Counter</p></article>
+    <article class="menu-card"><span class="num">10</span><h3>Raita & Chaat</h3><p>Boondi Raita · Pineapple Raita · Vegetable Raita · Cucumber Raita · Mixed Raita · Punjabi Aloo Chaat · Delhi Chaat · Garam Masala Chaat · Rajdhani Rajwadi Chaat · Sev Puri · Dahi Puri · Bhel Puri · Papdi Chaat · Basket Chaat</p></article>
+    <article class="menu-card"><span class="num">11</span><h3>Mexican & Continental</h3><p>Mexican Roll · Mexican Corn · Mexican Nachos · Mexican Garlic Bread · Mexican Samosa · Cocktail Samosa · Cheese Balls · Cheese Cherry Pineapple Stick · Dry Fruit Roll · Mexican Salad · Pasta · Garlic Bread · Garlic Naan · Continental Starters</p></article>
+    <article class="menu-card"><span class="num">12</span><h3>Other Variety Foods</h3><p>Counter Decoration · Service Staff · Good Food Service · Trusted Staff · Custom Menu Planning · Special Occasion Catering</p></article>
+  </div>
+</section>
 
-<section id="services"><h2>OUR SERVICES</h2><div class="line"></div><div class="services">
-<div class="service">Wedding Catering</div><div class="service">Festival Events</div><div class="service">Corporate Events</div>
-<div class="service">Birthday Parties</div><div class="service">Kitty Parties</div><div class="service">Counter Decoration</div>
-<div class="service">Service Staff</div><div class="service">Special Food Service</div><div class="service">Timely &amp; Trusted Service</div>
-</div></section>
+<section id="services" class="dark-section">
+  <div class="section-head"><span class="eyebrow">OUR SERVICES</span><h2>More Than Catering</h2></div>
+  <div class="service-grid">
+    <div><b>01</b><h3>Event Catering</h3><p>Complete food service for family functions, celebrations and corporate occasions.</p></div>
+    <div><b>02</b><h3>Counter Decoration</h3><p>Attractive live-food counters designed to complement your event.</p></div>
+    <div><b>03</b><h3>Professional Staff</h3><p>Courteous, trained service staff for a smooth guest experience.</p></div>
+    <div><b>04</b><h3>Custom Menus</h3><p>Flexible menus across Kathiyawadi, Punjabi, Chinese and variety cuisines.</p></div>
+  </div>
+</section>
 
-<section id="gallery"><h2>FOOD GALLERY</h2><div class="line"></div><div class="gallery">
-<img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2026/2/10/5bf859d0-617e-4e26-81ad-acbe2db5829a_4039bed4-ef30-4402-b368-b0daae83e223.jpg"><img src="https://royalcatererslucknow.com/img/create-top-indian-vegetarian.jpg"><img src="https://www.khanakhazananj.com/_next/image?q=75&url=%2FCatering.jpg&w=828"><img src="https://sukhsagaruae.com/cdn/shop/files/Untitled_design.png?v=1772775813&width=1500">
-<img src="https://royalcatererslucknow.com/img/create-top-indian-vegetarian.jpg"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2026/2/10/5bf859d0-617e-4e26-81ad-acbe2db5829a_4039bed4-ef30-4402-b368-b0daae83e223.jpg"><img src="https://sukhsagaruae.com/cdn/shop/files/Untitled_design.png?v=1772775813&width=1500"><img src="https://www.khanakhazananj.com/_next/image?q=75&url=%2FCatering.jpg&w=828">
-</div></section>
+<section id="gallery" class="section">
+  <div class="section-head"><span class="eyebrow">GALLERY</span><h2>Fresh Flavours, Beautifully Served</h2><p>New food photography is used for this gallery — not the supplied menu-book photographs.</p></div>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Indian food">
+    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=85" alt="Samosa">
+    <img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=900&q=85" alt="Pasta">
+    <img src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=900&q=85" alt="Indian snack">
+    <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=900&q=85" alt="Rice">
+    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=900&q=85" alt="Curry">
+  </div>
+</section>
 
-<div id="contact" class="contact"><h2>FOR ENQUIRY &amp; BOOKINGS</h2>
-<p><b>Darshitbhai Kakkad</b><br>98253 21216<br><br>Kakkad Brothers<br>Dharmendra Road, Thosa Gali, Rajkot</p>
-<a class="btn" target="_blank" href="https://wa.me/919825321216?text=Hello%20Bhumi%20Caterers%2C%20I%20would%20like%20to%20make%20an%20enquiry.">WhatsApp Enquiry</a>
-</div>
-<footer>© 2003–2026 Bhumi Caterers • Taste of Perfection • Rajkot</footer>
-</body></html>
+<section id="contact" class="contact">
+  <div><span class="eyebrow">PLAN YOUR EVENT</span><h2>Let's Make It Delicious.</h2><p>For menu planning, catering enquiries and bookings, contact Darshitbhai Kakkad.</p></div>
+  <div class="contact-card"><strong>Darshitbhai Kakkad</strong><a href="tel:+919825321216">98253 21216</a><a class="whatsapp" href="https://wa.me/919825321216?text=Hello%20Bhumi%20Caterers%2C%20I%20would%20like%20to%20make%20an%20enquiry.">WhatsApp Enquiry</a><small>Kakkad Brothers, Dharmendra Road, Thosa Gali, Rajkot</small></div>
+</section>
+</main>
+
+<footer><strong>BHUMI CATERERS</strong><span>Since 2003 · Rajkot</span><span>© 2026 Bhumi Caterers</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
