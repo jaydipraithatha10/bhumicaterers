@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#9d1c1c">
+<meta name="description" content="Bhumi Caterers Rajkot - Kathiyawadi, Punjabi, Chinese & variety foods.">
+<title>Bhumi Caterers | Rajkot</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fff8f1;color:#2a1712}
+.hero{min-height:76vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:50px 18px;background:linear-gradient(145deg,#8f1518,#c9471f 55%,#ef8a2e);color:white;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;inset:auto -15% -180px;height:330px;background:#f6a54b;border-radius:50% 50% 0 0/35% 35% 0 0;opacity:.35}
+.hero-content{position:relative;z-index:1;max-width:900px}
+.logo{font-size:clamp(42px,9vw,82px);font-weight:900;letter-spacing:-2px;margin:0 0 12px}
+.tagline{font-size:clamp(17px,3vw,25px);line-height:1.5;margin:0 auto 28px;max-width:760px}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;padding:14px 22px;border-radius:999px;font-weight:800;background:white;color:#97191b}
+.btn.alt{background:transparent;color:white;border:2px solid white}
+section{padding:58px 18px}.container{max-width:1100px;margin:auto}
+.title{text-align:center;font-size:34px;margin:0 0 10px;color:#8f1518}.sub{text-align:center;color:#6b5148;margin:0 auto 30px;max-width:700px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.box{background:white;border-radius:20px;padding:26px;box-shadow:0 8px 25px rgba(73,27,13,.08);border:1px solid #f0d9c5}
+.box h3{margin-top:0;color:#9d1c1c}.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.menu-card{border:0;background:white;padding:0;border-radius:18px;overflow:hidden;box-shadow:0 8px 25px rgba(73,27,13,.12);cursor:pointer;text-align:left;transition:.2s}
+.menu-card:hover{transform:translateY(-4px)}.menu-card img{width:100%;display:block;aspect-ratio:3/4;object-fit:cover}.menu-card span{display:block;padding:13px 15px;font-weight:800;color:#8f1518}
+.contact{background:#241512;color:white}.contact .title{color:#ffb45d}.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.contact a{color:#ffd08e;text-decoration:none;font-weight:800}
+footer{background:#160d0b;color:#d9c2b9;text-align:center;padding:22px 15px;font-size:14px}
+.modal{display:none;position:fixed;z-index:20;inset:0;background:rgba(0,0,0,.88);padding:25px}
+.modal.show{display:flex;align-items:center;justify-content:center}.modal img{max-width:96vw;max-height:88vh;object-fit:contain;border-radius:10px}
+.close{position:fixed;right:20px;top:15px;color:white;font-size:38px;background:none;border:0;cursor:pointer}
+@media(max-width:700px){.about{grid-template-columns:1fr}section{padding:45px 14px}.hero{min-height:70vh}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-content">
+    <h1 class="logo">Bhumi Caterers</h1>
+    <p class="tagline">Specialist for all type of Kathiyawadi Food,<br>Punjabi Food, Chinese Food & Other Variety Foods</p>
+    <div class="btns">
+      <a class="btn" href="#menu">View Menu</a>
+      <a class="btn alt" href="#contact">Contact Us</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h2 class="title">Welcome to Bhumi Caterers</h2>
+    <p class="sub">Rajkot's catering menu — from traditional Kathiyawadi flavours to Punjabi, Chinese and other variety foods.</p>
+    <div class="about">
+      <div class="box"><h3>Our Speciality</h3><p>Kathiyawadi Food • Punjabi Food • Chinese Food • Variety Foods</p></div>
+      <div class="box"><h3>Catering Services</h3><p>Food service, counter decoration and service staff for your events and functions.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="container">
+    <h2 class="title">Our Menu</h2>
+    <p class="sub">Tap any menu page to view it full screen.</p>
+    <div class="menu-grid">
+      <button class="menu-card" onclick="openMenu('menu-1.webp')">
+      <img src="images/menu-1.webp" alt="Bhumi Caterers Menu Page 1" loading="lazy">
+      <span>Menu Page 1</span>
+    </button>
+<button class="menu-card" onclick="openMenu('menu-2.webp')">
+      <img src="images/menu-2.webp" alt="Bhumi Caterers Menu Page 2" loading="lazy">
+      <span>Menu Page 2</span>
+    </button>
+<button class="menu-card" onclick="openMenu('menu-3.webp')">
+      <img src="images/menu-3.webp" alt="Bhumi Caterers Menu Page 3" loading="lazy">
+      <span>Menu Page 3</span>
+    </button>
+<button class="menu-card" onclick="openMenu('menu-4.webp')">
+      <img src="images/menu-4.webp" alt="Bhumi Caterers Menu Page 4" loading="lazy">
+      <span>Menu Page 4</span>
+    </button>
+<button class="menu-card" onclick="openMenu('menu-5.webp')">
+      <img src="images/menu-5.webp" alt="Bhumi Caterers Menu Page 5" loading="lazy">
+      <span>Menu Page 5</span>
+    </button>
+<button class="menu-card" onclick="openMenu('menu-6.webp')">
+      <img src="images/menu-6.webp" alt="Bhumi Caterers Menu Page 6" loading="lazy">
+      <span>Menu Page 6</span>
+    </button>
+<button class="menu-card" onclick="openMenu('menu-7.webp')">
+      <img src="images/menu-7.webp" alt="Bhumi Caterers Menu Page 7" loading="lazy">
+      <span>Menu Page 7</span>
+    </button>
+<button class="menu-card" onclick="openMenu('menu-8.webp')">
+      <img src="images/menu-8.webp" alt="Bhumi Caterers Menu Page 8" loading="lazy">
+      <span>Menu Page 8</span>
+    </button>
+<button class="menu-card" onclick="openMenu('menu-9.webp')">
+      <img src="images/menu-9.webp" alt="Bhumi Caterers Menu Page 9" loading="lazy">
+      <span>Menu Page 9</span>
+    </button>
+<button class="menu-card" onclick="openMenu('menu-10.webp')">
+      <img src="images/menu-10.webp" alt="Bhumi Caterers Menu Page 10" loading="lazy">
+      <span>Menu Page 10</span>
+    </button>
+<button class="menu-card" onclick="openMenu('menu-11.webp')">
+      <img src="images/menu-11.webp" alt="Bhumi Caterers Menu Page 11" loading="lazy">
+      <span>Menu Page 11</span>
+    </button>
+<button class="menu-card" onclick="openMenu('menu-12.webp')">
+      <img src="images/menu-12.webp" alt="Bhumi Caterers Menu Page 12" loading="lazy">
+      <span>Menu Page 12</span>
+    </button>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="title">Contact Bhumi Caterers</h2>
+    <div class="contact-grid">
+      <div class="box"><h3>Darshitbhai Kakkad</h3><p><a href="tel:9825321216">98253 21216</a></p></div>
+      <div class="box"><h3>Harishbhai Kakkad</h3><p><a href="tel:9428296263">94282 96263</a></p></div>
+      <div class="box"><h3>Office</h3><p>Kakkad Brothers,<br>Dharmendra Road, Thosa Gali, Rajkot</p></div>
+      <div class="box"><h3>Branch</h3><p>Shree Kakkad Brothers,<br>University Road, Siddhi Complex, Rajkot</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Bhumi Caterers • Rajkot</footer>
+
+<div class="modal" id="viewer" onclick="closeMenu()">
+  <button class="close" aria-label="Close">×</button>
+  <img id="viewerImg" src="" alt="Menu">
+</div>
+
+<script>
+const menuImages = ["images/menu-1.webp",
+"images/menu-2.webp",
+"images/menu-3.webp",
+"images/menu-4.webp",
+"images/menu-5.webp",
+"images/menu-6.webp",
+"images/menu-7.webp",
+"images/menu-8.webp",
+"images/menu-9.webp",
+"images/menu-10.webp",
+"images/menu-11.webp",
+"images/menu-12.webp"];
+function openMenu(file) {
+  document.getElementById('viewerImg').src = 'images/' + file;
+  document.getElementById('viewer').classList.add('show');
+}
+function closeMenu() {
+  document.getElementById('viewer').classList.remove('show');
+}
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape') closeMenu();
+});
+</script>
+</body>
+</html>
