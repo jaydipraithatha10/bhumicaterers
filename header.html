@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhumi Caterers — Premium LED Header</title>
+<style>
+:root{
+ --bg:#070606;--wine:#250708;--wine2:#5e1014;
+ --gold:#d8a94f;--gold2:#ffe09a;--cream:#fff7e5;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#120506;font-family:Arial,sans-serif}
+.header{
+ position:sticky;top:0;z-index:100;
+ background:
+ radial-gradient(circle at 50% -30%,rgba(255,183,57,.12),transparent 45%),
+ linear-gradient(180deg,#120606,#26090b 55%,#100505);
+ color:white;border-bottom:1px solid rgba(216,169,79,.65);
+ box-shadow:0 8px 35px #0009;
+ overflow:hidden;
+}
+.header:before{
+ content:"";position:absolute;inset:0;pointer-events:none;opacity:.15;
+ background-image:radial-gradient(#f3c96b 1px,transparent 1px);
+ background-size:18px 18px;
+}
+.inner{max-width:1250px;margin:auto;padding:11px 18px;position:relative}
+.topline{
+ display:flex;align-items:center;justify-content:center;gap:14px;
+ color:#f2cf82;font:10px Arial;letter-spacing:3px;text-transform:uppercase;
+ margin-bottom:7px;
+}
+.topline i{width:70px;height:1px;background:linear-gradient(90deg,transparent,#d8a94f)}
+.brandrow{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:13px;text-decoration:none;color:white}
+.emblem{
+ width:57px;height:57px;border-radius:50%;display:grid;place-items:center;
+ border:2px solid var(--gold);background:radial-gradient(circle,#7a171c 0,#2a0708 68%);
+ color:var(--gold2);font:700 25px Georgia,serif;
+ box-shadow:0 0 16px rgba(255,194,71,.16),inset 0 0 0 4px #360a0b;
+}
+.name{
+ font:900 clamp(25px,5vw,43px) Georgia,serif;letter-spacing:2px;
+ color:#f7d57f;text-shadow:0 0 5px #e9aa36,2px 3px 0 #3c090b,0 5px 15px #000;
+}
+.sub{font:10px Arial;letter-spacing:2px;color:#f9e6b5;margin-top:3px}
+.actions{display:flex;align-items:center;gap:8px}
+.action{
+ color:#fff3d0;text-decoration:none;border:1px solid #765522;
+ padding:9px 12px;border-radius:20px;font-size:12px;
+ background:#210708cc;
+}
+.enquire{
+ color:#260708;background:linear-gradient(135deg,#ffe09a,#c89438);
+ border:0;font-weight:800;box-shadow:0 4px 18px #d8a94f33;
+}
+.nav{
+ margin-top:12px;padding:8px 4px 2px;
+ display:flex;justify-content:center;gap:4px;overflow:auto;
+ border-top:1px solid #704b1d;border-bottom:1px solid #704b1d;
+}
+.nav a{
+ flex:0 0 auto;color:#fff6e4;text-decoration:none;padding:9px 15px;
+ font:600 12px Arial;letter-spacing:.6px;border-radius:18px;
+}
+.nav a:hover,.nav a.active{background:#6d1418;color:#ffe09a}
+.mobile{display:none}
+@media(max-width:760px){
+ .inner{padding:9px 12px}.topline{font-size:8px;letter-spacing:2px}
+ .topline i{width:28px}.brandrow{gap:8px}
+ .emblem{width:45px;height:45px;font-size:20px}.name{font-size:21px;letter-spacing:1px}
+ .sub{font-size:7px;letter-spacing:1px}
+ .actions .action:not(.enquire){display:none}
+ .enquire{padding:8px 10px;font-size:10px}
+ .nav{justify-content:flex-start}
+ .nav a{font-size:11px;padding:8px 12px}
+}
+</style>
+</head>
+<body>
+<header class="header">
+ <div class="inner">
+  <div class="topline"><i></i> A PREMIUM CATERING EXPERIENCE <i></i></div>
+
+  <div class="brandrow">
+   <a class="brand" href="#home">
+    <div class="emblem">B</div>
+    <div>
+     <div class="name">BHUMI CATERERS</div>
+     <div class="sub">KATHIYAWADI • PUNJABI • CHINESE • VARIETY FOODS</div>
+    </div>
+   </a>
+
+   <div class="actions">
+    <a class="action" href="#contact">Contact</a>
+    <a class="action enquire" href="#contact">ENQUIRE NOW</a>
+   </div>
+  </div>
+
+  <nav class="nav">
+   <a class="active" href="#home">Home</a>
+   <a href="#about">About</a>
+   <a href="#menu">Our Menu</a>
+   <a href="#services">Services</a>
+   <a href="#gallery">Gallery</a>
+   <a href="#contact">Contact</a>
+  </nav>
+ </div>
+</header>
+</body>
+</html>
