@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhumi Caterers</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff9ef;font-family:Arial,sans-serif;color:#4b1114}
+.hero{width:100%;display:block}
+.nav{
+  position:sticky;top:0;z-index:100;
+  display:flex;justify-content:center;gap:8px;
+  padding:10px 12px;
+  background:linear-gradient(180deg,#430b0e,#1e0506);
+  border-top:1px solid #e0ad4e;
+  border-bottom:1px solid #8f6225;
+  overflow-x:auto;
+}
+.nav a{
+  white-space:nowrap;text-decoration:none;color:#ffe39b;
+  padding:10px 16px;border-radius:8px;
+  font-weight:700;font-size:13px;
+  border:1px solid transparent;
+}
+.nav a:hover,.nav a.active{
+  background:#7b181c;border-color:#d9a846;
+  box-shadow:0 0 12px #d9a84655;
+}
+.enquire{
+  background:linear-gradient(135deg,#ffe49c,#bd8530)!important;
+  color:#320709!important;border-color:#f1c968!important;
+}
+@media(max-width:700px){
+  .nav{justify-content:flex-start;padding:7px}
+  .nav a{font-size:11px;padding:8px 12px}
+}
+</style>
+</head>
+<body>
+
+<!-- Premium hero image: navigation is NOT part of the image -->
+<section id="home">
+  <img class="hero" src="bhumi-header.webp" alt="Bhumi Caterers Premium Header">
+</section>
+
+<!-- Separate clickable navigation section -->
+<nav class="nav" aria-label="Main navigation">
+  <a class="active" href="#home">HOME</a>
+  <a href="#about">ABOUT US</a>
+  <a href="#menu">OUR MENU</a>
+  <a href="#services">SERVICES</a>
+  <a href="#gallery">GALLERY</a>
+  <a href="#contact">CONTACT US</a>
+  <a class="enquire" href="#contact">☎ ENQUIRE NOW</a>
+</nav>
+
+</body>
+</html>
