@@ -1,0 +1,1 @@
+New complete Bhumi Caterers website. Menu names are presented in English from the supplied menu source; the supplied menu-book photos are not used in the website gallery. Gallery uses separate vegetarian food visuals. Contact: Darshit Bhai Kakkad, Kakkad Brothers, 9825321216, Dharmendra Road, Thosa Gali, Rajkot.
