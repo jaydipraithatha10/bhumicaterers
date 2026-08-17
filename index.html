@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#4b0c0e">
+<title>Bhumi Caterers | Premium Catering</title>
+<style>
+:root{--wine:#4b0c0e;--wine2:#7c1719;--gold:#d7a84b;--gold2:#f4d27b;--cream:#fff9ef;--ink:#351718;--muted:#725a55}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#210708;color:var(--ink);font-family:Arial,sans-serif}
+.hero{background:#210708}.hero img{display:block;width:100%;height:auto}
+.nav{position:sticky;top:0;z-index:20;display:flex;justify-content:center;gap:7px;overflow-x:auto;padding:9px 10px;background:linear-gradient(#4b0c0e,#210708);border-top:1px solid var(--gold);border-bottom:1px solid #8d6429}
+.nav a{white-space:nowrap;text-decoration:none;color:#ffe6a5;padding:9px 14px;border-radius:18px;font-size:12px;font-weight:700}
+.nav a:hover,.nav a.active{background:var(--wine2);color:#fff;border:1px solid var(--gold)}
+.page{max-width:1180px;margin:auto;background:var(--cream);min-height:100vh}
+.intro{text-align:center;padding:42px 18px 28px}
+.kicker{font-size:11px;letter-spacing:3px;color:#a4772e;font-weight:700}
+h1{font:700 36px Georgia,serif;color:var(--wine);margin:9px 0}
+.intro p{max-width:720px;margin:auto;color:var(--muted);line-height:1.65;font-size:14px}
+.categories{padding:10px 16px 40px}
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cat{position:relative;min-height:125px;padding:22px 15px;border:1px solid #dfc58c;border-radius:16px;background:linear-gradient(145deg,#fff,#fff7e8);box-shadow:0 8px 22px #4b0c0e14;cursor:pointer;text-align:center;transition:.2s}
+.cat:hover{transform:translateY(-4px);box-shadow:0 12px 28px #4b0c0e25;border-color:var(--gold)}
+.icon{font-size:29px;margin-bottom:9px}
+.cat strong{display:block;font:700 18px Georgia,serif;color:var(--wine)}
+.cat span{display:block;margin-top:6px;font-size:11px;color:var(--muted)}
+.menu-preview{padding:5px 16px 55px}
+.menu-head{text-align:center;margin-bottom:20px}
+.menu-head h2{font:700 29px Georgia,serif;color:var(--wine);margin:0 0 8px}
+.line{width:75px;height:3px;background:var(--gold);margin:auto}
+.items{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}
+.item{background:white;border:1px solid #ead9b8;border-left:4px solid var(--gold);border-radius:11px;padding:14px 16px}
+.item b{color:var(--wine);font:700 17px Georgia,serif}
+.item p{margin:6px 0 0;color:var(--muted);font-size:12px;line-height:1.45}
+.cta{margin:0 16px 45px;padding:30px 18px;border-radius:18px;text-align:center;background:linear-gradient(135deg,#4b0c0e,#831c1c);color:#fff0ce;border:1px solid var(--gold)}
+.cta h2{font:700 27px Georgia,serif;margin:0 0 8px}.cta p{font-size:13px;margin:0 0 17px}
+.button{display:inline-block;text-decoration:none;background:linear-gradient(135deg,#f4d27b,#bd8730);color:#2d0708;font-weight:800;padding:11px 20px;border-radius:22px}
+footer{background:#210708;color:#f1d28c;text-align:center;padding:28px 15px;font-size:12px}
+@media(max-width:850px){.cat-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.nav{justify-content:flex-start}.cat-grid,.items{grid-template-columns:1fr}.intro{padding-top:32px}h1{font-size:30px}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="hero" id="home"><img src="bhumi-header.webp" alt="Bhumi Caterers"></header>
+
+<nav class="nav">
+<a class="active" href="#home">HOME</a>
+<a href="#about">ABOUT US</a>
+<a href="#menu">OUR MENU</a>
+<a href="#services">SERVICES</a>
+<a href="#gallery">GALLERY</a>
+<a href="#contact">CONTACT US</a>
+</nav>
+
+<section class="intro" id="about">
+<div class="kicker">A PREMIUM CATERING EXPERIENCE</div>
+<h1>Our Signature Menu</h1>
+<p>A celebration of flavours crafted for weddings, parties, functions and memorable occasions. Explore our carefully arranged selection of Indian, Kathiyawadi, Punjabi, Chinese and international favourites.</p>
+</section>
+
+<section class="categories" id="menu">
+<div class="cat-grid">
+<div class="cat" data-target="dal"><div class="icon">🍚</div><strong>Dal • Rice • Pulao</strong><span>Traditional & aromatic</span></div>
+<div class="cat" data-target="punjabi"><div class="icon">🥘</div><strong>Punjabi</strong><span>Rich & royal flavours</span></div>
+<div class="cat" data-target="kathiyawadi"><div class="icon">🌶️</div><strong>Kathiyawadi</strong><span>Authentic Gujarati taste</span></div>
+<div class="cat" data-target="chinese"><div class="icon">🥢</div><strong>Chinese</strong><span>Indo-Chinese favourites</span></div>
+<div class="cat" data-target="south"><div class="icon">🥞</div><strong>South Indian</strong><span>Fresh live preparations</span></div>
+<div class="cat" data-target="starters"><div class="icon">🍢</div><strong>Starters</strong><span>Crispy & delicious</span></div>
+<div class="cat" data-target="roti"><div class="icon">🫓</div><strong>Roti • Naan</strong><span>Fresh from the kitchen</span></div>
+<div class="cat" data-target="sweets"><div class="icon">🍮</div><strong>Sweets</strong><span>Festive sweet creations</span></div>
+</div>
+</section>
+
+<section class="menu-preview" id="services">
+<div class="menu-head"><h2 id="selectedTitle">Dal • Rice • Pulao</h2><div class="line"></div></div>
+<div class="items" id="items">
+<div class="item"><b>Dal Fry</b><p>Comforting lentils tempered with aromatic spices and fresh herbs.</p></div>
+<div class="item"><b>Special Punjabi Dal Tadka</b><p>Slow-cooked dal finished with a fragrant Punjabi-style tempering.</p></div>
+<div class="item"><b>Special Punjabi Dal Makhani</b><p>Creamy, slow-cooked black lentils with a rich aromatic finish.</p></div>
+<div class="item"><b>Kathiyawadi Tuver Dal</b><p>Traditional Gujarati-style tuver dal with authentic regional flavour.</p></div>
+<div class="item"><b>Plain Rice</b><p>Light and fluffy steamed rice to complement every curry.</p></div>
+<div class="item"><b>Jeera Rice</b><p>Fragrant rice finished with roasted cumin and subtle herbs.</p></div>
+<div class="item"><b>Dry Fruit Rice</b><p>Aromatic rice enriched with premium dry fruits.</p></div>
+<div class="item"><b>Vegetable Biryani</b><p>Fragrant basmati rice layered with vegetables and aromatic spices.</p></div>
+</div>
+</section>
+
+<section class="cta" id="gallery">
+<h2>Made for Your Special Occasion</h2>
+<p>From intimate gatherings to grand celebrations, Bhumi Caterers brings flavour, presentation and professional service together.</p>
+<a class="button" href="#contact">ENQUIRE NOW</a>
+</section>
+
+<footer id="contact">BHUMI CATERERS • KATHIYAWADI • PUNJABI • CHINESE • VARIETY FOODS</footer>
+</div>
+
+<script>
+const data={
+dal:{title:"Dal • Rice • Pulao",items:[
+["Dal Fry","Comforting lentils tempered with aromatic spices and fresh herbs."],
+["Special Punjabi Dal Tadka","Slow-cooked dal finished with a fragrant Punjabi-style tempering."],
+["Special Punjabi Dal Makhani","Creamy, slow-cooked black lentils with a rich aromatic finish."],
+["Kathiyawadi Tuver Dal","Traditional Gujarati-style tuver dal with authentic regional flavour."],
+["Plain Rice","Light and fluffy steamed rice to complement every curry."],
+["Jeera Rice","Fragrant rice finished with roasted cumin and subtle herbs."],
+["Dry Fruit Rice","Aromatic rice enriched with premium dry fruits."],
+["Vegetable Biryani","Fragrant basmati rice layered with vegetables and aromatic spices."]]},
+punjabi:{title:"Punjabi",items:[["Paneer Butter Masala","Soft paneer in a rich, creamy tomato gravy."],["Palak Paneer","Paneer cooked with creamy spinach and aromatic spices."],["Paneer Tikka Masala","Grilled paneer simmered in a bold spiced tomato gravy."],["Vegetable Jalfrezi","Fresh vegetables cooked with vibrant spices and herbs."]]},
+kathiyawadi:{title:"Kathiyawadi",items:[["Special Kathiyawadi Undhiyu","Traditional mixed vegetables cooked with rustic regional spices."],["Rajwadi Dhokli","Traditional Gujarati-style dhokli in a comforting preparation."],["Sev Tomato","Tangy tomato gravy finished with crispy sev."],["Kathiyawadi Kadhi","Sweet-tangy yogurt curry with an aromatic tempering."]]},
+chinese:{title:"Chinese",items:[["Chinese Bhel","Crispy noodles tossed with fresh vegetables and sweet-spicy dressing."],["Veg Momos","Steamed dumplings filled with seasoned vegetables."],["Spring Roll","Crisp rolls filled with flavorful vegetables."],["Chilli Paneer","Paneer tossed with peppers, onions and chilli-garlic sauce."]]},
+south:{title:"South Indian",items:[["Special Plain Dosa","Crisp South Indian dosa served with traditional accompaniments."],["Special Masala Dosa","Crisp dosa filled with seasoned potato masala."],["Live Idli","Soft steamed rice cakes served warm."],["Uttapam","Soft South Indian pancake topped with fresh vegetables."]]},
+starters:{title:"Starters",items:[["Hara Bhara Kebab","Green vegetable and herb kebabs with a delicate spice blend."],["Dragon Potato","Crispy potato tossed in bold Indo-Chinese sauce."],["Paneer Chilli Dry","Crispy paneer with peppers, onions and chilli-garlic sauce."],["Garlic Bread","Golden baked bread infused with garlic and herbs."]]},
+roti:{title:"Roti • Naan",items:[["Butter Naan","Soft leavened naan brushed with butter."],["Garlic Kulcha","Soft Indian bread topped with fragrant garlic and herbs."],["Bajri Rotla","Traditional millet flatbread with an authentic Gujarati touch."],["Lachha Paratha","Flaky layered paratha cooked to a golden finish."]]},
+sweets:{title:"Sweets",items:[["Live Kesar Jalebi","Crisp golden jalebi finished with fragrant saffron syrup."],["Ghevar Rabdi","Traditional ghevar paired with rich creamy rabdi."],["Rajasthani Malpua","Soft golden malpua with a festive sweet finish."],["Green Coconut Halwa","Rich coconut halwa with a delicate traditional flavour."]]}}
+document.querySelectorAll(".cat").forEach(c=>c.addEventListener("click",()=>{
+ const d=data[c.dataset.target];document.getElementById("selectedTitle").textContent=d.title;
+ document.getElementById("items").innerHTML=d.items.map(x=>`<div class="item"><b>${x[0]}</b><p>${x[1]}</p></div>`).join("");
+ document.getElementById("services").scrollIntoView({behavior:"smooth",block:"start"});
+}));
+</script>
+</body>
+</html>
