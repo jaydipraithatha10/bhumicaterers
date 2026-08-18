@@ -1,8 +1,10 @@
-BHUMI CATERERS – FINAL PROFESSIONAL TAGLINE VERSION
+BHUMI CATERERS – COMPACT HERO FINAL
 
-Removed the previous Why Bhumi Caterers card section.
-Added a premium professional brand statement/tagline section.
-Complete menu content remains unchanged.
-Photos remain catering/event/Indian celebration focused.
+Hero section reduced substantially for a cleaner first screen.
+Only two main photos are retained: hero catering photo + food/catering visual.
+Large photo gallery removed.
+Service cards are now premium text-based cards instead of photo cards.
+Complete menu and menu item names remain unchanged.
+Professional tagline remains.
 Contact: Darshit Kakkad | 9825321216
 No assets folder.
