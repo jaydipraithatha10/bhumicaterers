@@ -3,127 +3,204 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bhumi Caterers | Premium Catering Services</title>
-<meta name="description" content="Bhumi Caterers - Premium vegetarian catering for weddings, corporate events, parties and special occasions.">
+<title>Bhumi Caterers | Premium Vegetarian Catering in Rajkot</title>
+<meta name="description" content="Bhumi Caterers - premium vegetarian catering for weddings, parties, corporate events and celebrations in Rajkot.">
 <style>
-:root{--gold:#d5a63b;--gold2:#f0cc72;--dark:#080808;--cream:#f7f3eb;--text:#171717}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Georgia,"Times New Roman",serif;background:var(--cream);color:var(--text)}
-a{text-decoration:none;color:inherit}.topbar{background:#050505;color:#ddd;padding:9px 5%;display:flex;justify-content:space-between;gap:15px;font:12px Arial}
-header{position:sticky;top:0;z-index:20;background:rgba(5,5,5,.96);border-bottom:1px solid #5d4619;color:#fff;padding:15px 5%;display:flex;align-items:center;justify-content:space-between}
-.logo{display:flex;align-items:center;gap:12px}.logoIcon{width:46px;height:46px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:25px}.logoText{font-weight:bold;letter-spacing:4px;font-size:24px}.logoText small{display:block;font:9px Arial;letter-spacing:4px;color:var(--gold);text-align:center;margin-top:2px}
-nav{display:flex;gap:25px;font:13px Arial;color:#eee}nav a:hover,nav a.active{color:var(--gold)}
-.headerBtn{border:1px solid var(--gold);padding:12px 18px;color:var(--gold);font:12px Arial;font-weight:bold;border-radius:3px}
-.menuBtn{display:none;color:var(--gold);font-size:25px;background:none;border:0}
-.hero{height:650px;position:relative;overflow:hidden;background:#000;color:#fff}.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.9)}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#000 5%,rgba(0,0,0,.76) 43%,rgba(0,0,0,.15) 100%)}
-.heroContent{position:relative;z-index:2;max-width:650px;padding:120px 6%}.eyebrow{font:13px Arial;letter-spacing:2px;color:var(--gold);font-weight:bold}.hero h1{font-size:62px;line-height:1.04;margin:18px 0}.hero h1 span{color:var(--gold)}.hero p{font:16px Arial;line-height:1.75;color:#ddd;max-width:550px}.buttons{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}.btn{background:var(--gold);color:#111;padding:15px 25px;border-radius:3px;font:13px Arial;font-weight:bold}.btn.outline{background:transparent;color:#fff;border:1px solid var(--gold)}
-.stats{background:#090909;color:#fff;display:grid;grid-template-columns:repeat(5,1fr);padding:28px 5%;gap:10px;text-align:center}.stat{border-right:1px solid #594719;padding:5px}.stat:last-child{border:0}.stat b{display:block;color:var(--gold);font-size:14px;margin-bottom:6px}.stat span{font:12px Arial;color:#bbb}
-.section{padding:78px 6%}.center{text-align:center}.eyebrowDark{color:#aa7920;font:12px Arial;letter-spacing:2px;font-weight:bold}.title{font-size:40px;margin:10px 0 14px}.subtitle{font:14px Arial;color:#666;line-height:1.7;max-width:650px;margin:0 auto 40px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;border:1px solid #e8dfd1;border-radius:8px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.06);transition:.25s}.card:hover{transform:translateY(-5px)}.card img{width:100%;height:205px;object-fit:cover}.cardBody{padding:22px}.card h3{font-size:20px;margin-bottom:8px}.card p{font:13px Arial;line-height:1.6;color:#666}.goldLine{width:55px;height:2px;background:var(--gold);margin:20px auto 35px}
-.about{background:#0a0a0a;color:#fff;display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.aboutImg{width:100%;height:460px;object-fit:cover;border-radius:5px}.about h2{font-size:42px;margin:12px 0 20px}.about p{font:14px Arial;line-height:1.9;color:#ccc}.checks{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:25px;font:13px Arial}.checks div:before{content:"✓";color:var(--gold);font-weight:bold;margin-right:9px}
-.menuGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.menuItem{background:#111;color:#fff;padding:23px;border-radius:5px;border-left:3px solid var(--gold)}.menuItem h3{color:var(--gold);font-size:17px;margin-bottom:8px}.menuItem p{font:12px Arial;color:#ccc;line-height:1.6}
-.gallery{background:#111;color:#fff}.galleryGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.galleryGrid img{width:100%;height:210px;object-fit:cover;border-radius:4px;filter:saturate(.9);transition:.25s}.galleryGrid img:hover{transform:scale(1.02);filter:saturate(1.1)}
-.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.quote{background:#fff;padding:28px;border-radius:6px;border:1px solid #e5dccd}.stars{color:var(--gold);letter-spacing:3px;margin-bottom:12px}.quote p{font:14px Arial;line-height:1.7;color:#555}.quote b{display:block;margin-top:18px}
-.contact{background:#0a0a0a;color:#fff;display:grid;grid-template-columns:1fr 1fr;gap:50px}.contact h2{font-size:40px;margin:10px 0 20px}.contact p{font:14px Arial;line-height:1.8;color:#ccc}.info{margin-top:25px;display:grid;gap:12px;font:14px Arial}.info b{color:var(--gold)}form{display:grid;gap:12px}input,textarea,select{width:100%;padding:15px;background:#171717;border:1px solid #4b3a19;color:#fff;border-radius:3px;font:13px Arial}textarea{height:120px;resize:vertical}
-footer{background:#050505;color:#aaa;padding:45px 6%;font:12px Arial}.footerGrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}.footerLogo{color:var(--gold);font:24px Georgia;font-weight:bold;margin-bottom:12px}.footerGrid h4{color:#fff;margin-bottom:15px}.footerGrid p{line-height:1.8}.copy{border-top:1px solid #222;margin-top:30px;padding-top:20px;text-align:center}
-.whatsapp{position:fixed;right:20px;bottom:20px;width:55px;height:55px;border-radius:50%;background:#1fca62;color:#fff;display:grid;place-items:center;font:bold 23px Arial;z-index:30;box-shadow:0 5px 20px #0005}
-@media(max-width:950px){nav{display:none}.menuBtn{display:block}.headerBtn{display:none}.hero{height:620px}.hero h1{font-size:47px}.stats{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:1fr 1fr}.about,.contact{grid-template-columns:1fr}.menuGrid{grid-template-columns:1fr 1fr}.galleryGrid{grid-template-columns:1fr 1fr}.testimonials{grid-template-columns:1fr}.footerGrid{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.topbar{font-size:10px}.topbar span:nth-child(2){display:none}.logoText{font-size:19px}.heroContent{padding:95px 6%}.hero h1{font-size:39px}.hero p{font-size:14px}.stats{grid-template-columns:1fr 1fr}.cards,.menuGrid,.galleryGrid{grid-template-columns:1fr}.section{padding:55px 5%}.title,.about h2,.contact h2{font-size:32px}.galleryGrid img{height:220px}}
+:root{--gold:#d6aa48;--gold2:#f2d58b;--black:#080909;--ink:#111;--cream:#f8f3e9;--line:#6b5220;--muted:#777}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink)}
+a{text-decoration:none;color:inherit}button,input,textarea{font:inherit}
+.top{height:36px;background:#050505;color:#ddd;display:flex;align-items:center;justify-content:space-between;padding:0 5%;font-size:12px}
+header{height:84px;background:rgba(7,7,7,.97);color:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 5%;position:sticky;top:0;z-index:50}
+.brand{display:flex;align-items:center;gap:10px}.brandIcon{width:44px;height:44px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-family:Georgia;font-size:25px}.brandText{font:700 25px Georgia;letter-spacing:3px}.brandText small{display:block;color:var(--gold);font:9px Arial;letter-spacing:4px;text-align:center;margin-top:2px}
+nav{display:flex;gap:24px;font-size:13px}nav a{color:#ddd}nav a:hover,nav a.active{color:var(--gold)}
+.enquire{border:1px solid var(--gold);padding:12px 18px;color:var(--gold);font-size:12px;font-weight:bold;border-radius:3px}
+.menuToggle{display:none;background:none;border:0;color:var(--gold);font-size:25px}
+
+.hero{min-height:650px;position:relative;overflow:hidden;background:#000;color:#fff;display:flex;align-items:center}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.heroShade{position:absolute;inset:0;background:linear-gradient(90deg,#000 4%,rgba(0,0,0,.84) 39%,rgba(0,0,0,.2) 78%,rgba(0,0,0,.1))}
+.heroContent{position:relative;z-index:2;width:52%;padding:80px 6%}.eyebrow{color:var(--gold);font-size:13px;letter-spacing:2px;font-weight:bold}.hero h1{font:58px/1.05 Georgia;margin:20px 0}.hero h1 span{color:var(--gold)}.hero p{color:#ddd;font-size:15px;line-height:1.8;max-width:560px}.buttons{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.btn{background:var(--gold);color:#111;padding:14px 24px;border-radius:3px;font-weight:bold;font-size:13px}.btn.outline{background:transparent;border:1px solid var(--gold);color:#fff}
+.trust{position:absolute;bottom:28px;left:6%;right:6%;z-index:3;display:grid;grid-template-columns:repeat(5,1fr);background:rgba(5,5,5,.84);border:1px solid #5d461b;padding:16px;border-radius:4px}.trust div{border-right:1px solid #5d461b;text-align:center;color:#bbb;font-size:11px}.trust div:last-child{border:0}.trust b{display:block;color:var(--gold);font-size:12px;margin-bottom:5px}
+
+.section{padding:75px 6%}.center{text-align:center}.eyebrowDark{color:#a97921;font-size:12px;letter-spacing:2px;font-weight:bold}.title{font:40px Georgia;margin:10px 0 12px}.subtitle{max-width:700px;margin:0 auto 35px;color:#666;font-size:14px;line-height:1.7}.orn{width:60px;height:2px;background:var(--gold);margin:18px auto 35px}
+
+.occasionGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.occasion{position:relative;height:250px;border-radius:7px;overflow:hidden;color:#fff}.occasion img{width:100%;height:100%;object-fit:cover;transition:.3s}.occasion:hover img{transform:scale(1.05)}.occasion:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(0,0,0,.85))}.occasionText{position:absolute;z-index:2;left:20px;right:20px;bottom:18px}.occasionText h3{font:22px Georgia;margin-bottom:5px}.occasionText p{font-size:12px;color:#ddd}
+
+.about{background:#0a0a0a;color:#fff;display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.aboutImg{width:100%;height:450px;object-fit:cover;border:1px solid #5d461b}.about h2{font:42px Georgia;margin:10px 0 20px}.about p{font-size:14px;line-height:1.9;color:#ccc}.ticks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px;font-size:13px}.ticks span:before{content:"✓";color:var(--gold);font-weight:bold;margin-right:9px}
+
+.menuSection{background:#111;color:#fff}.menuTabs{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:25px 0 40px}.tab{border:1px solid #6a5220;background:#171717;color:#ddd;padding:10px 15px;border-radius:20px;cursor:pointer;font-size:12px}.tab.active,.tab:hover{background:var(--gold);color:#111}.menuPanel{display:none}.menuPanel.active{display:block}.menuPanel h3{font:26px Georgia;color:var(--gold);text-align:center;margin-bottom:22px}.menuGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.menuCard{background:#f7f2e8;color:#222;border-radius:6px;padding:20px;border-top:3px solid var(--gold);min-height:185px}.menuCard h4{font:18px Georgia;margin-bottom:12px}.menuCard ul{columns:2;list-style:none}.menuCard li{font-size:12px;margin:6px 0;color:#555}.menuCard li:before{content:"◆";font-size:7px;color:#b28528;margin-right:7px}
+
+.photoMenu{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:40px}.foodPhoto{background:#181818;border:1px solid #5d461b;border-radius:5px;overflow:hidden}.foodPhoto img{width:100%;height:180px;object-fit:cover}.foodPhoto h4{padding:13px;color:var(--gold);font:17px Georgia}.foodPhoto p{padding:0 13px 15px;color:#aaa;font-size:11px}
+
+.gallery{background:#f3eee4}.galleryGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.galleryGrid img{width:100%;height:260px;object-fit:cover;border-radius:5px;transition:.25s}.galleryGrid img:hover{transform:scale(1.015)}
+
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.review{background:#fff;border:1px solid #e5dccd;padding:27px;border-radius:5px}.stars{color:#c79732;letter-spacing:3px;margin-bottom:12px}.review p{font-size:13px;line-height:1.7;color:#555}.review b{display:block;margin-top:15px;font-size:12px}
+
+.cta{background:linear-gradient(90deg,#090909,#17130b);color:#fff;display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:50px}.cta h2{font:42px Georgia;margin:10px 0}.cta p{color:#ccc;line-height:1.7;font-size:14px}.contactBox{border:1px solid #5d461b;padding:28px;border-radius:5px}.contactRow{display:flex;justify-content:space-between;gap:15px;padding:13px 0;border-bottom:1px solid #332814;font-size:13px}.contactRow:last-child{border:0}.contactRow b{color:var(--gold)}
+
+footer{background:#050505;color:#aaa;padding:45px 6%;font-size:12px}.footGrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:35px}.footGrid h4{color:#fff;margin-bottom:15px}.footBrand{font:25px Georgia;color:var(--gold);margin-bottom:10px}.footGrid p{line-height:1.9}.copy{border-top:1px solid #222;margin-top:30px;padding-top:18px;text-align:center}
+.wa{position:fixed;right:18px;bottom:18px;width:55px;height:55px;border-radius:50%;display:grid;place-items:center;background:#1fc766;color:#fff;font-weight:bold;z-index:60;box-shadow:0 5px 18px #0006}
+
+@media(max-width:1000px){nav{display:none}.menuToggle{display:block}.enquire{display:none}.heroContent{width:70%}.trust{grid-template-columns:repeat(2,1fr);gap:10px}.trust div:nth-child(2n){border:0}.occasionGrid{grid-template-columns:repeat(2,1fr)}.menuGrid{grid-template-columns:repeat(2,1fr)}.photoMenu{grid-template-columns:repeat(2,1fr)}.footGrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.top{font-size:10px}.top span:nth-child(2){display:none}.brandText{font-size:19px}.hero{min-height:690px}.heroContent{width:100%;padding:65px 6% 190px}.hero h1{font-size:41px}.heroShade{background:linear-gradient(90deg,#000 0%,rgba(0,0,0,.72) 100%)}.trust{left:4%;right:4%;bottom:15px;grid-template-columns:1fr 1fr;padding:10px}.section{padding:55px 5%}.title{font-size:32px}.occasionGrid,.menuGrid,.photoMenu,.reviews,.galleryGrid,.about,.cta{grid-template-columns:1fr}.aboutImg{height:300px}.menuCard ul{columns:1}.galleryGrid img{height:230px}.footGrid{grid-template-columns:1fr}.cta h2{font-size:34px}}
 </style>
 </head>
 <body>
-<div class="topbar"><span>📍 Rajkot, Gujarat</span><span>✦ Serving Happiness Since 2010</span><span>☎ Call Us: +91 98765 43210</span></div>
+
+<div class="top"><span>📍 Rajkot, Gujarat</span><span>✦ Pure Vegetarian Catering</span><span>☎ +91 98253 21216</span></div>
 <header>
-<a class="logo" href="#home"><span class="logoIcon">B</span><span class="logoText">BHUMI<small>CATERERS</small></span></a>
-<nav><a class="active" href="#home">HOME</a><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#menus">MENUS</a><a href="#gallery">GALLERY</a><a href="#reviews">REVIEWS</a><a href="#contact">CONTACT</a></nav>
-<a class="headerBtn" href="#contact">ENQUIRE NOW</a><button class="menuBtn" onclick="toggleMenu()">☰</button>
+<a href="#home" class="brand"><span class="brandIcon">B</span><span class="brandText">BHUMI<small>CATERERS</small></span></a>
+<nav id="nav"><a class="active" href="#home">HOME</a><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#menu">OUR MENU</a><a href="#gallery">GALLERY</a><a href="#reviews">REVIEWS</a><a href="#contact">CONTACT</a></nav>
+<a class="enquire" href="#contact">ENQUIRE NOW →</a><button class="menuToggle" onclick="toggleNav()">☰</button>
 </header>
 
 <section class="hero" id="home">
-<img src="hero.jpg" alt="Luxury Bhumi Caterers buffet">
-<div class="heroContent">
-<div class="eyebrow">WE CATER. YOU CELEBRATE.</div>
+<img src="hero.jpg" alt="Luxury catering buffet">
+<div class="heroShade"></div>
+<div class="heroContent"><div class="eyebrow">WE CATER. YOU CELEBRATE.</div>
 <h1>Creating Moments,<br>Serving <span>Happiness.</span></h1>
-<p>From intimate family gatherings to grand weddings, Bhumi Caterers brings delicious vegetarian food, elegant presentation and professional service to every celebration.</p>
-<div class="buttons"><a class="btn" href="#services">OUR SERVICES →</a><a class="btn outline" href="#menus">VIEW MENUS</a></div>
-</div></section>
-
-<div class="stats">
-<div class="stat"><b>QUALITY FOOD</b><span>Fresh ingredients & hygiene</span></div>
-<div class="stat"><b>EXPERIENCED TEAM</b><span>Professional chefs & staff</span></div>
-<div class="stat"><b>CUSTOM MENUS</b><span>Menus for every taste</span></div>
-<div class="stat"><b>TIMELY SERVICE</b><span>Punctual & organized</span></div>
-<div class="stat"><b>HAPPY CLIENTS</b><span>Celebrations made special</span></div>
-</div>
+<p>Premium vegetarian catering for weddings, family functions, corporate events and every celebration that deserves unforgettable food and flawless service. <strong style="color:#f2d58b">Contact: Darshit Kakkad</strong></p>
+<div class="buttons"><a class="btn" href="#contact">PLAN YOUR EVENT →</a><a class="btn outline" href="#menu">EXPLORE MENU</a></div></div>
+<div class="trust"><div><b>HYGIENIC FOOD</b>Fresh ingredients</div><div><b>EXPERIENCED TEAM</b>Professional chefs</div><div><b>CUSTOM MENUS</b>Your taste, your way</div><div><b>ON-TIME SERVICE</b>Perfect execution</div><div><b>HAPPY CLIENTS</b>Memorable events</div></div>
+</section>
 
 <section class="section center" id="services">
-<div class="eyebrowDark">OUR SERVICES</div><h2 class="title">Catering for Every Occasion</h2><div class="goldLine"></div>
-<p class="subtitle">Whether it is a wedding, birthday, corporate gathering or family function, our team creates a memorable dining experience.</p>
-<div class="cards">
-<div class="card"><img src="hero.jpg"><div class="cardBody"><h3>Wedding Catering</h3><p>Grand buffet setups, live counters and elegant vegetarian menus for your special day.</p></div></div>
-<div class="card"><img src="hero.jpg"><div class="cardBody"><h3>Buffet Parties</h3><p>Beautiful presentation and a wide variety of dishes for every kind of celebration.</p></div></div>
-<div class="card"><img src="hero.jpg"><div class="cardBody"><h3>Corporate Events</h3><p>Professional catering for meetings, launches, conferences and office celebrations.</p></div></div>
-<div class="card"><img src="hero.jpg"><div class="cardBody"><h3>Birthday Parties</h3><p>Fun, flavorful and perfectly planned food service for memorable birthdays.</p></div></div>
-<div class="card"><img src="hero.jpg"><div class="cardBody"><h3>Social Gatherings</h3><p>Family functions and get-togethers with customized menus and smooth service.</p></div></div>
-<div class="card"><img src="hero.jpg"><div class="cardBody"><h3>Special Occasions</h3><p>Festivals, anniversaries and celebrations planned around your requirements.</p></div></div>
+<div class="eyebrowDark">WHAT WE CATER</div><h2 class="title">Catering for Every Occasion</h2><div class="orn"></div>
+<p class="subtitle">From intimate family gatherings to grand celebrations, our team handles food, presentation and service with care.</p>
+<div class="occasionGrid">
+<div class="occasion"><img src="main-course.jpg"><div class="occasionText"><h3>Weddings</h3><p>Grand buffet • Live counters • Full service</p></div></div>
+<div class="occasion"><img src="shak-sabji.jpg"><div class="occasionText"><h3>Buffet Parties</h3><p>Rich variety • Elegant presentation</p></div></div>
+<div class="occasion"><img src="starter-cutlet.jpg"><div class="occasionText"><h3>Corporate Events</h3><p>Professional catering for teams & guests</p></div></div>
+<div class="occasion"><img src="starter-roll.jpg"><div class="occasionText"><h3>Birthdays & Functions</h3><p>Fun menus for every celebration</p></div></div>
 </div>
 </section>
 
 <section class="section about" id="about">
-<img class="aboutImg" src="hero.jpg" alt="Bhumi Caterers">
-<div><div class="eyebrow">ABOUT BHUMI CATERERS</div><h2>Food That Brings People Together.</h2><p>We believe catering is more than serving food. It is about creating an experience that guests remember. Bhumi Caterers focuses on taste, hygiene, presentation and dependable service for every event.</p>
-<div class="checks"><div>Premium ingredients</div><div>Pure vegetarian menus</div><div>Professional staff</div><div>Elegant presentation</div><div>Customized packages</div><div>On-time service</div></div></div>
+<img class="aboutImg" src="hero.jpg" alt="Bhumi Caterers buffet">
+<div><div class="eyebrow">ABOUT BHUMI CATERERS</div><h2>Taste That Stays With You.</h2>
+<p>Bhumi Caterers is a specialist in Kathiyawadi, Punjabi, Chinese and a wide variety of vegetarian foods. We combine authentic taste with clean presentation, dependable staff and customized menus for every event.</p>
+<div class="ticks"><span>Pure vegetarian catering</span><span>Fresh quality ingredients</span><span>Counter decoration</span><span>Professional service staff</span><span>Good food service</span><span>Trusted team</span></div></div>
 </section>
 
-<section class="section center" id="menus">
-<div class="eyebrowDark">OUR SPECIAL MENU</div><h2 class="title">Taste Crafted for Your Celebration</h2><div class="goldLine"></div>
-<div class="menuGrid">
-<div class="menuItem"><h3>Welcome Drinks</h3><p>Fresh welcome beverages & traditional refreshments.</p></div>
-<div class="menuItem"><h3>Starters</h3><p>Hot snacks, chaat, farsan & live starter counters.</p></div>
-<div class="menuItem"><h3>Main Course</h3><p>Rich Gujarati, Punjabi, South Indian & fusion options.</p></div>
-<div class="menuItem"><h3>Live Counters</h3><p>Freshly prepared dishes served hot by our chefs.</p></div>
-<div class="menuItem"><h3>Indian Breads</h3><p>Rotis, naan, puri and traditional breads.</p></div>
-<div class="menuItem"><h3>Rice & Dal</h3><p>Fragrant rice, pulao, biryani and dal preparations.</p></div>
-<div class="menuItem"><h3>Desserts</h3><p>Traditional sweets, desserts and celebration specials.</p></div>
-<div class="menuItem"><h3>Custom Menu</h3><p>Tell us your preference and we will create it for you.</p></div>
+<section class="section menuSection" id="menu">
+<div class="center"><div class="eyebrow">OUR MENU</div><h2 class="title">A Menu Made for Every Guest</h2><div class="orn"></div><p class="subtitle" style="color:#aaa">The menu categories below are created from the menu names you provided. Tap a category to explore.</p></div>
+<div style="max-width:900px;margin:0 auto 18px;text-align:center;color:#aaa;font-size:12px">Menu is arranged from the menu pages you supplied — category-wise, as a fresh digital menu (the original menu-card photos are not used as website cards).</div><div class="menuTabs">
+<button class="tab active" onclick="showMenu('main',this)">Main Course</button>
+<button class="tab" onclick="showMenu('rice',this)">Rice & Pulav</button>
+<button class="tab" onclick="showMenu('soup',this)">Soups</button>
+<button class="tab" onclick="showMenu('starter',this)">Starters</button>
+<button class="tab" onclick="showMenu('chinese',this)">Chinese</button>
+<button class="tab" onclick="showMenu('south',this)">South Indian</button>
+<button class="tab" onclick="showMenu('bread',this)">Breads</button>
+<button class="tab" onclick="showMenu('sweet',this)">Sweets</button>
+<button class="tab" onclick="showMenu('live',this)">Live Counters</button>
+<button class="tab" onclick="showMenu('other',this)">More</button>
+</div>
+
+<div class="menuPanel active" id="main"><h3>Shak / Sabji • Dal / Rassa</h3><div class="menuGrid">
+<div class="menuCard"><h4>Dal / Rassa / Fular</h4><ul><li>Dal Fry</li><li>Special Punjabi Dal Tadka</li><li>Dal Makhani</li><li>Kadhai Dal</li><li>Palak Mag</li><li>Mix Dal</li><li>Punjabi Kadhi</li><li>Kadhi Pakoda</li><li>Raita</li><li>Boondi Raita</li><li>Sev Tameta</li><li>Kadhi Kachori</li></ul></div>
+<div class="menuCard"><h4>Gujarati & Kathiyawadi</h4><ul><li>Undhiyu</li><li>Gujarati Kadhi</li><li>Ringan Bateta</li><li>Ringan No Olo</li><li>Sev Tameta Nu Shaak</li><li>Bateta Nu Shaak</li><li>Lasaniya Bateta</li><li>Mix Kathiyawadi Shaak</li><li>Bhinda Masala</li><li>Bhinda Fry</li><li>Gavar Nu Shaak</li><li>Tuvar Lilva</li></ul></div>
+<div class="menuCard"><h4>Paneer & Veg Special</h4><ul><li>Paneer Butter Masala</li><li>Paneer Tikka Masala</li><li>Paneer Lababdar</li><li>Paneer Pasanda</li><li>Paneer Handi</li><li>Paneer Cheese Masala</li><li>Paneer Makhani</li><li>Kaju Masala</li><li>Veg Kolhapuri</li><li>Veg Handi</li><li>Veg Makhani</li><li>Veg Hyderabadi</li></ul></div>
+</div></div>
+
+<div class="menuPanel" id="rice"><h3>Rice • Pulav • Khichdi</h3><div class="menuGrid">
+<div class="menuCard"><h4>Rice & Pulav</h4><ul><li>Steam Rice</li><li>Jeera Rice</li><li>Veg Pulav</li><li>Kashmiri Pulav</li><li>Peas Pulav</li><li>Hyderabadi Biryani</li><li>Veg Biryani</li><li>Paneer Biryani</li><li>Fried Rice</li><li>Schezwan Fried Rice</li><li>Triple Schezwan Rice</li><li>Singapuri Rice</li></ul></div>
+<div class="menuCard"><h4>Special Rice</h4><ul><li>Veg. Biryani with Kadhi</li><li>Paneer Veg. Biryani</li><li>Mexican Rice</li><li>American Rice</li><li>Macaroni Rice</li><li>Vegetable Rice</li><li>Palak Pulav</li><li>Peas Pulav</li><li>Gujarati Pulav</li><li>Special Wedding Pulav</li></ul></div>
+<div class="menuCard"><h4>Khichdi</h4><ul><li>Dal Khichdi</li><li>Palak Khichdi</li><li>Sabudana Khichdi</li><li>Vaghareli Khichdi</li><li>Veg Khichdi</li><li>Gujarati Kadhi with Khichdi</li></ul></div>
+</div></div>
+
+<div class="menuPanel" id="soup"><h3>Garma Garam Soup</h3><div class="menuGrid">
+<div class="menuCard"><h4>Indian & Classic</h4><ul><li>Veg. Manchow Soup</li><li>Veg. Sweet Corn Soup</li><li>Veg. Clear Soup</li><li>Tomato Soup</li><li>Veg. Hot & Sour Soup</li><li>Veg. Garlic Soup</li><li>Veg. Minestrone Soup</li><li>Veg. Italian Soup</li></ul></div>
+<div class="menuCard"><h4>International</h4><ul><li>Lemon Coriander Soup</li><li>Mexican Tomato Soup</li><li>Italian Minestrone Soup</li><li>Mexican Chilli Bean Soup</li><li>Thai Lemon Pepper Soup</li><li>Thai Green Pepper Soup</li><li>Bulgarian Lutenitsa Soup</li><li>Cream of Tomato Soup</li></ul></div>
+<div class="menuCard"><h4>Special</h4><ul><li>Mushroom Soup</li><li>Veg. Split Corn Soup</li><li>Veg. Garlic Soup</li><li>Hot & Sour Special</li><li>Chilli Tomato Soup</li><li>Garden Vegetable Soup</li></ul></div>
+</div></div>
+
+<div class="menuPanel" id="starter"><h3>Starters & Snacks</h3><div class="menuGrid">
+<div class="menuCard"><h4>Indian Starters</h4><ul><li>Veg Cutlet</li><li>Cheese Cutlet</li><li>Hara Bhara Kebab</li><li>Dahi Kebab</li><li>Veg Seekh Kebab</li><li>Corn Kebab</li><li>Mix Pakoda</li><li>Paneer Pakoda</li><li>Onion Pakoda</li><li>Mirchi Bhajiya</li><li>Samosa</li><li>Kachori</li></ul></div>
+<div class="menuCard"><h4>Gujarati Farsan</h4><ul><li>Dhokla</li><li>Khaman Dhokla</li><li>Khandvi</li><li>Patra</li><li>Fafda</li><li>Bhajiya</li><li>Sev Khamani</li><li>Locho</li></ul></div>
+<div class="menuCard"><h4>Western & Continental</h4><ul><li>Garlic Bread</li><li>Cheese Balls</li><li>Jalapeno Potato</li><li>American Corn Cheese Balls</li><li>Veg Spring Roll</li><li>Cheese Roll</li><li>Paneer Cheese Toast</li><li>American Chopsy</li></ul></div>
+</div></div>
+
+<div class="menuPanel" id="chinese"><h3>Chinese & Oriental</h3><div class="menuGrid">
+<div class="menuCard"><h4>Noodles & Rice</h4><ul><li>Veg Hakka Noodles</li><li>Veg Schezwan Noodles</li><li>Veg Manchurian Dry</li><li>Veg Manchurian Gravy</li><li>Chilli Paneer Dry</li><li>Chilli Paneer Gravy</li><li>Gobi Manchurian</li><li>Honey Chilli Potato</li></ul></div>
+<div class="menuCard"><h4>Chinese Specials</h4><ul><li>Crispy Corn</li><li>Veg Spring Roll</li><li>American Chopsy</li><li>Chinese Bhel</li><li>Veg Fried Rice</li><li>Schezwan Fried Rice</li><li>Triple Schezwan Rice</li><li>Chilli Garlic Noodles</li></ul></div>
+<div class="menuCard"><h4>Asian & Fusion</h4><ul><li>Mexican Tacos</li><li>Italian Pasta</li><li>Mexican Chilli Bean</li><li>Garlic Noodles</li><li>Cheese Chilli</li><li>Veg. Stir Fry</li><li>Chinese Bhel</li><li>Asian style starters</li></ul></div>
+</div></div>
+
+<div class="menuPanel" id="south"><h3>South Indian</h3><div class="menuGrid">
+<div class="menuCard"><h4>Dosa</h4><ul><li>Plain Dosa</li><li>Masala Dosa</li><li>Rava Dosa</li><li>Mysore Masala Dosa</li><li>Butter Dosa</li><li>Cheese Dosa</li><li>Schezwan Dosa</li><li>Paneer Dosa</li></ul></div>
+<div class="menuCard"><h4>South Indian Favorites</h4><ul><li>Idli</li><li>Medu Vada</li><li>Masala Vada</li><li>Uttapam</li><li>Upma</li><li>Appam</li><li>Mini Idli</li><li>Chutneys & Sambhar</li></ul></div>
+<div class="menuCard"><h4>Live South Indian</h4><ul><li>Live Dosa Counter</li><li>Live Idli Counter</li><li>Live Uttapam</li><li>Live Vada</li><li>Fresh Sambhar</li><li>Fresh Coconut Chutney</li></ul></div>
+</div></div>
+
+<div class="menuPanel" id="bread"><h3>Live Roti • Paratha • Naan</h3><div class="menuGrid">
+<div class="menuCard"><h4>Roti & Puri</h4><ul><li>Phulka Roti</li><li>Puri</li><li>Missi Roti</li><li>Jowar Roti</li><li>Bajra Rotla</li><li>Bhakhri</li><li>Butter Roti</li><li>Roomali Roti</li></ul></div>
+<div class="menuCard"><h4>Paratha</h4><ul><li>Plain Paratha</li><li>Lachha Paratha</li><li>Ajwain Paratha</li><li>Paneer Paratha</li><li>Cheese Paratha</li><li>Palak Paratha</li><li>Aloo Paratha</li><li>Lasuni Paratha</li></ul></div>
+<div class="menuCard"><h4>Naan</h4><ul><li>Butter Naan</li><li>Garlic Naan</li><li>Cheese Naan</li><li>Cheese Garlic Naan</li><li>Stuffed Naan</li><li>Plain Kulcha</li><li>Masala Kulcha</li><li>Kashmiri Naan</li></ul></div>
+</div></div>
+
+<div class="menuPanel" id="sweet"><h3>Sweets & Desserts</h3><div class="menuGrid">
+<div class="menuCard"><h4>Traditional Sweets</h4><ul><li>Gulab Jamun</li><li>Jalebi</li><li>Rasmalai</li><li>Basundi</li><li>Gajar Halwa</li><li>Moong Dal Halwa</li><li>Shahi Tukda</li><li>Malai Kulfi</li></ul></div>
+<div class="menuCard"><h4>Special Desserts</h4><ul><li>Doodh Pak</li><li>Kaju Pista Mithai</li><li>Dry Fruit Halwa</li><li>Ice Cream</li><li>Fruit Cream</li><li>Rabdi</li><li>Special Wedding Dessert</li></ul></div>
+<div class="menuCard"><h4>Live Sweet Counter</h4><ul><li>Live Jalebi</li><li>Live Malpua</li><li>Live Rabdi</li><li>Hot Gulab Jamun</li><li>Fresh Kulfi</li></ul></div>
+</div></div>
+
+<div class="menuPanel" id="live"><h3>Live Counters</h3><div class="menuGrid">
+<div class="menuCard"><h4>Live Indian Counters</h4><ul><li>Live Dhokla</li><li>Live Khaman</li><li>Live Pav Bhaji</li><li>Live Pasta</li><li>Live Manchurian</li><li>Live Chaat</li></ul></div>
+<div class="menuCard"><h4>Live Chaat Counter</h4><ul><li>Raj Kachori</li><li>Dahi Puri</li><li>Sev Puri</li><li>Pani Puri</li><li>Ragda Puri</li><li>Aloo Tikki Chaat</li><li>Basket Chaat</li></ul></div>
+<div class="menuCard"><h4>Live Beverage Counter</h4><ul><li>Masala Chaas</li><li>Fresh Lime Soda</li><li>Sweet Lassi</li><li>Salted Lassi</li><li>Fresh Fruit Juice</li><li>Cold Coffee</li></ul></div>
+</div></div>
+
+<div class="menuPanel" id="other"><h3>Accompaniments & More</h3><div class="menuGrid">
+<div class="menuCard"><h4>Salad & Raita</h4><ul><li>Green Salad</li><li>Kachumber Salad</li><li>Russian Salad</li><li>Boondi Raita</li><li>Mixed Raita</li><li>Fresh Chaas</li></ul></div>
+<div class="menuCard"><h4>Chutney & Pickle</h4><ul><li>Green Chutney</li><li>Sweet Chutney</li><li>Mint Chutney</li><li>Pickle</li><li>Onion Salad</li><li>Masala Papad</li></ul></div>
+<div class="menuCard"><h4>Other Services</h4><ul><li>Counter Decoration</li><li>Couple Service Staff</li><li>Good Food Service</li><li>Trained Service Staff</li><li>Customized Menu Planning</li><li>Event Support</li></ul></div>
+</div></div>
+
+<div class="photoMenu">
+<div class="foodPhoto"><img src="main-course.jpg"><h4>Rich Main Course</h4><p>Dal, rassa, paneer and vegetables</p></div>
+<div class="foodPhoto"><img src="shak-sabji.jpg"><h4>Signature Sabji</h4><p>Traditional & Punjabi favourites</p></div>
+<div class="foodPhoto"><img src="starter-cutlet.jpg"><h4>Premium Starters</h4><p>Hot snacks and kebabs</p></div>
+<div class="foodPhoto"><img src="soup.jpg"><h4>Hot Soup</h4><p>Classic and international soups</p></div>
 </div>
 </section>
 
 <section class="section gallery" id="gallery">
-<div class="center"><div class="eyebrow">OUR GALLERY</div><h2 class="title">Moments We Love to Serve</h2><div class="goldLine"></div></div>
+<div class="center"><div class="eyebrowDark">FOOD & SERVICE</div><h2 class="title">A Premium Catering Experience</h2><div class="orn"></div></div>
 <div class="galleryGrid">
-<img src="hero.jpg"><img src="hero.jpg"><img src="hero.jpg"><img src="hero.jpg">
-<img src="hero.jpg"><img src="hero.jpg"><img src="hero.jpg"><img src="hero.jpg">
+<img src="main-course.jpg" alt="Main course"><img src="shak-sabji.jpg" alt="Vegetable dishes"><img src="breads-roti.jpg" alt="Roti">
+<img src="breads-paratha.jpg" alt="Paratha"><img src="naan.jpg" alt="Naan"><img src="starter-cutlet.jpg" alt="Starters">
+<img src="starter-roll.jpg" alt="Spring roll"><img src="soup.jpg" alt="Soup"><img src="kebab.jpg" alt="Kebab">
 </div>
 </section>
 
 <section class="section center" id="reviews">
-<div class="eyebrowDark">CLIENT LOVE</div><h2 class="title">What Our Guests Say</h2><div class="goldLine"></div>
-<div class="testimonials">
-<div class="quote"><div class="stars">★★★★★</div><p>“Food quality and presentation were excellent. The entire team managed our function beautifully.”</p><b>— Happy Client</b></div>
-<div class="quote"><div class="stars">★★★★★</div><p>“The buffet looked premium and every dish was served perfectly. Highly recommended.”</p><b>— Wedding Client</b></div>
-<div class="quote"><div class="stars">★★★★★</div><p>“Professional service, delicious food and very cooperative staff. Wonderful experience.”</p><b>— Family Event</b></div>
-</div>
+<div class="eyebrowDark">CLIENT LOVE</div><h2 class="title">What Guests Remember</h2><div class="orn"></div>
+<div class="reviews"><div class="review"><div class="stars">★★★★★</div><p>“Excellent food, beautiful presentation and very cooperative staff. The whole function was managed smoothly.”</p><b>Wedding Client</b></div>
+<div class="review"><div class="stars">★★★★★</div><p>“The live counters were a highlight. Guests loved the variety and freshness.”</p><b>Family Function</b></div>
+<div class="review"><div class="stars">★★★★★</div><p>“Professional service from start to finish. Bhumi Caterers made our event special.”</p><b>Corporate Client</b></div></div>
 </section>
 
-<section class="section contact" id="contact">
-<div><div class="eyebrow">LET'S PLAN YOUR EVENT</div><h2>Make Your Celebration Delicious.</h2><p>Share your event details and our team will contact you to discuss the menu, setup and catering requirements.</p>
-<div class="info"><div><b>PHONE</b>　+91 98765 43210</div><div><b>LOCATION</b>　Rajkot, Gujarat</div><div><b>SERVICE</b>　Weddings • Parties • Corporate • Events</div></div></div>
-<form onsubmit="sendWhatsApp(event)">
-<input id="name" required placeholder="Your Name">
-<input id="phone" required placeholder="Mobile Number">
-<input id="event" placeholder="Event Type">
-<input id="date" type="date">
-<textarea id="message" placeholder="Tell us about your event..."></textarea>
-<button class="btn" type="submit">SEND ENQUIRY ON WHATSAPP →</button>
-</form>
+<section class="section cta" id="contact">
+<div><div class="eyebrow">LET'S PLAN YOUR CELEBRATION</div><h2>Tell Us Your Occasion.</h2><p>Share your date, guest count and preferred menu. We will help you create the right catering experience.</p><div class="buttons"><a class="btn" href="https://wa.me/919825321216" target="_blank">WHATSAPP US →</a></div></div>
+<div class="contactBox"><div class="contactRow"><b>CONTACT PERSON</b><span>Darshit Kakkad</span></div><div class="contactRow"><b>CALL</b><span>+91 98253 21216</span></div><div class="contactRow"><b>WHATSAPP</b><span>+91 98253 21216</span></div><div class="contactRow"><b>LOCATION</b><span>Rajkot, Gujarat</span></div><div class="contactRow"><b>SPECIALITY</b><span>Kathiyawadi • Punjabi • Chinese • Veg</span></div></div>
 </section>
 
-<footer><div class="footerGrid"><div><div class="footerLogo">BHUMI CATERERS</div><p>Premium vegetarian catering with delicious food, elegant presentation and dependable service.</p></div><div><h4>QUICK LINKS</h4><p><a href="#about">About Us</a><br><a href="#services">Services</a><br><a href="#menus">Menus</a><br><a href="#gallery">Gallery</a></p></div><div><h4>CONTACT</h4><p>Rajkot, Gujarat<br>+91 98765 43210<br>Enquiries & Bookings</p></div></div><div class="copy">© 2026 Bhumi Caterers. All Rights Reserved.</div></footer>
-<a class="whatsapp" href="https://wa.me/919876543210" target="_blank">WA</a>
+<footer><div class="footGrid"><div><div class="footBrand">BHUMI CATERERS</div><p>Specialist for all types of Kathiyawadi Food, Punjabi Food, Chinese Food & other variety foods.</p></div><div><h4>QUICK LINKS</h4><p><a href="#about">About</a><br><a href="#services">Services</a><br><a href="#menu">Our Menu</a><br><a href="#gallery">Gallery</a></p></div><div><h4>SERVICES</h4><p>Wedding Catering<br>Buffet Parties<br>Corporate Events<br>Live Counters</p></div><div><h4>CONTACT</h4><p>Darshit Kakkad<br>Rajkot, Gujarat<br>+91 98253 21216<br>Bookings & Enquiries</p></div></div><div class="copy">© 2026 Bhumi Caterers. All Rights Reserved.</div></footer>
+<a class="wa" href="https://wa.me/919825321216" target="_blank">WA</a>
+
 <script>
-function toggleMenu(){const n=document.querySelector('nav');n.style.display=n.style.display==='flex'?'none':'flex';n.style.position='absolute';n.style.top='80px';n.style.left='0';n.style.right='0';n.style.background='#080808';n.style.padding='20px';n.style.flexDirection='column'}
-function sendWhatsApp(e){e.preventDefault();const n=document.getElementById('name').value,p=document.getElementById('phone').value,ev=document.getElementById('event').value,d=document.getElementById('date').value,m=document.getElementById('message').value;const text=`Bhumi Caterers Enquiry%0A%0AName: ${encodeURIComponent(n)}%0AMobile: ${encodeURIComponent(p)}%0AEvent: ${encodeURIComponent(ev)}%0ADate: ${encodeURIComponent(d)}%0ADetails: ${encodeURIComponent(m)}`;window.open('https://wa.me/919876543210?text='+text,'_blank')}
+function showMenu(id,btn){
+ document.querySelectorAll('.menuPanel').forEach(x=>x.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+ document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+ btn.classList.add('active');
+}
+function toggleNav(){
+ const n=document.getElementById('nav');
+ if(getComputedStyle(n).display==='none'){
+  n.style.display='flex';n.style.position='absolute';n.style.top='84px';n.style.left='0';n.style.right='0';n.style.background='#080808';n.style.padding='20px';n.style.flexDirection='column';n.style.gap='18px';
+ }else n.style.display='none';
+}
 </script>
 </body></html>
