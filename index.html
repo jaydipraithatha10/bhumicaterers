@@ -6,128 +6,77 @@
 <title>Bhumi Caterers | Premium Catering</title>
 <meta name="description" content="Bhumi Caterers - Premium catering for weddings, functions, corporate events and celebrations.">
 <style>
-:root{--bg:#080604;--panel:#100d09;--cream:#f8f3e9;--gold:#d4a64a;--gold2:#f5d98a;--red:#681f19;--red2:#9e392b;--muted:#a9a39a;--line:#5a411c;--white:#fff}
+:root{--black:#090705;--black2:#15100b;--gold:#d4aa58;--gold2:#f1d48c;--cream:#f7f1e6;--brown:#6f3d22;--text:#201a14;--muted:#756d63}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;background:var(--cream);color:#17120e}
-a{color:inherit;text-decoration:none}
-.top{background:#050403;color:#c8bda9;padding:9px 5%;display:flex;justify-content:space-between;font-size:11px;letter-spacing:.4px;border-bottom:1px solid #2b2115}
-header{height:82px;position:sticky;top:0;z-index:30;background:rgba(7,5,3,.97);color:#fff;border-bottom:1px solid #4c3517;display:flex;align-items:center;justify-content:space-between;padding:0 5%;box-shadow:0 5px 25px #0008}
-.logo{font:700 25px Georgia;letter-spacing:3px;color:#fff}.logo span{color:var(--gold)}
-.logo small{display:block;text-align:center;color:#c9a45a;font:9px Arial;letter-spacing:4px;margin-top:3px}
-nav{display:flex;gap:24px;font-size:11px;letter-spacing:1px}nav a{color:#ddd}nav a:hover{color:var(--gold)}
-.btn{display:inline-block;background:linear-gradient(135deg,#f0cf7c,#b98228);color:#120d07;padding:13px 22px;border-radius:3px;font-weight:800;font-size:11px;letter-spacing:1px;box-shadow:0 8px 25px #0005}
-.hero{min-height:520px;position:relative;display:flex;align-items:center;color:#fff;overflow:hidden;background:#000}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(1.08) contrast(1.04)}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050403 0%,rgba(5,4,3,.88) 35%,rgba(5,4,3,.28) 72%,rgba(5,4,3,.52) 100%),linear-gradient(0deg,rgba(0,0,0,.55),transparent 45%,rgba(0,0,0,.2))}
-.hero:before{content:"";position:absolute;inset:18px;border:1px solid rgba(235,197,113,.35);z-index:2;pointer-events:none}
-.heroContent{position:relative;z-index:3;width:62%;padding:95px 7%}
-.kicker{color:var(--gold2);letter-spacing:4px;font-size:11px;font-weight:bold}
-h1{font:53px/1.05 Georgia;margin:19px 0 22px;text-shadow:0 4px 30px #000}
-h1 span{color:var(--gold2)}
-.hero p{color:#e4ded5;line-height:1.75;max-width:570px;font-size:14px}
-.actions{display:flex;gap:10px;margin-top:23px;flex-wrap:wrap}
-.outline{background:transparent;color:#fff;border:1px solid #d1a34b;box-shadow:none}
-.section{padding:88px 6%}.dark{background:var(--bg);color:#fff}.center{text-align:center}
-.eyebrow{color:#a87822;letter-spacing:3px;font-size:11px;font-weight:bold}.dark .eyebrow{color:var(--gold)}
-.title{font:43px Georgia;margin:11px 0 15px}.sub{max-width:790px;margin:auto;color:#777;font-size:14px;line-height:1.85}
-.goldline{width:72px;height:2px;background:linear-gradient(90deg,var(--red2),var(--gold),var(--red2));margin:19px auto 38px}
-.services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:38px}
-.service{position:relative;min-height:190px;overflow:hidden;border-radius:4px;color:#fff;border:1px solid #7b5922;background:linear-gradient(145deg,#19120b,#090705);box-shadow:0 12px 35px #0002;padding:27px}
-.service img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.5s;filter:saturate(1.1) contrast(1.05)}.servicePhoto:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 20%,rgba(0,0,0,.9))}.servicePhoto div{position:absolute;left:21px;right:15px;bottom:20px}.servicePhoto:hover img{transform:scale(1.05)}
-.service:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 25%,rgba(0,0,0,.9))}
-.service div{position:relative;z-index:2}.service h3{font:23px Georgia;margin-bottom:6px}.service p{font-size:11px;color:#ddd}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.about img{width:100%;height:450px;object-fit:cover;border:1px solid #745322;box-shadow:20px 20px 0 #281a0e}
-.about h2{font:44px Georgia;margin:10px 0 18px}.about p{line-height:1.95;color:#cfc7bb;font-size:14px}
-.points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px;font-size:12px;color:#ddd}.points div:before{content:"✓";color:var(--gold);margin-right:8px}
-.menuWrap{background:#0c0a08;color:#fff;border-top:1px solid #5b421d;border-bottom:1px solid #5b421d}
-.tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:25px auto 35px;max-width:1100px}
-.tab{border:1px solid #5b451b;background:#17130f;color:#ddd;border-radius:20px;padding:10px 14px;font-size:11px;cursor:pointer;transition:.2s}
-.tab.active,.tab:hover{background:linear-gradient(135deg,#e2bd6a,#9b6d1e);color:#111;border-color:#e8c976}
+body{font-family:Arial,sans-serif;background:var(--cream);color:var(--text)}
+a{text-decoration:none;color:inherit}
+.top{height:34px;background:#050403;color:#cfc5b6;display:flex;align-items:center;justify-content:space-between;padding:0 5%;font-size:11px;border-bottom:1px solid #342719}
+header{height:76px;position:sticky;top:0;z-index:50;background:rgba(8,6,4,.98);display:flex;align-items:center;justify-content:space-between;padding:0 5%;border-bottom:1px solid #58421f;box-shadow:0 4px 22px #0008}
+.logo{font:700 24px Georgia;color:#fff;letter-spacing:3px}.logo span{color:var(--gold)}
+.logo small{display:block;text-align:center;font:8px Arial;color:var(--gold2);letter-spacing:3px;margin-top:3px}
+nav{display:flex;gap:22px;font-size:10px;letter-spacing:1px;color:#eee}nav a:hover{color:var(--gold2)}
+.btn{display:inline-block;background:linear-gradient(135deg,#f1d18a,#ad7725);color:#171007;font-weight:bold;font-size:11px;letter-spacing:1px;padding:12px 19px;border-radius:3px}
+.outline{background:transparent;color:#fff;border:1px solid var(--gold)}
+.hero{height:520px;position:relative;display:flex;align-items:center;overflow:hidden;background:#080604;color:#fff}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(1.08) contrast(1.05)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.82) 38%,rgba(0,0,0,.3) 75%,rgba(0,0,0,.45) 100%)}
+.hero:before{content:"";position:absolute;inset:15px;border:1px solid rgba(221,181,93,.35);z-index:2}
+.heroContent{position:relative;z-index:3;width:60%;padding:50px 7%}
+.kicker{font-size:10px;letter-spacing:3px;color:var(--gold2);font-weight:bold}
+h1{font:52px/1.05 Georgia;margin:15px 0 17px}h1 span{color:var(--gold2)}
+.hero p{max-width:570px;color:#ded8ce;font-size:13px;line-height:1.75}
+.heroTags{display:flex;gap:7px;flex-wrap:wrap;margin-top:15px}.heroTags span{font-size:8px;letter-spacing:1px;color:#f2d58e;border:1px solid #86652e;padding:6px 8px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:21px}
+.section{padding:70px 6%}.dark{background:var(--black);color:#fff}.center{text-align:center}
+.eyebrow{font-size:10px;letter-spacing:3px;color:#9c6b25;font-weight:bold}.dark .eyebrow{color:var(--gold)}
+.title{font:38px Georgia;margin:9px 0 13px}.sub{max-width:760px;margin:auto;color:var(--muted);font-size:13px;line-height:1.8}
+.goldline{width:65px;height:2px;margin:16px auto 30px;background:linear-gradient(90deg,var(--brown),var(--gold2),var(--brown))}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:32px}
+.service{position:relative;min-height:175px;overflow:hidden;background:linear-gradient(145deg,#1d150d,#0a0805);border:1px solid #60471f;border-radius:4px;padding:25px;color:#fff;display:flex;align-items:flex-end}
+.service img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.service:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 15%,rgba(0,0,0,.9))}
+.service div{position:relative;z-index:2}.service h3{font:20px Georgia;margin-bottom:6px}.service p{font-size:10px;color:#d8d1c6}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about img{width:100%;height:380px;object-fit:cover;border:1px solid #765522}
+.about h2{font:40px Georgia;margin:9px 0 15px}.about p{font-size:13px;line-height:1.85;color:#cfc7bb}
+.points{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px;color:#ddd;font-size:11px}.points div:before{content:"✓";color:var(--gold);margin-right:7px}
+.brandStatement{background:linear-gradient(135deg,#0b0805,#1b1209,#0b0805);color:#fff;text-align:center;padding:60px 6%;border-top:1px solid #57401d;border-bottom:1px solid #57401d}
+.brandStatementInner{max-width:820px;margin:auto}.brandStatement .eyebrow{color:var(--gold2)}
+.brandStatement h2{font:38px/1.15 Georgia;margin:10px 0 16px}.brandStatement h2 span{color:var(--gold2)}
+.statementLine{width:60px;height:2px;background:var(--gold);margin:0 auto 20px}.brandStatement p{max-width:700px;margin:auto;color:#d4cec4;font-size:13px;line-height:1.85}
+.statementTags{display:flex;justify-content:center;flex-wrap:wrap;gap:7px;margin-top:22px}.statementTags span{font-size:8px;letter-spacing:1.3px;border:1px solid #6f5425;padding:7px 9px;color:#e8cb84}
+.menuWrap{background:#0c0a07;color:#fff;border-top:1px solid #5a421d;border-bottom:1px solid #5a421d}
+.tabs{display:flex;gap:7px;justify-content:center;flex-wrap:wrap;max-width:1150px;margin:24px auto 32px}
+.tab{cursor:pointer;background:#17120c;color:#ddd;border:1px solid #59441f;border-radius:20px;padding:9px 13px;font-size:10px}
+.tab:hover,.tab.active{background:linear-gradient(135deg,#e5c16d,#a77225);color:#111;border-color:#e4c775}
 .menuPanel{display:none;max-width:1250px;margin:auto}.menuPanel.show{display:block}
-.menuPanel h3{text-align:center;color:var(--gold2);font:28px Georgia;margin-bottom:21px}
-.menuGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
-.menuCard{background:linear-gradient(145deg,#fbf6ed,#eee3d0);color:#24201b;border-radius:4px;border:1px solid #c69b4c;border-top:3px solid var(--red2);padding:20px;box-shadow:0 12px 25px #0003}
-.menuCard ul{columns:1;list-style:none}.menuCard li{font-family:Arial,sans-serif;font-size:13px;line-height:1.5;padding:5px 0;border-bottom:1px solid #e2d6c4}
-.menuCard li:before{content:"◆";font-size:6px;color:#9d7025;margin-right:8px}
-.visuals{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:42px}.eventGallery{margin-top:40px}
-.visual{height:280px;position:relative;overflow:hidden;border-radius:4px;border:1px solid #8c6528;box-shadow:0 15px 30px #0002}.visual img{width:100%;height:100%;object-fit:cover;transition:.5s}.visual:hover img{transform:scale(1.06)}
-.visual span{position:absolute;bottom:0;left:0;right:0;padding:19px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.9));font:20px Georgia}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:38px}
-.step{padding:30px;background:#fff;border:1px solid #dfd1bd;border-top:3px solid var(--gold);border-radius:4px;box-shadow:0 10px 25px #0001}
-.step b{display:block;color:#b1842e;font:27px Georgia;margin-bottom:10px}.step h3{font:19px Georgia;margin-bottom:8px}.step p{font-size:12px;color:#777;line-height:1.65}
-.contact{background:radial-gradient(circle at 85% 30%,#3c2318,#080604 50%);color:#fff;display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:center}
-.contact h2{font:45px Georgia;margin:10px 0 18px}.contact p{color:#ccc;line-height:1.8;font-size:14px}
-.contactBox{border:1px solid #745322;background:#0e0b08cc;padding:26px;border-radius:4px;box-shadow:0 15px 40px #0006}
-.row{display:flex;justify-content:space-between;gap:15px;padding:14px 0;border-bottom:1px solid #2c2314;font-size:13px}.row:last-child{border:0}.row b{color:var(--gold)}
-footer{background:#040302;color:#aaa;padding:42px 6%;font-size:12px}.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}.foot h4{color:#fff;margin-bottom:12px}.foot p{line-height:1.8}.copy{border-top:1px solid #222;margin-top:28px;padding-top:18px;text-align:center}
-.wa{position:fixed;right:18px;bottom:18px;width:57px;height:57px;border-radius:50%;background:#20c866;color:#fff;display:grid;place-items:center;font-weight:bold;z-index:40;box-shadow:0 8px 28px #0008;border:2px solid #fff}
-@media(max-width:900px){nav{display:none}.heroContent{width:80%}.services{grid-template-columns:1fr 1fr}.about,.contact{grid-template-columns:1fr}.menuGrid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.top span:nth-child(2){display:none}header{height:70px}.logo{font-size:20px}.hero{min-height:500px}.heroContent{width:100%;padding:65px 7% 180px}h1{font-size:42px}.services,.menuGrid,.visuals,.steps,.foot{grid-template-columns:1fr}.section{padding:58px 5%}.title{font-size:33px}.about img{height:280px}.hero:before{inset:10px}}
-
-/* Indian Gujarati catering hero refinement */
-.hero img{object-position:center center;filter:saturate(1.18) contrast(1.06)}
-.heroContent{max-width:720px;padding-top:58px;padding-bottom:58px}
-.hero .kicker{letter-spacing:3.2px}
-.hero h1{max-width:680px}
-@media(max-width:600px){
-  .hero img{object-position:58% center}
-  .heroContent{padding-top:75px}
-  .hero p{font-size:14px;line-height:1.75}
-}
-
-.heroTags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
-.heroTags span{font-size:10px;letter-spacing:1px;text-transform:uppercase;border:1px solid rgba(224,184,91,.5);color:#f1d58d;background:rgba(0,0,0,.25);padding:7px 10px;border-radius:2px}
-@media(max-width:600px){.heroTags{margin-top:14px}.heroTags span{font-size:9px;padding:6px 8px}}
-
-.whyBhumi{background:#f5eee2;border-top:1px solid #e4d4b8;border-bottom:1px solid #e4d4b8}
-.whyGrid{max-width:1100px;margin:35px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.whyGrid>div{background:#fff;padding:24px;border:1px solid #e5d7c2;border-top:3px solid #b98a32}
-.whyGrid b{font:24px Georgia;color:#b1842e}.whyGrid h3{font:18px Georgia;margin:9px 0}.whyGrid p{font-size:12px;color:#777;line-height:1.65}
-@media(max-width:900px){.whyGrid{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.whyGrid{grid-template-columns:1fr}}
-
-.brandStatement{background:linear-gradient(135deg,#0b0906,#1a1209 55%,#0b0906);color:#fff;text-align:center;padding:72px 6%;border-top:1px solid #5a411c;border-bottom:1px solid #5a411c;position:relative;overflow:hidden}
-.brandStatement:before,.brandStatement:after{content:"";position:absolute;width:180px;height:180px;border:1px solid rgba(212,166,74,.18);border-radius:50%;top:50%;transform:translateY(-50%)}
-.brandStatement:before{left:-90px}.brandStatement:after{right:-90px}
-.brandStatementInner{max-width:850px;margin:auto;position:relative;z-index:2}
-.brandStatement .eyebrow{color:var(--gold2)}
-.brandStatement h2{font:42px/1.15 Georgia;margin:12px 0 18px}
-.brandStatement h2 span{color:var(--gold2)}
-.statementLine{width:65px;height:2px;background:linear-gradient(90deg,var(--red2),var(--gold2),var(--red2));margin:0 auto 22px}
-.brandStatement p{max-width:700px;margin:auto;color:#d4cec5;font-size:14px;line-height:1.9}
-.statementTags{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;margin-top:25px}
-.statementTags span{font-size:9px;letter-spacing:1.5px;color:#e9cd88;border:1px solid rgba(212,166,74,.45);padding:8px 11px}
-@media(max-width:600px){.brandStatement{padding:55px 6%}.brandStatement h2{font-size:32px}.brandStatement p{font-size:13px}.statementTags{gap:6px}.statementTags span{font-size:8px;padding:7px 8px}}
-
-/* Final clean visual balance */
-.service:before{content:"✦";position:absolute;right:18px;top:15px;color:rgba(212,166,74,.32);font-size:23px}
-.servicePhoto:before{z-index:3}
-@media(max-width:900px){.services{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){
-  .hero{min-height:500px}
-  .heroContent{padding:52px 7% 55px}
-  h1{font-size:38px}
-  .hero p{font-size:12px;line-height:1.7}
-  .services{grid-template-columns:1fr}
-  .service{min-height:150px}
-}
+.menuPanel h3{text-align:center;font:27px Georgia;color:var(--gold2);margin-bottom:18px}
+.menuGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.menuCard{background:linear-gradient(145deg,#fff9ef,#eee2d0);color:#251e17;border-radius:4px;border-top:3px solid #9c3927;padding:18px;border:1px solid #d0b27c}
+.menuCard ul{list-style:none}.menuCard li{font-size:12px;line-height:1.45;padding:4px 0;border-bottom:1px solid #e4d8c7}.menuCard li:before{content:"◆";font-size:5px;color:#a97626;margin-right:7px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:30px}.step{background:#fff;padding:25px;border:1px solid #e3d6c2;border-top:3px solid var(--gold)}.step b{font:24px Georgia;color:#ad7b2a}.step h3{font:17px Georgia;margin:8px 0}.step p{font-size:11px;color:#777;line-height:1.6}
+.contact{background:radial-gradient(circle at 80%,#3b2317,#080604 50%);color:#fff;display:grid;grid-template-columns:1.2fr 1fr;gap:45px;align-items:center}
+.contact h2{font:40px Georgia;margin:9px 0 15px}.contact p{font-size:13px;color:#ccc;line-height:1.8}
+.contactBox{border:1px solid #705322;background:#0d0a07;padding:24px}.row{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #2b2114;font-size:11px}.row:last-child{border:0}.row b{color:var(--gold)}
+footer{background:#040302;color:#aaa;padding:35px 6%;font-size:11px}.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:25px}.foot h4{color:#fff;margin-bottom:10px}.foot p{line-height:1.8}.copy{text-align:center;border-top:1px solid #222;margin-top:22px;padding-top:16px}
+.wa{position:fixed;right:18px;bottom:18px;width:55px;height:55px;border-radius:50%;background:#20c866;color:#fff;display:grid;place-items:center;font-weight:bold;z-index:100;box-shadow:0 7px 25px #0008}
+@media(max-width:900px){nav{display:none}.heroContent{width:75%}.services{grid-template-columns:1fr 1fr}.about,.contact{grid-template-columns:1fr}.menuGrid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.top{font-size:9px}.top span:nth-child(2){display:none}.hero{height:490px}.heroContent{width:100%;padding:45px 7%}.hero:before{inset:9px}h1{font-size:38px}.hero p{font-size:12px}.heroTags{margin-top:12px}.section{padding:55px 5%}.title{font-size:32px}.services,.menuGrid,.steps,.foot{grid-template-columns:1fr}.service{min-height:145px}.about img{height:270px}.brandStatement h2{font-size:32px}.contact h2{font-size:34px}}
 </style>
 </head>
 <body>
 <div class="top"><span>📍 Rajkot, Gujarat</span><span>Premium Vegetarian Catering</span><span>Darshit Kakkad • 9825321216</span></div>
 <header>
 <a class="logo" href="#home">BHUMI <span>CATERERS</span><small>WE CATER • YOU CELEBRATE</small></a>
-<nav><a href="#home">HOME</a><a href="#services">SERVICES</a><a href="#about">ABOUT</a><a href="#events">EVENTS</a><a href="#menu">MENU</a><a href="#experience">EXPERIENCE</a><a href="#contact">CONTACT</a></nav>
+<nav><a href="#home">HOME</a><a href="#services">SERVICES</a><a href="#about">ABOUT</a><a href="#menu">MENU</a><a href="#experience">EXPERIENCE</a><a href="#contact">CONTACT</a></nav>
 <a class="btn" href="tel:+919825321216">CALL NOW</a>
 </header>
 
 <section class="hero" id="home">
-<img src="hero-gujarati-catering.webp" alt="Indian Gujarati vegetarian catering buffet">
+<img src="https://images.pexels.com/photos/16884249/pexels-photo-16884249.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="Premium wedding buffet catering">
 <div class="heroContent"><div class="kicker">PURE VEG • GUJARATI CATERING • RAJKOT</div>
 <h1>Authentic Gujarati<br><span>Flavours & Celebrations.</span></h1>
-<p>Authentic Gujarati & multi-cuisine vegetarian catering for weddings, Gujarati functions, party plots and celebrations — with traditional taste, grand presentation and professional service.</p><div class="heroTags"><span>Gujarati Functions</span><span>Weddings</span><span>Party Plots</span><span>Pure Veg</span></div>
+<p>Authentic Gujarati & multi-cuisine vegetarian catering for weddings, Gujarati functions, party plots and celebrations — with traditional taste, grand presentation and professional service.</p>
 <div class="actions"><a class="btn" href="#menu">VIEW COMPLETE MENU</a><a class="btn outline" href="#contact">BOOK YOUR EVENT</a></div></div>
 </section>
 
@@ -135,41 +84,58 @@ footer{background:#040302;color:#aaa;padding:42px 6%;font-size:12px}.foot{displa
 <div class="eyebrow">OUR SERVICES</div><h2 class="title">Designed Around Your Celebration</h2><div class="goldline"></div>
 <p class="sub">Elegant presentation, experienced service and a menu that can be customized around your occasion.</p>
 <div class="services">
-<div class="service servicePhoto"><img src="https://images.pexels.com/photos/17878224/pexels-photo-17878224.jpeg?auto=compress&cs=tinysrgb&w=1200"><div><h3>Gujarati Functions</h3><p>Traditional taste • Elegant catering</p></div></div>
-<div class="service"><div><h3>Weddings & Marriages</h3><p>Grand celebrations with thoughtful food service.</p></div></div>
-<div class="service"><div><h3>Party Plot Events</h3><p>Professional buffet planning for large gatherings.</p></div></div>
-<div class="service"><div><h3>Family & Corporate Events</h3><p>Reliable catering for every special occasion.</p></div></div>
-</div></section>
+<div class="service"><img src="https://images.pexels.com/photos/24863057/pexels-photo-24863057.jpeg?auto=compress&cs=tinysrgb&w=1200"><div><h3>Wedding Catering</h3><p>Grand buffet & celebration dining</p></div></div>
+<div class="service"><img src="https://images.pexels.com/photos/4959845/pexels-photo-4959845.jpeg?auto=compress&cs=tinysrgb&w=1200"><div><h3>Grand Buffet</h3><p>Beautiful setup & wide variety</p></div></div>
+<div class="service"><img src="https://images.pexels.com/photos/12253092/pexels-photo-12253092.jpeg?auto=compress&cs=tinysrgb&w=1200"><div><h3>Live Food Counters</h3><p>Freshly prepared at your event</p></div></div>
+<div class="service"><img src="https://images.pexels.com/photos/7648322/pexels-photo-7648322.jpeg?auto=compress&cs=tinysrgb&w=1200"><div><h3>Professional Catering</h3><p>Trained team & smooth execution</p></div></div>
+</div>
+</section>
 
 <section class="section dark" id="about">
-<div class="about"><div>
+<div class="about"><img src="https://images.pexels.com/photos/4007053/pexels-photo-4007053.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Premium catering food"><div>
 <div class="eyebrow">ABOUT BHUMI CATERERS</div><h2>One Caterer. Every Celebration.</h2>
 <p>Bhumi Caterers specializes in Kathiyawadi, Punjabi, Gujarati, Chinese, Continental, South Indian and a wide variety of vegetarian foods. Your supplied menu has been converted into a fresh digital menu — the original menu-card photographs are not used.</p>
 <div class="points"><div>Pure vegetarian catering</div><div>Customized menus</div><div>Live food counters</div><div>Counter decoration</div><div>Professional service staff</div><div>Good food service</div></div>
 </div></div>
 </section>
 
+<section class="section menuWrap" id="menu">
+<div class="center"><div class="eyebrow">COMPLETE DIGITAL MENU</div><h2 class="title">Every Menu Item, Category by Category</h2><div class="goldline"></div>
+<p class="sub" style="color:#aaa">આ menu તમારા આપેલા menu photos માંથી category-wise digital format માં તૈયાર કરેલું છે. Original card photos websiteમાં ઉપયોગમાં લીધા નથી.</p></div>
+<div class="menuIntro center"><div class="eyebrow" style="color:#d4aa58">COMPLETE MENU</div><p style="color:#aaa;font-size:12px;margin-top:7px">Tap any category to view the full list.</p></div><div class="tabs"><button class="tab active" onclick="openMenu(0)">ગરમાગરમ સૂપ</button><button class="tab " onclick="openMenu(1)">સ્ટાર્ટર</button><button class="tab " onclick="openMenu(2)">લાઇવ સ્ટાર્ટર</button><button class="tab " onclick="openMenu(3)">પનીર સબ્જી</button><button class="tab " onclick="openMenu(4)">વેજ સબ્જી</button><button class="tab " onclick="openMenu(5)">કાઠિયાવાડી સબ્જી</button><button class="tab " onclick="openMenu(6)">લાઇવ રોટી પરાઠા</button><button class="tab " onclick="openMenu(7)">ચાઇનીઝ / ફાસ્ટફૂડ</button><button class="tab " onclick="openMenu(8)">કાઠિયાવાડી ફરસાણ</button><button class="tab " onclick="openMenu(9)">ચાટ</button><button class="tab " onclick="openMenu(10)">સાઉથ ઇન્ડિયન</button><button class="tab " onclick="openMenu(11)">કૉન્ટિનેન્ટલ / ઓરિએન્ટલ / સીઝલર</button><button class="tab " onclick="openMenu(12)">સ્વીટ્સ / ડેઝર્ટ</button><button class="tab " onclick="openMenu(13)">દાલ / રાઇસ / પુલાવ</button><button class="tab " onclick="openMenu(14)">અન્ય સેવાઓ</button></div>
+<section class="menuPanel show" id="panel0"><h3>ગરમાગરમ સૂપ</h3><div class="menuGrid"><div class="menuCard"><ul><li>સ્પે. સ્પેનીચ આલમંડ સુપ</li><li>સ્પે. મુલી પાલક સુપ</li><li>મુમતાઝ સુપ</li><li>મન્ચુરીયન સુપ</li><li>વેજ. મિનીસ્ટ્રોન સુપ</li><li>કાઠિયાવાડી સુપ</li><li>ગ્રીન ઝીલ સુપ</li><li>બ્લોકી આલમંડ સુપ</li><li>ચીઝ ટોમેટિયમ સુપ</li><li>મેક્સીકન ચીલી બીન સુપ</li><li>હર્બસ એન્ડ વેજીસ સુપ</li><li>થાઇ લેમન પેપર સુપ</li><li>થાઇ લેમન પેપર સુપ</li></ul></div><div class="menuCard"><ul><li>સ્પે. સ્પેનીચ પાલક સુપ</li><li>લેમન કોરીએંડર સુપ</li><li>યુ.પી. થોમસ સુપ</li><li>વેજ. સ્વીટ કોર્ન સુપ</li><li>ટોમેટો કોર્ન સુપ</li><li>થાઇ પમકીન સુપ</li><li>ચીઝ કોર્ન ટોમેટો સુપ</li><li>લેમન વોટર સુપ</li><li>મેક્સીકન ટોમેટો સુપ</li><li>ઇટાલીયન સ્પેગીટી સુપ</li><li>ટોમેટો બેસીલ સુપ</li><li>થાઇ ગ્રીન પેપર સુપ</li></ul></div><div class="menuCard"><ul><li>સ્પે. હોટ એન્ડ સૌર સુપ</li><li>વેજ. મનચાઉ સુપ</li><li>ક્રીમ ટોમેટો સુપ વીથ ક્રમ્સ</li><li>વેજ. ગાર્લિક સુપ</li><li>વેજ. ઓનીયન સુપ</li><li>વેજ. લંગફન સુપ</li><li>વેજ. કોળીયર સુપ</li><li>ટોમેટો ધનીયા સોરવા સુપ</li><li>ઇટાલીયન સ્મોક ટોમેટો સુપ</li><li>ચીક પીસ સુપ</li><li>ઝેટર સુપ</li><li>બલ્ગેરીયન લીન્ટેલ સુપ</li></ul></div></div></section><section class="menuPanel " id="panel1"><h3>સ્ટાર્ટર</h3><div class="menuGrid"><div class="menuCard"><ul><li>ગાર્લિક બ્રેડ</li><li>અમેરીકન કોર્ન ચીઝ બોલ્સ</li><li>પનીર પકોડી</li><li>ચીલીકોર્ન કેન</li><li>ડ્રાયફૂટ (કાજુ, બદામ, પિસ્તા)</li><li>મેક્સીકન ડીલાઇટ</li><li>જલપરી</li></ul></div><div class="menuCard"><ul><li>કોસ્ટીની</li><li>ચિડીયા સમોસા</li><li>મેક્સીકન રોલ</li><li>ચીઝ ચેરી પાઇનેપલ સ્ટીક</li><li>મેક્સીકન રેફીટોસ એરોઝ</li><li>ગાર્ડન સ્કેલેટ</li><li>મલેશીયન રોલ</li></ul></div><div class="menuCard"><ul><li>જલેપિનો પોટેટો</li><li>ક્વોસાડિલાસ</li><li>ચીઝ પનીર બોલ</li><li>મેક્સીકન રગડા વીથ ટીક્કી</li><li>કાશ્મીરી કબાબ</li><li>સ્પેનીચ ચીઝ બોલ</li></ul></div></div></section><section class="menuPanel " id="panel2"><h3>લાઇવ સ્ટાર્ટર</h3><div class="menuGrid"><div class="menuCard"><ul><li>લાઇવ રોસ્ટેડ શાંઘાઇ કબાબ</li><li>ક્રિસ્પી બેબી પોટેટો (બોમ્બે)</li><li>લાઇવ ચિડીયા સમોસા</li><li>મેક્સીકન ચીઝી પાઉચીસ</li><li>રોસ્ટેડ પનીર બારબેક્યુ</li><li>તીલ કબાબ</li><li>મસાલા ચીઝી પોપર્સ</li><li>કીમી બ્રેડ રોલ</li><li>કોટેજ ચીઝી કોક્યુટસ</li><li>કોકટેઇલ ટોસ્ટેડસ</li><li>ઇન્ડોનેશીયન સાટે</li><li>બ્યૂરી ટોસ</li><li>સીકલીન બુસેટો</li></ul></div><div class="menuCard"><ul><li>લાઇવ ચાઇના બાદામ</li><li>લાઇવ હરાભરા કબાબ</li><li>જલેપિનો ચીઝી પાઉચીસ</li><li>ઇટાલીયન વોલ્વો</li><li>ચીઝ મીલેનિયમ</li><li>પોટેટો વેજીસ</li><li>રેપ એન રોલ</li><li>હર્બસ ચીઝી બોલ્સ</li><li>મેક્સીકન ટાકોઝ</li><li>થાઇ કોર્ન ક્રેકર્સ</li><li>મેક્સીકન નાચોઝ વીથ ચીઝ સોસ</li><li>એક્સોટીકા</li></ul></div><div class="menuCard"><ul><li>લાઇવ પનીર ચીલી</li><li>ઇટાલીયન સ્ટફ પોટેટો</li><li>લાઇવ વેજ. બુલેટ</li><li>ગ્રીક બોમ્બ બ્લાસ્ટ</li><li>વેજ. કેન્ડી</li><li>મેક્સીકન ક્લેઝોન</li><li>વેજી. બેસીલ બોલ્સ</li><li>મિની બર્ગર</li><li>થાઇ કોર્ન શ્રાઇટીસ</li><li>મેક્સીકન શી બીન ટિક્કી</li><li>થાઇરિયાકી કોટેજ ચીઝી</li><li>લેબેનીસ કીવી</li></ul></div></div></section><section class="menuPanel " id="panel3"><h3>પનીર સબ્જી</h3><div class="menuGrid"><div class="menuCard"><ul><li>પનીર મટર ફ્લાવર કોરમા (યલો ગ્રેવી)</li><li>તવા પનીર ચીલી (યલો ગ્રેવી)</li><li>સ્પે. કાજુ કરી</li><li>પનીર પસંદા</li><li>પનીર મુગલાઇ</li><li>પનીર શાહી મેવા</li><li>પનીર સીઝલર</li><li>પનીર મહારાજા</li><li>પનીર ટીકા મસાલા</li><li>પનીર બટર મસાલા</li></ul></div><div class="menuCard"><ul><li>પનીર પેશાવરી (કાજુ ગ્રેવી)</li><li>ચીઝ પનીર બોલ મસાલા (ગ્રેવી)</li><li>પનીર ટકાટક</li><li>પનીર હાંડી</li><li>પનીર મલાઇ કોફ્તા (સ્વીટ)</li><li>પનીર મખનવાલા</li><li>પનીર મખની</li><li>પનીર લોંગ લતા</li><li>પાલક પનીર</li></ul></div><div class="menuCard"><ul><li>પનીર બહાર કેશરી મસાલા (કેશરી ગ્રેવી)</li><li>પનીર ખોયા કાજુ (સ્વીટ મીડિયમ)</li><li>પનીર પતિયાલા</li><li>પનીર લવાબદાર</li><li>પનીર મેથી મટર મલાઇ</li><li>પનીર ભુજ</li><li>પનીર મોતી મલાઇ</li><li>પનીર દિલબહાર</li><li>પાલક પનીર કોર્ન કેપ્સીકમ</li></ul></div></div></section><section class="menuPanel " id="panel4"><h3>વેજ સબ્જી</h3><div class="menuGrid"><div class="menuCard"><ul><li>વેજ. રીમઝીમ</li><li>વેજ. સુનહેરી ડાય (વ્હાઇટ ગ્રેવી)</li><li>વેજ. હૈદરાબાદી ગ્રીન</li><li>વેજ. સીંગાપુરી (સ્પાઇસી)</li><li>વેજ. પુરી</li><li>વેજ. હરિયાલી ગ્રીન</li></ul></div><div class="menuCard"><ul><li>વેજ. મિલીજુલી (સ્પાઇસી)</li><li>વેજ. જાલફાય (રેડ ગ્રેવી)</li><li>વેજ. વિન્ટર સ્પે. (બ્રાઉન)</li><li>વેજ. તાજમહાલ</li><li>વેજ. કોહપૂરી</li><li>વેજ. સેફોની (જ્વાઉન ગ્રેવી)</li></ul></div><div class="menuCard"><ul><li>વેજ. પનીર રસીલી</li><li>વેજ. મટર મશરૂમ મસાલા</li><li>વેજ. ખોજામ્બો</li><li>વેજ. તવા મહેફીલ</li><li>વેજ. કડાઇ</li><li>વેજ. ખીમા મસાલા</li></ul></div></div></section><section class="menuPanel " id="panel5"><h3>કાઠિયાવાડી સબ્જી</h3><div class="menuGrid"><div class="menuCard"><ul><li>સ્પે. કાઠીયાવાડી ઉધીયું</li><li>પંચ કઠોળ</li><li>સ્પે. મકાઇ, મૂઠીયા, વટાણા</li><li>ભરેલા રીંગણ બટાકા મીક્સ</li></ul></div><div class="menuCard"><ul><li>સ્પે. મીની ઉધીયું</li><li>સ્પે. કાજુ ગાઠાયા</li><li>સ્પે. સેવ ટમેટા</li></ul></div><div class="menuCard"><ul><li>સ્પે. રજવાડી ઢોકળી</li><li>સ્પે. તુરીયા, પાત્રા, વટાણા</li><li>દમ-આલું</li></ul></div></div></section><section class="menuPanel " id="panel6"><h3>લાઇવ રોટી પરાઠા</h3><div class="menuGrid"><div class="menuCard"><ul><li>લાઇવ ફૂલકા રોટી</li><li>સ્પે. સ્વામીનારાયણ રોટી</li><li>મીક્સી રોટી</li><li>બિસ્કીટ ભાખરી</li><li>બટર નાન</li><li>ચીઝ મખ્ખન નાન</li><li>ખાંધારી નાન</li><li>ગુલદસ્તા નાન</li><li>ગાર્લિક કુલ્ચા</li><li>રેશમ પરાઠા</li><li>આલુ સ્ટફ પરાઠા</li></ul></div><div class="menuCard"><ul><li>પુરી</li><li>ધાબા રોટી</li><li>ધનીયા મેથી રોટી</li><li>બાજરી રોટલા</li><li>બટર માલામાલ નાન</li><li>લચ્છા પરાઠા</li><li>કાજુ મસાલા નાન</li><li>ચીલી નાન</li><li>અમૃતસરી કુલ્ચા</li><li>ચીઝ પરાઠા</li><li>પાલક પરાઠા</li></ul></div><div class="menuCard"><ul><li>પરોઠા</li><li>મથુરા રોટી</li><li>મકે-દી-રોટી</li><li>જુવાર રોટલા</li><li>કાશ્મીરી નાન</li><li>ગ્રીન નાન</li><li>રાજસ્થાની નાન</li><li>સ્ટફ મસાલા કુલ્ચા</li><li>બેબી બિસ્કીટ પરાઠા</li><li>વેજ. પરાઠા</li></ul></div></div></section><section class="menuPanel " id="panel7"><h3>ચાઇનીઝ / ફાસ્ટફૂડ</h3><div class="menuGrid"><div class="menuCard"><ul><li>ચાઇનીઝ સમોસા</li><li>હક્કા નુડલ્સ</li><li>મોંગોલિયન નુડલ્સ / પાસ્તા</li><li>ચાઇનીઝ કસાટા</li><li>વેજ. લેજીંગ ફાય</li><li>પનીર ચીઝ ટોસ્ટ</li><li>મેક્સિકન ચોપ્સી</li><li>અરમાની પોટેટો</li><li>માર્ગેરીટા પીત્ઝા</li><li>લાઇવ ઇટાલીયન કુઝ</li><li>ચીઝ ચીલી સેન્ડવીચ</li></ul></div><div class="menuCard"><ul><li>ચાઇનીઝ ભેલ</li><li>વેજ મોમોઝ</li><li>ચીલી ચંગા</li><li>ચાઇનીઝ લીફાફા</li><li>કાશ્મીરી કોકોનટ કલી</li><li>અમેરિકન ચોપ્સી</li><li>તમામ પ્રકારનું ફાસ્ટફૂડ</li><li>રશિયન ટોસ્ટ</li><li>મેક્સીકન પીત્ઝા</li><li>લાઇવ વેજ. ડિલાઇટ</li></ul></div><div class="menuCard"><ul><li>વેજ ચાઉમીન</li><li>સ્પ્રીંગ રોલ</li><li>ચાઇનીઝ લહર</li><li>કાટી રોલ ચાઇનીઝ</li><li>વેજ. રેશમ કબાબ</li><li>ચાઇનીઝ ચોપ્સી</li><li>બટર પોટલી</li><li>લાઇવ ઇટાલીયન પીત્ઝા</li><li>લાઇવ કપલ કંચી</li><li>લાઇવ પાઇનેપલ ટીટબીટ</li></ul></div></div></section><section class="menuPanel " id="panel8"><h3>કાઠિયાવાડી ફરસાણ</h3><div class="menuGrid"><div class="menuCard"><ul><li>મીક્સ ભજીયા</li><li>સમોસા</li><li>ખમણ</li><li>કરાય પાત્રા</li><li>લાઇવ સ્ટીમ ઢોકળા</li><li>ખાંડવી</li></ul></div><div class="menuCard"><ul><li>ખસ્તા કચોરી</li><li>કટલેસ</li><li>ટમટમ</li><li>રસપાત્રા</li><li>લાઇવ પુડલા</li><li>ખુશ્બૂ ગુજરાતકી</li></ul></div><div class="menuCard"><ul><li>હાંડવો</li><li>કચોરી</li><li>કોથમીર કલી</li><li>લાઇવ મૂઠીયા ઢોકળા</li><li>સેવખમણી</li><li>પનીર ચીલા (મગદાળ પુડલા)</li></ul></div></div></section><section class="menuPanel " id="panel9"><h3>ચાટ</h3><div class="menuGrid"><div class="menuCard"><ul><li>સ્પે. જોધપુરી ચાટ</li><li>ગરમ મથુરા ચાટ</li><li>ગરમ રગડા વીથ પેટીસ ચાટ</li><li>રસી ચાટ</li><li>મશરૂમ ચાટ</li></ul></div><div class="menuCard"><ul><li>કોકટેઇલ ચાટ</li><li>ગરમ રગડા વીથ સમોસા ચાટ</li><li>ગરમ રાજસ્થાની રજવાડી ચાટ</li><li>ગરમ બોમ્બે ચોપાટી ચાટ</li><li>કલકત્તી પતા ચાટ</li></ul></div><div class="menuCard"><ul><li>લોજીંગ ચાટ</li><li>દિલ્હી ચાટ</li><li>વેજ. માર્વેલ ચાટ</li><li>ઓરેંજ પાપડી ચાટ</li></ul></div></div></section><section class="menuPanel " id="panel10"><h3>સાઉથ ઇન્ડિયન</h3><div class="menuGrid"><div class="menuCard"><ul><li>સ્પે. સાદા ઢોસા</li><li>સ્પે. મૈસુર મસાલા ઢોસા</li><li>સ્પે. ઢોસા ફ્રાય</li><li>કાંચીપુરમ ઇડલી</li><li>ચટની (ટોમેટો, પાલક, ફૂદીના)</li><li>છોલે પુરી (ભટ્રે)</li><li>ભેલ પુરી</li></ul></div><div class="menuCard"><ul><li>સ્પે. મસાલા ઢોસા</li><li>સ્પે. નુડલ્સ કોર્ન ઢોસા</li><li>લાઇવ ઇડલી</li><li>ઉતપમ (ટોમેટો, ઓનીયન, ચીલી)</li><li>લાઇવ મેંદુવડા</li><li>પાંવભાજી</li><li>સેવ પુરી</li></ul></div><div class="menuCard"><ul><li>સ્પે. રવા ઢોસા</li><li>સ્પે. પાલક પનીર ઢોસા</li><li>સેઝવાન ઇડલી</li><li>સાંભાર</li><li>અપમ</li><li>પાણીપુરી</li><li>દાબેલી બ્રેડ</li></ul></div></div></section><section class="menuPanel " id="panel11"><h3>કૉન્ટિનેન્ટલ / ઓરિએન્ટલ / સીઝલર</h3><div class="menuGrid"><div class="menuCard"><ul><li>બર્મીસ સ્પેગેટી</li><li>કેનેલોની ફ્લોરેન્ટાઇન</li><li>બેક્ડ મુસ્ક્કા</li><li>થાઇ કરી (રેડ / યેલો / ગ્રીન)</li><li>લેબેનીસ ફલાફલ</li><li>ખાઉસ-વે</li><li>જાપાનીઝ ટેપેનીટેકી સીઝલર</li></ul></div><div class="menuCard"><ul><li>મેક્સીકન ટ્રાયો</li><li>બેક્ડ મેકોની પાઇનેપલ</li><li>મોંગોલિયન હોચ પોચ</li><li>સ્વીસ પોટેટો રોસ્ટી વીથ સાલ્સા એન્ડ સૌરકીમ</li><li>લેબેનીસ ફોકસીયા ગ્રીલ</li><li>ઇટાલીયન સીઝલર</li></ul></div><div class="menuCard"><ul><li>કેનેલોની અલફોર્મેજીયો</li><li>બેક્ડ વેજીટેબલ વીથ પાઇનેપલ</li><li>મોંગોલિયન સ્ટીઅર ફાય</li><li>લેબેનીસ સાઉરમા</li><li>લેબેનીસ રાઇસ વીથ લેબેનીસ કરી</li><li>મેક્સીકન સીઝલર</li></ul></div></div></section><section class="menuPanel " id="panel12"><h3>સ્વીટ્સ / ડેઝર્ટ</h3><div class="menuGrid"><div class="menuCard"><ul><li>લાઇવ કાજુ</li><li>લાઇવ રાજભોગ મેસુબ</li><li>બદામ કબાબ</li><li>પંચરત્ન તવા સ્વીટ</li><li>કાજુબદામ સેન્ડવીચ</li><li>લાઇવ કેશર જલેબી</li><li>રેડીમેઇડ ડેરી પ્રોડક્ટસ સ્વીટ્સ</li><li>ચંદ્રકલા</li><li>કાજુ બદામ ટીકી</li></ul></div><div class="menuCard"><ul><li>લાઇવ પિસ્તા ધારી</li><li>રાજસ્થાની માલપુવા</li><li>ઇમરતી ડ્રાયફૂટ</li><li>કાજુ પિસ્તા સેન્ડવીચ</li><li>કાશ્મીરી કોલ્ડ સ્વીટ</li><li>સ્પે. ડ્રાયફૂટ લાડું</li><li>લાઇવ એપલ જલેબી</li><li>બદામ રોટી</li><li>લીલા નારિયેલ હલવો</li></ul></div><div class="menuCard"><ul><li>લાઇવ કાજુ પિસ્તા ધારી</li><li>ઘેવર રબડી</li><li>બદામ પીઝા</li><li>લાઇવ મેરઠ સ્વીટ</li><li>લાઇવ ત્રિવેણીસંગમ કોલ્ડ</li><li>લાઇવ પાઇનેપલ જલેબી</li><li>લાઇવ પનીર જલેબી</li><li>કાજુ રોટી</li><li>શાહી મેવા હલવો</li></ul></div></div></section><section class="menuPanel " id="panel13"><h3>દાલ / રાઇસ / પુલાવ</h3><div class="menuGrid"><div class="menuCard"><ul><li>દાલકફાય</li><li>કાઠિયાવાડી તુવેરદાલ</li><li>મગની છૂટી દાલ</li><li>કાઠિયાવાડી કઢી</li><li>ભીંડાની કઢી</li><li>પ્લેઇન રાઇસ</li><li>તજ-લવીંગ રાઇસ</li><li>કાશ્મીરી પુલાવ રાઇસ</li><li>ઇટાલીયન રિસોટો રાઇસ</li><li>મેક્સીકન સ્પાઇસી રાઇસ</li><li>મશરૂમ વેજ. બિરીયાની</li><li>ઓસ્ટ્રીયન કરી</li></ul></div><div class="menuCard"><ul><li>સ્પે. પંજાબી દાલ તડકા</li><li>પાલક મુગદાલ</li><li>મીક્સ પંચરત્ન દાલ</li><li>વેજ. કઢી</li><li>સ્વામી વેજ. ખીચડી</li><li>પીસ પુલાવ રાઇસ</li><li>ડ્રાયફૂટ રાઇસ</li><li>નવરત્ન પુલાવ રાઇસ</li><li>મેક્સીકન ક્લીનટ્રો રાઇસ</li><li>વેજ. બિરીયાની વીથ કર્ડ</li><li>પનીર વેજ. બિરીયાની</li><li>બેકફાઇડ જાપાનીઝ ગ્રીન્સ</li></ul></div><div class="menuCard"><ul><li>સ્પે. પંજાબી દાલ મખની</li><li>અડદની દાલ</li><li>હૈદરાબાદી દાલ</li><li>મકાઇની કઢી</li><li>સ્ટીમ જીરા રાઇસ</li><li>જીરા રાઇસ</li><li>પાઇનેપલ પુલાવ રાઇસ</li><li>મલેશીયન રાઇસ</li><li>મેક્સીકન કોર્ન પેપર રાઇસ</li><li>પાલક મસ્તી રાઇસ વીથ કર્ડ</li><li>મેક્સીકન કરી</li><li>એકઝોટીક વેજ વીથ ચીઝ પોટેટો નટ્સ</li></ul></div></div></section><section class="menuPanel " id="panel14"><h3>અન્ય સેવાઓ</h3><div class="menuGrid"><div class="menuCard"><ul><li>Counter Decoration</li><li>Good Staff with Trust</li></ul></div><div class="menuCard"><ul><li>Bombay P.R.O. Couple Service Staff</li></ul></div><div class="menuCard"><ul><li>Good Food Service</li></ul></div></div></section>
+</section>
 
-<section class="section" id="events">
-<div class="center">
-<div class="eyebrow">EVENTS • CELEBRATIONS • CATERING</div>
-<h2 class="title">Catering For Every Celebration</h2>
-<div class="goldline"></div>
-<p class="sub">Party plots, Gujarati functions, weddings, marriages, family celebrations and premium food service — presented with a premium event-focused visual style.</p>
+<section class="section" id="experience">
+<div class="center"><div class="eyebrow">THE BHUMI EXPERIENCE</div><h2 class="title">From Menu to Celebration</h2><div class="goldline"></div></div>
+<div class="steps">
+<div class="step"><b>01</b><h3>Discuss</h3><p>Your event, guest count and preferences are discussed with our team.</p></div>
+<div class="step"><b>02</b><h3>Customize</h3><p>Select from the complete menu and build the right combination for your occasion.</p></div>
+<div class="step"><b>03</b><h3>Setup</h3><p>Our service team prepares counters, food presentation and event service.</p></div>
+<div class="step"><b>04</b><h3>Celebrate</h3><p>You enjoy the occasion while our team takes care of the food service.</p></div>
+</div>
+<div class="visuals">
+<div class="visual"><img src="https://images.pexels.com/photos/24863057/pexels-photo-24863057.jpeg?auto=compress&cs=tinysrgb&w=1200"><span>Grand Buffet Presentation</span></div>
+<div class="visual"><img src="https://images.pexels.com/photos/12253092/pexels-photo-12253092.jpeg?auto=compress&cs=tinysrgb&w=1200"><span>Professional Catering Service</span></div>
+<div class="visual"><img src="https://images.pexels.com/photos/4959845/pexels-photo-4959845.jpeg?auto=compress&cs=tinysrgb&w=1200"><span>Celebration Setup</span></div>
 </div>
 </section>
 
 <section class="section contact" id="contact">
-<div><div class="eyebrow">BOOK YOUR CATERING</div><h2>Let's Make Your Event Special.</h2><p>For menu planning, event catering and customized packages, contact Bhumi Caterers directly.</p><div class="actions"><a class="btn" href="tel:+919825321216">CALL DARSHIT</a><a class="btn outline" href="https://wa.me/919825321216?text=Hello%20Bhumi%20Caterers,%20I%20want%20to%20discuss%20catering." target="_blank">WHATSAPP ENQUIRY</a></div></div>
+<div><div class="eyebrow">BOOK YOUR CATERING</div><h2>Let's Make Your Event Special.</h2><p>For menu planning, event catering and customized packages, contact Bhumi Caterers directly.</p><div class="actions"><a class="btn" href="https://wa.me/919825321216?text=Hello%20Bhumi%20Caterers,%20I%20want%20to%20discuss%20catering." target="_blank">WHATSAPP DARSHIT →</a></div></div>
 <div class="contactBox"><div class="row"><b>CONTACT PERSON</b><span>Darshit Kakkad</span></div><div class="row"><b>MOBILE</b><span>9825321216</span></div><div class="row"><b>LOCATION</b><span>Rajkot, Gujarat</span></div><div class="row"><b>SPECIALITY</b><span>Kathiyawadi • Punjabi • Chinese • Vegetarian</span></div></div>
 </section>
 
-<footer><div class="foot"><div><h4>BHUMI CATERERS</h4><p>Premium catering for weddings, functions, corporate events and celebrations.</p></div><div><h4>MENU</h4><p>Soups<br>Starters<br>Sabji<br>Rice & Pulav<br>Breads<br>Chinese<br>South Indian<br>Sweets & Desserts</p></div><div><h4>CONTACT</h4><p>Darshit Kakkad<br>9825321216<br>Rajkot, Gujarat</p></div></div><div class="copy">© 2026 Bhumi Caterers • Darshit Kakkad • 9825321216</div></footer>
+<footer><div class="foot"><div><h4>BHUMI CATERERS</h4><p>Premium catering for weddings, functions, corporate events and celebrations.</p></div><div><h4>MENU</h4><p>Soups<br>Starters<br>Sabji<br>Rice & Pulav<br>Breads<br>Chinese<br>South Indian<br>Sweets & Desserts</p></div><div><h4>CONTACT</h4><p>Darshit Kakkad<br>9825321216<br>Rajkot, Gujarat</p></div></div><div class="copy">© 2026 Bhumi Caterers. All Rights Reserved.</div></footer>
 <a class="wa" href="https://wa.me/919825321216" target="_blank">WA</a>
 <script>
 function openMenu(i) {
- document.querySelectorAll('.menuPanel').forEach((p,n)=>p.classList.toggle('show',n===i));
- document.querySelectorAll('.tab').forEach((b,n)=>b.classList.toggle('active',n===i));
+  const panels = document.querySelectorAll('.menuPanel');
+  const tabs = document.querySelectorAll('.tab');
+  panels.forEach((panel,n) => panel.classList.toggle('show', n === i));
+  tabs.forEach((tab,n) => tab.classList.toggle('active', n === i));
+  const menu = document.getElementById('menu');
+  if (menu) menu.scrollIntoView({behavior:'smooth', block:'start'});
 }
 </script>
 </body>

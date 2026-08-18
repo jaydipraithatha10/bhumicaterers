@@ -1,10 +1,8 @@
-BHUMI CATERERS – PROPER FINAL PREMIUM DESIGN
+BHUMI CATERERS – FULL NEW WEBSITE
 
-Rebuilt from the stable premium version.
-Hero: compact 520px desktop / 500px mobile, balanced typography and no overlap.
-Photos: only 3 visual photos total — hero, one Gujarati catering service card, one food/about photo.
-Services: clean premium cards, not photo-heavy.
-Menu: COMPLETE MENU IS UNCHANGED.
-Professional tagline: retained.
+Rebuilt from the complete-menu source to avoid the previous broken menu layout.
+The COMPLETE MENU is preserved category-by-category and the first category is visible by default.
+Menu tabs use a robust openMenu() function.
+Premium Indian/Gujarati catering design, compact hero, catering-focused photos, professional tagline.
 Contact: Darshit Kakkad | 9825321216
-No assets folder.
+No assets folder; all files are in the root.
