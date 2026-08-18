@@ -1,332 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#2b0608">
-<title>Bhumi Caterers | Since 2003 | Rajkot</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhumi Caterers | Premium Catering Services</title>
+<meta name="description" content="Bhumi Caterers - Premium vegetarian catering for weddings, corporate events, parties and special occasions.">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
-:root{--wine:#4b080d;--wine2:#250305;--gold:#d1a043;--gold2:#f0ce7b;--cream:#f8f2e8;--paper:#fffdf8;--ink:#211817;--muted:#756661;--line:#e8dcc9}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif}
-a{color:inherit}.top{background:#100203;color:#f8eee0;padding:10px 5%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:13px}.top a{text-decoration:none}
-header{position:sticky;top:0;z-index:50;background:rgba(248,242,232,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.nav{max-width:1400px;margin:auto;padding:13px 5%;display:flex;align-items:center;gap:22px}.brand{text-decoration:none;color:var(--wine);font:800 36px/1 "Playfair Display",serif;letter-spacing:-1px}.brand small{display:block;color:var(--gold);font:800 10px/1.8 "DM Sans";letter-spacing:5px}
-.since{border-left:1px solid var(--line);padding-left:18px;color:var(--gold);font-size:10px;font-weight:800;letter-spacing:2px;line-height:1.25}.navlinks{margin-left:auto;display:flex;gap:22px}.navlinks a{font-size:12px;text-decoration:none;font-weight:800;letter-spacing:1px}.navlinks a:hover{color:var(--gold)}
-.call{background:var(--wine);color:#fff;text-decoration:none;padding:13px 17px;border-radius:4px;font-size:11px;font-weight:800;letter-spacing:.7px}
-.hero{background:linear-gradient(118deg,#210305 0%,#4b080d 55%,#72151b 100%);color:#fff;padding:78px 5% 88px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(209,160,67,.35);border-radius:50%;right:-180px;top:-240px;box-shadow:0 0 0 40px rgba(209,160,67,.04),0 0 0 90px rgba(209,160,67,.025)}
-.hero-in{max-width:1400px;margin:auto;display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center;position:relative;z-index:1}.kicker{color:var(--gold2);font-size:11px;font-weight:800;letter-spacing:3px}
-h1{font:800 clamp(56px,8vw,104px)/.9 "Playfair Display",serif;margin:18px 0 6px}.hero em{font:600 italic clamp(30px,4vw,56px)/1.1 "Playfair Display";color:var(--gold2)}.hero p{max-width:620px;color:#eadbd3;font-size:18px;line-height:1.8;margin-top:25px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-block;padding:14px 22px;border-radius:3px;text-decoration:none;font-weight:800;font-size:13px}.primary{background:var(--gold);color:#210706}.secondary{border:1px solid var(--gold2);color:#fff}
-.hero-photo{background:#fff;padding:9px;border-radius:5px;box-shadow:0 28px 70px rgba(0,0,0,.35);transform:rotate(1deg)}.hero-photo img{width:100%;height:330px;display:block;object-fit:cover}.hero-caption{color:#241817;padding:14px 10px 7px;display:flex;justify-content:space-between;gap:15px;font-size:13px}.hero-caption span{color:#806f68}
-.about{max-width:1200px;margin:auto;text-align:center;padding:85px 5%}.about h2,.head h2,.contact h2{font:800 clamp(40px,5vw,64px)/1.04 "Playfair Display",serif;margin:12px 0 18px}.about p,.head p,.contact p{color:var(--muted);line-height:1.8;font-size:17px}.pills{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:25px}.pills span{border:1px solid #dac9ad;border-radius:999px;padding:9px 14px;font-size:11px;font-weight:800}
-.section{max-width:1400px;margin:auto;padding:85px 5%}.head{text-align:center;max-width:850px;margin:0 auto 38px}.rule{width:70px;height:1px;background:var(--gold);margin:22px auto}
-.search{max-width:650px;margin:0 auto 35px;background:#fff;border:1px solid var(--line);padding:6px;display:flex;border-radius:4px;box-shadow:0 10px 25px rgba(40,20,10,.04)}.search input{width:100%;border:0;outline:0;background:transparent;padding:13px;font:500 14px "DM Sans"}.search b{padding:12px;color:var(--gold);font-size:11px;white-space:nowrap}
-.menu{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.menu-card{background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:25px;box-shadow:0 10px 30px rgba(45,20,10,.04)}.menu-card.full{grid-column:1/-1}.menu-card h3{margin:0;color:var(--wine);font:700 30px "Playfair Display",serif;text-shadow:1px 1px 0 #fff,-1px -1px 0 rgba(75,8,13,.16)}.line{height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin:13px 0}.items{display:grid;grid-template-columns:1fr 1fr;gap:0 28px}.item{padding:10px 0;border-bottom:1px dashed #e5dacc;font-size:14.5px;line-height:1.55;color:#493b36;font-weight:600;letter-spacing:.15px;text-shadow:0 1px 0 #fff,0 -1px 0 rgba(75,8,13,.16)}.item::before{content:"✦";color:var(--gold);font-size:9px;margin-right:8px}
-.dark{background:var(--wine2);color:#fff;padding:88px 5%}.dark .head p{color:#cdbab3}.service-grid{max-width:1400px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.service{border:1px solid #5a292d;padding:25px;background:rgba(255,255,255,.025)}.service strong{color:var(--gold2);font-size:11px;letter-spacing:2px}.service h3{font:700 24px "Playfair Display",serif}.service p{color:#cdbab3;line-height:1.7;font-size:14px}
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}figure{margin:0;background:#fff;padding:8px;border:1px solid var(--line)}figure img{width:100%;height:250px;object-fit:cover;display:block}figcaption{padding:10px 4px 5px;color:var(--wine);font:700 14px "Playfair Display",serif}.credits{font-size:11px;color:#88766e;text-align:center;margin-top:20px}
-.contact{background:var(--gold);padding:75px 5%;display:grid;grid-template-columns:1fr .65fr;gap:70px;align-items:center}.contact p{color:#4f3825}.card{background:#210406;color:#fff;padding:30px;border-radius:5px;display:flex;flex-direction:column;gap:12px;box-shadow:0 18px 45px rgba(40,5,0,.2)}.card strong{font:700 31px "Playfair Display",serif}.card a{text-decoration:none;font-weight:800}.wa{background:var(--gold);color:#210706!important;padding:13px;text-align:center;border-radius:3px;font-size:13px}.card small{color:#cdbab3;line-height:1.6}
-footer{background:#0e0203;color:#cbbdb6;padding:25px 5%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:12px}footer strong{color:#fff;letter-spacing:2px}
-@media(max-width:950px){.navlinks{display:none}.hero-in,.contact{grid-template-columns:1fr}.hero-photo{max-width:650px}.menu{grid-template-columns:1fr}.items{grid-template-columns:1fr}.service-grid{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.slides{height:240px}.top{font-size:11px}.nav{padding:12px 5%}.brand{font-size:30px}.since{display:none}.call{margin-left:auto;padding:11px 12px}.hero{padding:58px 6% 70px}h1{font-size:55px}.hero p{font-size:16px}.hero-photo img{height:240px}.section,.about{padding:65px 6%}.menu-card{padding:21px}.service-grid,.gallery{grid-template-columns:1fr}figure img{height:260px}.contact{padding:65px 6%}}
-
-.slider{position:relative;background:#fff;padding:9px;border-radius:5px;box-shadow:0 28px 70px rgba(0,0,0,.35);overflow:hidden}
-.slides{position:relative;height:330px}
-.slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease}
-.slide.active{opacity:1}.slide img{width:100%;height:100%;object-fit:cover;display:block}
-.slide-caption{position:absolute;left:18px;right:18px;bottom:18px;background:linear-gradient(90deg,rgba(25,2,4,.92),rgba(25,2,4,.18));color:#fff;padding:10px 14px;font:700 16px "Playfair Display",serif}
-.slider-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:42px;height:42px;border:1px solid rgba(255,255,255,.65);background:rgba(40,2,5,.55);color:#fff;border-radius:50%;font-size:24px;cursor:pointer}
-.slider-arrow.prev{left:20px}.slider-arrow.next{right:20px}
-.slider-dots{position:absolute;z-index:4;bottom:12px;right:20px;display:flex;gap:7px}
-.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.55);cursor:pointer}.dot.active{background:#d1a043;transform:scale(1.25)}
-
-.single-photo{transform:none}.why{background:#fffdf8}.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.why-grid>div{background:#f8f2e8;border:1px solid #e5d7bf;border-top:3px solid var(--gold);padding:26px;border-radius:4px}.why-grid span{color:var(--gold);font-size:11px;font-weight:800;letter-spacing:2px}.why-grid h3{font:700 24px "Playfair Display",serif;color:var(--wine);margin:12px 0}.why-grid p{font-size:14px;color:var(--muted);line-height:1.7;margin:0}@media(max-width:950px){.why-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.why-grid{grid-template-columns:1fr}.single-photo img{height:240px}}
-
-.menu-tabs{max-width:1200px;margin:-15px auto 38px;display:flex;gap:9px;overflow-x:auto;padding:8px 3px 12px;scrollbar-width:none;white-space:nowrap}
-.menu-tabs::-webkit-scrollbar{display:none}
-.menu-tab{border:1px solid #d9c28c;background:#fffdf8;color:#4b080d;border-radius:999px;padding:10px 16px;font-size:11px;font-weight:800;letter-spacing:.7px;cursor:pointer;box-shadow:0 3px 10px rgba(60,20,5,.05);transition:.2s}
-.menu-tab:hover{transform:translateY(-1px);border-color:#c99a3b}
-.menu-tab.active{background:linear-gradient(135deg,#5a0b11,#360508);color:#f5ce78;border-color:#c99a3b;box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 5px 16px rgba(55,5,8,.18);text-shadow:0 1px 1px #160102}
-
-.bhumi-ad{padding:72px 20px;background:linear-gradient(135deg,#3d0508,#6b0c12 55%,#3d0508);color:#fff7e8}
-.ad-inner{max-width:1100px;margin:auto;border:1px solid #cfa54c;padding:58px 42px;text-align:center;position:relative}
-.ad-inner:before,.ad-inner:after{content:"✦";position:absolute;color:#e7c36b;font-size:24px;top:20px}.ad-inner:before{left:24px}.ad-inner:after{right:24px}
-.ad-kicker{letter-spacing:6px;color:#e7c36b;font-size:13px;font-weight:800}
-.ad-inner h1{font:700 clamp(44px,7vw,82px) "Playfair Display",Georgia,serif;line-height:.98;margin:18px 0;color:#fff7e8}.ad-inner h1 em{color:#e7c36b;font-weight:500}
-.ad-inner p{font-size:18px;max-width:650px;margin:25px auto;color:#f7ead7;line-height:1.6}
-.ad-meta{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-top:28px;color:#e7c36b;font-weight:800;letter-spacing:1px}.ad-meta a{color:#fff7e8;text-decoration:none}
-@media(max-width:600px){.bhumi-ad{padding:42px 14px}.ad-inner{padding:45px 18px}.ad-inner p{font-size:15px}.ad-meta{gap:12px;font-size:12px}}
-
-.gallery img{background:linear-gradient(135deg,#3b080b,#8b1b22);min-height:180px;object-fit:cover}
-.gallery figure{overflow:hidden}
-
-@media(max-width:600px){.menu-tabs{margin:-5px 0 30px;padding:10px 2px 14px;gap:10px}.menu-tab{font-size:12px;padding:12px 18px;flex:0 0 auto}.head p{font-size:15px}}
-
-html,body{max-width:100%;overflow-x:hidden}
-.menu-tabs{max-width:100%;overflow-x:auto;overflow-y:hidden;display:flex;flex-wrap:nowrap;scrollbar-width:none}
-.menu-tabs::-webkit-scrollbar{display:none}
-.menu-tab{flex:0 0 auto}
-.hero-in,.section,.about,.dark,.contact,.bhumi-ad{min-width:0;max-width:100%}
-@media(max-width:600px){
-  .hero-in{display:block}
-  .hero{padding:48px 6% 60px}
-  .hero h1{font-size:clamp(48px,14vw,62px);line-height:.95;overflow-wrap:anywhere}
-  .hero p{max-width:100%;font-size:15px;line-height:1.6}
-  .actions{display:grid;grid-template-columns:1fr;gap:12px}
-  .btn{width:100%;box-sizing:border-box;text-align:center}
-}
-
-/* ===== FINAL MOBILE WIDTH SAFETY ===== */
-html, body {
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden !important;
-}
-*, *::before, *::after {
-  box-sizing: border-box;
-  max-width: 100%;
-}
-img, video, svg, canvas, iframe {
-  max-width: 100% !important;
-}
-.top, header, .nav, .hero, .hero-in, .about, .section, .dark,
-.contact, footer, .bhumi-ad, .menu, .menu-card, .gallery, .service-grid,
-.why-grid, .search, .head, .actions {
-  min-width: 0 !important;
-  width: auto;
-  max-width: 100% !important;
-}
-@media (max-width: 600px) {
-  .top {
-    display: block !important;
-    padding: 9px 16px !important;
-    overflow: hidden !important;
-  }
-  .top span, .top a {
-    display: block;
-    max-width: 100%;
-    overflow-wrap: anywhere;
-    word-break: break-word;
-  }
-  .top a { margin-top: 5px; }
-
-  .nav {
-    width: 100% !important;
-    padding: 12px 16px !important;
-    gap: 10px !important;
-    overflow: hidden !important;
-  }
-  .brand {
-    flex: 0 0 auto;
-    font-size: 30px !important;
-  }
-  .call {
-    margin-left: auto !important;
-    flex: 0 0 auto;
-    max-width: 170px !important;
-    overflow-wrap: anywhere;
-  }
-
-  .hero {
-    width: 100% !important;
-    padding: 48px 16px 60px !important;
-    overflow: hidden !important;
-  }
-  .hero-in {
-    display: block !important;
-    width: 100% !important;
-    margin: 0 !important;
-  }
-  .hero-in > div {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-  .kicker {
-    max-width: 100% !important;
-    white-space: normal !important;
-    overflow-wrap: anywhere !important;
-    word-break: break-word !important;
-  }
-  h1, .hero h1 {
-    width: 100% !important;
-    max-width: 100% !important;
-    font-size: clamp(44px, 14vw, 62px) !important;
-    line-height: .96 !important;
-    overflow-wrap: anywhere !important;
-    word-break: normal !important;
-  }
-  .hero em {
-    display: block;
-    max-width: 100% !important;
-    overflow-wrap: anywhere !important;
-  }
-  .hero p {
-    width: 100% !important;
-    max-width: 100% !important;
-    font-size: 15px !important;
-    line-height: 1.6 !important;
-    overflow-wrap: anywhere !important;
-  }
-  .actions {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    width: 100% !important;
-  }
-  .btn {
-    width: 100% !important;
-    max-width: 100% !important;
-    text-align: center !important;
-  }
-
-  .section, .about, .contact {
-    width: 100% !important;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-  }
-
-  .menu-tabs {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    -webkit-overflow-scrolling: touch;
-  }
-  .menu-tab {
-    flex: 0 0 auto !important;
-    white-space: nowrap !important;
-  }
-
-  .menu {
-    width: 100% !important;
-    grid-template-columns: 1fr !important;
-  }
-  .menu-card, .menu-card.full {
-    width: 100% !important;
-    grid-column: auto !important;
-  }
-  .items {
-    grid-template-columns: 1fr !important;
-  }
-  .item {
-    overflow-wrap: anywhere;
-  }
-
-  .gallery, .service-grid, .why-grid {
-    width: 100% !important;
-    grid-template-columns: 1fr !important;
-  }
-  figure, .service, .why-grid > div {
-    width: 100% !important;
-    min-width: 0 !important;
-  }
-
-  .bhumi-ad {
-    width: 100% !important;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-    overflow: hidden !important;
-  }
-  .ad-inner {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-  .ad-inner h1 {
-    max-width: 100% !important;
-    overflow-wrap: anywhere !important;
-  }
-
-  footer {
-    width: 100% !important;
-    display: block !important;
-  }
-}
-
+:root{--gold:#d5a63b;--gold2:#f0cc72;--dark:#080808;--cream:#f7f3eb;--text:#171717}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,"Times New Roman",serif;background:var(--cream);color:var(--text)}
+a{text-decoration:none;color:inherit}.topbar{background:#050505;color:#ddd;padding:9px 5%;display:flex;justify-content:space-between;gap:15px;font:12px Arial}
+header{position:sticky;top:0;z-index:20;background:rgba(5,5,5,.96);border-bottom:1px solid #5d4619;color:#fff;padding:15px 5%;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px}.logoIcon{width:46px;height:46px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:25px}.logoText{font-weight:bold;letter-spacing:4px;font-size:24px}.logoText small{display:block;font:9px Arial;letter-spacing:4px;color:var(--gold);text-align:center;margin-top:2px}
+nav{display:flex;gap:25px;font:13px Arial;color:#eee}nav a:hover,nav a.active{color:var(--gold)}
+.headerBtn{border:1px solid var(--gold);padding:12px 18px;color:var(--gold);font:12px Arial;font-weight:bold;border-radius:3px}
+.menuBtn{display:none;color:var(--gold);font-size:25px;background:none;border:0}
+.hero{height:650px;position:relative;overflow:hidden;background:#000;color:#fff}.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.9)}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#000 5%,rgba(0,0,0,.76) 43%,rgba(0,0,0,.15) 100%)}
+.heroContent{position:relative;z-index:2;max-width:650px;padding:120px 6%}.eyebrow{font:13px Arial;letter-spacing:2px;color:var(--gold);font-weight:bold}.hero h1{font-size:62px;line-height:1.04;margin:18px 0}.hero h1 span{color:var(--gold)}.hero p{font:16px Arial;line-height:1.75;color:#ddd;max-width:550px}.buttons{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}.btn{background:var(--gold);color:#111;padding:15px 25px;border-radius:3px;font:13px Arial;font-weight:bold}.btn.outline{background:transparent;color:#fff;border:1px solid var(--gold)}
+.stats{background:#090909;color:#fff;display:grid;grid-template-columns:repeat(5,1fr);padding:28px 5%;gap:10px;text-align:center}.stat{border-right:1px solid #594719;padding:5px}.stat:last-child{border:0}.stat b{display:block;color:var(--gold);font-size:14px;margin-bottom:6px}.stat span{font:12px Arial;color:#bbb}
+.section{padding:78px 6%}.center{text-align:center}.eyebrowDark{color:#aa7920;font:12px Arial;letter-spacing:2px;font-weight:bold}.title{font-size:40px;margin:10px 0 14px}.subtitle{font:14px Arial;color:#666;line-height:1.7;max-width:650px;margin:0 auto 40px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;border:1px solid #e8dfd1;border-radius:8px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.06);transition:.25s}.card:hover{transform:translateY(-5px)}.card img{width:100%;height:205px;object-fit:cover}.cardBody{padding:22px}.card h3{font-size:20px;margin-bottom:8px}.card p{font:13px Arial;line-height:1.6;color:#666}.goldLine{width:55px;height:2px;background:var(--gold);margin:20px auto 35px}
+.about{background:#0a0a0a;color:#fff;display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.aboutImg{width:100%;height:460px;object-fit:cover;border-radius:5px}.about h2{font-size:42px;margin:12px 0 20px}.about p{font:14px Arial;line-height:1.9;color:#ccc}.checks{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:25px;font:13px Arial}.checks div:before{content:"✓";color:var(--gold);font-weight:bold;margin-right:9px}
+.menuGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.menuItem{background:#111;color:#fff;padding:23px;border-radius:5px;border-left:3px solid var(--gold)}.menuItem h3{color:var(--gold);font-size:17px;margin-bottom:8px}.menuItem p{font:12px Arial;color:#ccc;line-height:1.6}
+.gallery{background:#111;color:#fff}.galleryGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.galleryGrid img{width:100%;height:210px;object-fit:cover;border-radius:4px;filter:saturate(.9);transition:.25s}.galleryGrid img:hover{transform:scale(1.02);filter:saturate(1.1)}
+.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.quote{background:#fff;padding:28px;border-radius:6px;border:1px solid #e5dccd}.stars{color:var(--gold);letter-spacing:3px;margin-bottom:12px}.quote p{font:14px Arial;line-height:1.7;color:#555}.quote b{display:block;margin-top:18px}
+.contact{background:#0a0a0a;color:#fff;display:grid;grid-template-columns:1fr 1fr;gap:50px}.contact h2{font-size:40px;margin:10px 0 20px}.contact p{font:14px Arial;line-height:1.8;color:#ccc}.info{margin-top:25px;display:grid;gap:12px;font:14px Arial}.info b{color:var(--gold)}form{display:grid;gap:12px}input,textarea,select{width:100%;padding:15px;background:#171717;border:1px solid #4b3a19;color:#fff;border-radius:3px;font:13px Arial}textarea{height:120px;resize:vertical}
+footer{background:#050505;color:#aaa;padding:45px 6%;font:12px Arial}.footerGrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}.footerLogo{color:var(--gold);font:24px Georgia;font-weight:bold;margin-bottom:12px}.footerGrid h4{color:#fff;margin-bottom:15px}.footerGrid p{line-height:1.8}.copy{border-top:1px solid #222;margin-top:30px;padding-top:20px;text-align:center}
+.whatsapp{position:fixed;right:20px;bottom:20px;width:55px;height:55px;border-radius:50%;background:#1fca62;color:#fff;display:grid;place-items:center;font:bold 23px Arial;z-index:30;box-shadow:0 5px 20px #0005}
+@media(max-width:950px){nav{display:none}.menuBtn{display:block}.headerBtn{display:none}.hero{height:620px}.hero h1{font-size:47px}.stats{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:1fr 1fr}.about,.contact{grid-template-columns:1fr}.menuGrid{grid-template-columns:1fr 1fr}.galleryGrid{grid-template-columns:1fr 1fr}.testimonials{grid-template-columns:1fr}.footerGrid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.topbar{font-size:10px}.topbar span:nth-child(2){display:none}.logoText{font-size:19px}.heroContent{padding:95px 6%}.hero h1{font-size:39px}.hero p{font-size:14px}.stats{grid-template-columns:1fr 1fr}.cards,.menuGrid,.galleryGrid{grid-template-columns:1fr}.section{padding:55px 5%}.title,.about h2,.contact h2{font-size:32px}.galleryGrid img{height:220px}}
 </style>
 </head>
 <body>
-<div class="top"><span>📍 Kakkad Brothers, Dharmendra Road, Thosa Gali, Rajkot</span><a href="tel:+919825321216">☎ Darshitbhai Kakkad: 98253 21216</a></div>
-<header><div class="nav"><a class="brand" href="#home">Bhumi<small>CATERERS</small></a><div class="since">SERVING<br>SINCE<br>2003</div><div class="navlinks"><a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#menu">MENU</a><a href="#services">SERVICES</a><a href="#gallery">GALLERY</a><a href="#contact">CONTACT</a></div><a class="call" href="tel:+919825321216">FOR ENQUIRY<br>98253 21216</a></div></header>
+<div class="topbar"><span>📍 Rajkot, Gujarat</span><span>✦ Serving Happiness Since 2010</span><span>☎ Call Us: +91 98765 43210</span></div>
+<header>
+<a class="logo" href="#home"><span class="logoIcon">B</span><span class="logoText">BHUMI<small>CATERERS</small></span></a>
+<nav><a class="active" href="#home">HOME</a><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#menus">MENUS</a><a href="#gallery">GALLERY</a><a href="#reviews">REVIEWS</a><a href="#contact">CONTACT</a></nav>
+<a class="headerBtn" href="#contact">ENQUIRE NOW</a><button class="menuBtn" onclick="toggleMenu()">☰</button>
+</header>
 
-<section class="hero" id="home"><div class="hero-in"><div><div class="kicker">RAJKOT • KATHIYAWADI • PUNJABI • CHINESE</div><h1>Delicious Food</h1><em>for Every Occasion</em><p>Bhumi Caterers brings generous flavours, elegant presentation and dependable catering service to celebrations across Rajkot.</p><div class="actions"><a class="btn primary" href="#menu">Explore Complete Menu</a><a class="btn secondary" href="tel:+919825321216">Call for Enquiry</a></div></div></div></section>
-
-<section class="about" id="about"><div class="kicker">BHUMI CATERERS</div><h2>A Trusted Name in Catering</h2><p>Specialist in Kathiyawadi, Punjabi, Chinese Food & Other Variety Foods. From family functions to grand celebrations, we focus on great food and warm hospitality.</p><div class="pills"><span>Since 2003</span><span>Kathiyawadi</span><span>Punjabi</span><span>Chinese</span><span>Variety Foods</span></div></section>
-
-<section class="section" id="menu"><div class="head"><div class="kicker">THE COMPLETE MENU</div><h2>Choose Your Favourites</h2><div class="rule"></div><p>Explore our curated menu, thoughtfully prepared for family functions, celebrations and grand occasions.</p></div><div class="search"><input id="search" placeholder="Search any menu item..."><b id="count"></b></div>
-<div class="menu-tabs" id="menuTabs">
-<button class="menu-tab active" data-cat="all">ALL MENU</button>
-<button class="menu-tab" data-cat="Soups">SOUPS</button>
-<button class="menu-tab" data-cat="Starters">STARTERS</button>
-<button class="menu-tab" data-cat="Live Punjabi Sabji">PUNJABI</button>
-<button class="menu-tab" data-cat="Kathiyawadi Sabji">KATHIYAWADI</button>
-<button class="menu-tab" data-cat="Roti • Paratha">ROTI & PARATHA</button>
-<button class="menu-tab" data-cat="Chinese • Fast Food">CHINESE</button>
-<button class="menu-tab" data-cat="Sweets">SWEETS</button>
-<button class="menu-tab" data-cat="Chaat">CHAAT</button>
-<button class="menu-tab" data-cat="Italian">ITALIAN</button>
-<button class="menu-tab" data-cat="Mexican">MEXICAN</button>
-<button class="menu-tab" data-cat="Thai">THAI</button>
-</div>
-<div class="menu" id="menuRoot"></div></section>
-
-<section class="bhumi-ad">
-  <div class="ad-inner">
-    <div class="ad-kicker">BHUMI CATERERS</div>
-    <h1>Delicious Food<br><em>for Every Occasion</em></h1>
-    <p>Specialist in Kathiyawadi, Punjabi, Chinese &amp; Variety Foods</p>
-    <div class="ad-meta"><span>Since 2003</span><span>Rajkot</span><a href="tel:9825321216">98253 21216</a></div>
-  </div>
-</section><section class="section why" id="why-us">
-<div class="head"><div class="kicker">WHY BHUMI CATERERS</div><h2>Made With Care, Served With Pride</h2><div class="rule"></div>
-<p>A premium catering experience built around taste, presentation, hospitality and reliable service.</p></div>
-<div class="why-grid">
-<div><span>01</span><h3>Authentic Flavours</h3><p>Traditional Indian flavours prepared with attention to taste and quality.</p></div>
-<div><span>02</span><h3>Elegant Presentation</h3><p>Beautiful food presentation and thoughtfully arranged catering counters.</p></div>
-<div><span>03</span><h3>Hygienic Preparation</h3><p>Careful preparation and professional handling from kitchen to event.</p></div>
-<div><span>04</span><h3>Trusted Since 2003</h3><p>Serving families and celebrations in Rajkot with dependable hospitality.</p></div>
+<section class="hero" id="home">
+<img src="assets/hero.jpg" alt="Luxury Bhumi Caterers buffet">
+<div class="heroContent">
+<div class="eyebrow">WE CATER. YOU CELEBRATE.</div>
+<h1>Creating Moments,<br>Serving <span>Happiness.</span></h1>
+<p>From intimate family gatherings to grand weddings, Bhumi Caterers brings delicious vegetarian food, elegant presentation and professional service to every celebration.</p>
+<div class="buttons"><a class="btn" href="#services">OUR SERVICES →</a><a class="btn outline" href="#menus">VIEW MENUS</a></div>
 </div></section>
-<section class="dark" id="services"><div class="head"><div class="kicker">OUR SERVICES</div><h2>Made for Memorable Occasions</h2><p>Food, presentation and service — planned together for your event.</p></div><div class="service-grid"><div class="service"><strong>01</strong><h3>Event Catering</h3><p>Complete catering arrangements for family functions, celebrations and gatherings.</p></div><div class="service"><strong>02</strong><h3>Counter Decoration</h3><p>Beautiful food counters and live stations that add a premium touch.</p></div><div class="service"><strong>03</strong><h3>Professional Staff</h3><p>Courteous service staff focused on smooth guest hospitality.</p></div><div class="service"><strong>04</strong><h3>Custom Menus</h3><p>Flexible combinations across Kathiyawadi, Punjabi, Chinese and variety foods.</p></div></div></section>
 
-<section class="section" id="gallery">
-<div class="head"><div class="kicker">BHUMI CATERERS EXPERIENCE</div>
-<h2>Premium Catering Setups</h2><div class="rule"></div>
-<p>Elegant buffet presentation, live counters and professional catering setups designed to make every celebration feel special.</p></div>
-<div class="gallery premium-gallery"><figure class="featured-setup"><img src="gallery-1.webp" alt="Grand Wedding Buffet Setup" loading="lazy"><div class="setup-tag">01 · GRAND WEDDING</div><figcaption>Grand Buffet Wedding Setup</figcaption><p>A lavish buffet experience designed with a royal touch.</p></figure><figure class="featured-setup"><img src="gallery-2.webp" alt="Live Catering Chef Counter" loading="lazy"><div class="setup-tag">02 · LIVE EXPERIENCE</div><figcaption>Live Catering Chef Counter</figcaption><p>Expert chefs creating fresh dishes live for your guests.</p></figure><figure class="featured-setup"><img src="gallery-3.webp" alt="Luxury Vegetarian Setup" loading="lazy"><div class="setup-tag">03 · PURE VEGETARIAN</div><figcaption>Luxury Vegetarian Setup</figcaption><p>Elegant vegetarian presentation with premium hospitality.</p></figure><figure><img src="https://www.srivinayakacatering.in/images/wedding-catering.png" alt="Premium Wedding Catering" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1600&q=85'"><figcaption>Premium Wedding Catering</figcaption></figure><figure><img src="https://sukhsagaruae.com/cdn/shop/files/Untitled_design.png?v=1772775813&width=1500" alt="Chef Serving Premium Buffet" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1600&q=85'"><figcaption>Chef Serving Premium Buffet</figcaption></figure></div>
+<div class="stats">
+<div class="stat"><b>QUALITY FOOD</b><span>Fresh ingredients & hygiene</span></div>
+<div class="stat"><b>EXPERIENCED TEAM</b><span>Professional chefs & staff</span></div>
+<div class="stat"><b>CUSTOM MENUS</b><span>Menus for every taste</span></div>
+<div class="stat"><b>TIMELY SERVICE</b><span>Punctual & organized</span></div>
+<div class="stat"><b>HAPPY CLIENTS</b><span>Celebrations made special</span></div>
+</div>
+
+<section class="section center" id="services">
+<div class="eyebrowDark">OUR SERVICES</div><h2 class="title">Catering for Every Occasion</h2><div class="goldLine"></div>
+<p class="subtitle">Whether it is a wedding, birthday, corporate gathering or family function, our team creates a memorable dining experience.</p>
+<div class="cards">
+<div class="card"><img src="assets/hero.jpg"><div class="cardBody"><h3>Wedding Catering</h3><p>Grand buffet setups, live counters and elegant vegetarian menus for your special day.</p></div></div>
+<div class="card"><img src="assets/hero.jpg"><div class="cardBody"><h3>Buffet Parties</h3><p>Beautiful presentation and a wide variety of dishes for every kind of celebration.</p></div></div>
+<div class="card"><img src="assets/hero.jpg"><div class="cardBody"><h3>Corporate Events</h3><p>Professional catering for meetings, launches, conferences and office celebrations.</p></div></div>
+<div class="card"><img src="assets/hero.jpg"><div class="cardBody"><h3>Birthday Parties</h3><p>Fun, flavorful and perfectly planned food service for memorable birthdays.</p></div></div>
+<div class="card"><img src="assets/hero.jpg"><div class="cardBody"><h3>Social Gatherings</h3><p>Family functions and get-togethers with customized menus and smooth service.</p></div></div>
+<div class="card"><img src="assets/hero.jpg"><div class="cardBody"><h3>Special Occasions</h3><p>Festivals, anniversaries and celebrations planned around your requirements.</p></div></div>
+</div>
 </section>
 
-<section class="contact" id="contact"><div><div class="kicker">FOR ENQUIRY</div><h2>Let's Make Your Occasion Delicious.</h2><p>For catering enquiries and bookings, contact Darshitbhai Kakkad.</p></div><div class="card"><strong>98253 21216</strong><a href="tel:+919825321216">☎ Call Now</a><a class="wa" href="https://wa.me/919825321216?text=Hello%20Bhumi%20Caterers%2C%20I%20would%20like%20to%20make%20an%20enquiry.">WhatsApp Enquiry</a><small>Kakkad Brothers, Dharmendra Road, Thosa Gali, Rajkot</small></div></section>
+<section class="section about" id="about">
+<img class="aboutImg" src="assets/hero.jpg" alt="Bhumi Caterers">
+<div><div class="eyebrow">ABOUT BHUMI CATERERS</div><h2>Food That Brings People Together.</h2><p>We believe catering is more than serving food. It is about creating an experience that guests remember. Bhumi Caterers focuses on taste, hygiene, presentation and dependable service for every event.</p>
+<div class="checks"><div>Premium ingredients</div><div>Pure vegetarian menus</div><div>Professional staff</div><div>Elegant presentation</div><div>Customized packages</div><div>On-time service</div></div></div>
+</section>
 
-<footer><strong>BHUMI CATERERS</strong><span>Since 2003 · Rajkot</span><span>© 2026 Bhumi Caterers</span></footer>
+<section class="section center" id="menus">
+<div class="eyebrowDark">OUR SPECIAL MENU</div><h2 class="title">Taste Crafted for Your Celebration</h2><div class="goldLine"></div>
+<div class="menuGrid">
+<div class="menuItem"><h3>Welcome Drinks</h3><p>Fresh welcome beverages & traditional refreshments.</p></div>
+<div class="menuItem"><h3>Starters</h3><p>Hot snacks, chaat, farsan & live starter counters.</p></div>
+<div class="menuItem"><h3>Main Course</h3><p>Rich Gujarati, Punjabi, South Indian & fusion options.</p></div>
+<div class="menuItem"><h3>Live Counters</h3><p>Freshly prepared dishes served hot by our chefs.</p></div>
+<div class="menuItem"><h3>Indian Breads</h3><p>Rotis, naan, puri and traditional breads.</p></div>
+<div class="menuItem"><h3>Rice & Dal</h3><p>Fragrant rice, pulao, biryani and dal preparations.</p></div>
+<div class="menuItem"><h3>Desserts</h3><p>Traditional sweets, desserts and celebration specials.</p></div>
+<div class="menuItem"><h3>Custom Menu</h3><p>Tell us your preference and we will create it for you.</p></div>
+</div>
+</section>
+
+<section class="section gallery" id="gallery">
+<div class="center"><div class="eyebrow">OUR GALLERY</div><h2 class="title">Moments We Love to Serve</h2><div class="goldLine"></div></div>
+<div class="galleryGrid">
+<img src="assets/hero.jpg"><img src="assets/hero.jpg"><img src="assets/hero.jpg"><img src="assets/hero.jpg">
+<img src="assets/hero.jpg"><img src="assets/hero.jpg"><img src="assets/hero.jpg"><img src="assets/hero.jpg">
+</div>
+</section>
+
+<section class="section center" id="reviews">
+<div class="eyebrowDark">CLIENT LOVE</div><h2 class="title">What Our Guests Say</h2><div class="goldLine"></div>
+<div class="testimonials">
+<div class="quote"><div class="stars">★★★★★</div><p>“Food quality and presentation were excellent. The entire team managed our function beautifully.”</p><b>— Happy Client</b></div>
+<div class="quote"><div class="stars">★★★★★</div><p>“The buffet looked premium and every dish was served perfectly. Highly recommended.”</p><b>— Wedding Client</b></div>
+<div class="quote"><div class="stars">★★★★★</div><p>“Professional service, delicious food and very cooperative staff. Wonderful experience.”</p><b>— Family Event</b></div>
+</div>
+</section>
+
+<section class="section contact" id="contact">
+<div><div class="eyebrow">LET'S PLAN YOUR EVENT</div><h2>Make Your Celebration Delicious.</h2><p>Share your event details and our team will contact you to discuss the menu, setup and catering requirements.</p>
+<div class="info"><div><b>PHONE</b>　+91 98765 43210</div><div><b>LOCATION</b>　Rajkot, Gujarat</div><div><b>SERVICE</b>　Weddings • Parties • Corporate • Events</div></div></div>
+<form onsubmit="sendWhatsApp(event)">
+<input id="name" required placeholder="Your Name">
+<input id="phone" required placeholder="Mobile Number">
+<input id="event" placeholder="Event Type">
+<input id="date" type="date">
+<textarea id="message" placeholder="Tell us about your event..."></textarea>
+<button class="btn" type="submit">SEND ENQUIRY ON WHATSAPP →</button>
+</form>
+</section>
+
+<footer><div class="footerGrid"><div><div class="footerLogo">BHUMI CATERERS</div><p>Premium vegetarian catering with delicious food, elegant presentation and dependable service.</p></div><div><h4>QUICK LINKS</h4><p><a href="#about">About Us</a><br><a href="#services">Services</a><br><a href="#menus">Menus</a><br><a href="#gallery">Gallery</a></p></div><div><h4>CONTACT</h4><p>Rajkot, Gujarat<br>+91 98765 43210<br>Enquiries & Bookings</p></div></div><div class="copy">© 2026 Bhumi Caterers. All Rights Reserved.</div></footer>
+<a class="whatsapp" href="https://wa.me/919876543210" target="_blank">WA</a>
 <script>
-const DATA={"Soups":[{"name":"Special Spinach Almond Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Special Spinach Palak Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Hot & Sour Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Hot & Sour Almond Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Lemon Water Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Lemon Coriander Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Tomato Coriander Sour Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Vegetable Manchow Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Vegetable Sweet Corn Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Mumtaz Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Vegetable Garlic Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"U.P. Thomas Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Cream Tomato Soup with Croutons","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Manchurian Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Vegetable Minestrone Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Vegetable Onion Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Tomato Corn Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Kathiyawadi Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Thai Pumpkin Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Vegetable Lungfung Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Green Zucchini Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Mexican Tomato Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Italian Smoked Tomato Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Mexican Chilli Bean Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Italian Spaghetti Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Chick Peas Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Herbs & Veggies Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Tomato Basil Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Zetter Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Thai Lemon Pepper Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Thai Green Pepper Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."},{"name":"Bulgarian Lentil Soup","desc":"Warm, flavourful soup prepared with fresh ingredients and balanced seasoning."}],"Starters":[{"name":"Garlic Bread","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Crostini","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"American Corn Cheese Balls","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Live Chinese Samosa","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Quesadillas","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Mexican Roll","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Cheese Paneer Balls","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Chilli Corn","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Cheese Cherry Pineapple Stick","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Mexican Ragda with Tikki","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Dry Fruit (Cashew, Almond, Pistachio)","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Mexican Refritos Arroz","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Kashmiri Kebab","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Mexican Delight","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Spanish Cheese Balls","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Garden Skillet","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Jalapeno","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Live Roasted Shanghai Kebab","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Live China Badam","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Dragon Potato","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Live Hara Bhara Kebab","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Italian Stuffed Potato","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Live Chidiya Samosa","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Jalapeno Cheesy Pouches","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Live Vegetable Bullet","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Mexican Cheesy Pouches","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Italian Volcano","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Greek Bomb Blast","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Roasted Paneer Barbecue","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Cheese Millennium","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Veg. Candy Til Kebab","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Potato Wedges","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Mexican Calzone","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Masala Cheesy Poppers","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Wrap & Roll","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Veg. Basil Balls","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Kimchi Bread Rolls","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Herbs Cheesy Balls","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Mini Burger","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Cottage Cheese Croquettes","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Mexican Tacos","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Thai Corn Cakes","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Thai Toasted","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Indonesian Satay","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Mexican Nachos with Cheese Sauce","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Teriyaki Cottage Cheese","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Cheese Toast","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Exotica Veg. in Hot Garlic Sauce","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Lebanese Kiwi","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Thai Spices Paneer","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Sizzling Bruschetta","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."}],"Live Punjabi Sabji":[{"name":"Paneer Sabji","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Veg. Sabji","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Live Paneer Methi Chaman (Green Cashew Gravy)","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Veg. Paneer Gul-Gule","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Paneer Matar Flower Korma (Yellow Gravy)","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Veg. Rimjhim","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Paneer Peshawari (Black Gravy)","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Veg. Milijuli (Spicy)","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Paneer Bahar Kesar Masala (Fisher Gravy)","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Veg. Paneer Rasili","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Tawa Paneer Chilli (Yellow Gravy)","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Veg. Sunheri Dal (White Gravy)","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Cheese Paneer Ball Masala (Yellow Gravy)","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Veg. Jalfrezi (Red Gravy)","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Paneer Khoya Kaju (Sweet Medium)","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Veg. Hyderabadi Green","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Paneer Patiala","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Veg. Khoya Masala","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Paneer Malai Kofta (Sweet)","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Veg. Winter Special (Brown)","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Paneer Methi Matar Malai","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Veg. Singapore (Spicy)","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Paneer Shahi Mewa","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Veg. Taj Mahal","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Paneer Moti Malai","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Veg. Tawa Mehfil","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Paneer Dilbahar","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Veg. Mughlai","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Palak Paneer","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Veg. Kadai","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Paneer Butter Masala","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Veg. Hariyali Green","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Veg. Saffron (Yellow Gravy)","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Veg. Kheema Masala","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."}],"Kathiyawadi Sabji":[{"name":"Special Kathiyawadi Undhiyu","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Special Mini Undhiyu","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Special Rajwadi Dhokli","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Panch Kathol","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Special Turai, Patra, Vatana","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Special Makai, Muthia, Vatana","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Special Sev Tameta","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Dum Aloo","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Bharela Ringan Bateta Mix","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."}],"Roti • Paratha":[{"name":"Live Phulka Roti / Puri / Paratha","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Special Swaminarayan Roti","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Dhaba Roti","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Mathura Roti","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Mix Roti","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Dhaniya Methi Roti","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Makke Di Roti","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Biscuit Bhakhri","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Bajri Rotla / Jowar Rotla","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Butter Naan","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Butter Malamal Naan","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Kashmiri Naan","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Khandhari Naan","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Kaju Masala Naan","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Rajasthani Naan","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Guldasta Naan","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Chilli Naan","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Stuffed Masala Kulcha","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Garlic Kulcha","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Amritsari Kulcha","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Baby Biscuit Paratha","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Resham Paratha","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Cheese Paratha","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Veg. Paratha","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Aloo Stuffed Paratha","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Lachha Paratha","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Palak Paratha","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."}],"Chinese • Fast Food":[{"name":"Live Chinese Samosa","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Cheese Millennium","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Chinese Bhel","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Butter Potli","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Armani Potato","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Veg. Momos","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Russian Toast","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Spring Roll","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Live Italian Pizza","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Vegetable Chowmein","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Margherita Pizza","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Chinese Changa","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Mexican Pizza","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Chinese Lafa","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Live Couple Kachori","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Chinese Kasata","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Live Italian Fusilli","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Chinese Leafafa","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Live Veg. Delight","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Kathi Roll","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Chinese Live Pineapple Tikki","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Veg. Schezwan Fry","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Cheese Chilli Sandwich","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Kashmiri Coconut Kali","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Veg. Resham Kebab","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"All Types of Fast Food","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Kathiyawadi Farsan","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Khasta Kachori","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Mix Bhajiya","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Kothmir Kali","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Handvo","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Samosa","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Cutlet","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Kachori","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Khaman","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Tam Tam","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Paneer Cheese Toast","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."}],"Farsan • Chaat • South Indian":[{"name":"Paneer Chilla (Moong Dal Pudla)","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"American Chopsuey","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Live Muthiya Dhokla","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Live Steam Dhokla","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Chinese Chopsuey","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Live Pudla","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Sev Khamani","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Khandvi","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Mexican Chopsuey","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Khusboo Gujarati","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Special Jodhpuri Chaat","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Cocktail Chaat","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Hot Ragda","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Hot Bombay Chowpatty Chaat","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Banarasi Chaat","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Kolkata Pata Chaat","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Special Plain Dosa","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Special Masala Dosa","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Special Rava Dosa","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Special Mysore Masala Dosa","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Special Noodles Corn Dosa","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Special Palak Paneer Dosa","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Special Dosa Fry","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Live Idli","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Sezwan Idli","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Uttapam (Tomato, Onion, Chilli)","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Sambar & Chutney (Tomato, Palak, Pudina)","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Chole Puri (Bhature)","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Pav Bhaji","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."},{"name":"Pani Puri, Bhel Puri, Sev Puri, Dabeli & More","desc":"Freshly prepared with quality ingredients, aromatic seasoning and Bhumi Caterers' signature care."}],"Oriental • Continental":[{"name":"Burmese Spaghetti","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Mexican Trio","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Cannelloni Al Formaggio","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Cannelloni Florentine","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Baked Spaghetti Neapolitana","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Baked Macaroni Pineapple","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Enchiladas","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Baked Vegetable with Pineapple","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Baked Moussaka","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Oriental Counter","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Lebanese Counter","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Mongolian Hot Pot","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Lebanese Shawarma","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Mongolian Stir Fry","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Lebanese Falafel","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Thai Curry - Red / Yellow / Green","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Lebanese Focaccia Grill","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Swiss Potato Rosti with Salsa & Sour Cream","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."},{"name":"Lebanese Rice with Lebanese Curry","desc":"Aromatic rice preparation made with carefully balanced spices and quality ingredients."},{"name":"Lebanese House","desc":"Freshly prepared with vegetables, aromatic seasoning and flavorful Indo-Chinese style sauces."}],"Sizzlers":[{"name":"Italian Sizzler","desc":"A sizzling speciality prepared fresh for a memorable dining experience."},{"name":"Mexican Sizzler","desc":"A sizzling speciality prepared fresh for a memorable dining experience."},{"name":"Japanese Teppanyaki Sizzler","desc":"A sizzling speciality prepared fresh for a memorable dining experience."}],"Live Sweets":[{"name":"Live Kaju Pista Dhari","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Kaju Kesar Malai","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Live Rajbhog Mesub","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Rajasthani Malpua","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Badam Burger","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Ghevar Rabdi","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Badam Kebab","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Imarti Dry Fruit","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Badam Pizza","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Panchratna Tava Sweet","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Kaju Pista Sandwich","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Live Mathura Sweet","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Kaju Badam Sandwich","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Kashmiri Cold Sweet","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Live Triveni Sangam Cold","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Live Kesar Jalebi","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Special Dry Fruit Ladoo","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Live Pineapple Jalebi","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Ready-made Dairy Products Sweets","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Live Apple Jalebi","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Live Paneer Jalebi","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Chandrakala","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Badam Roti","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Kaju Roti","desc":"Freshly prepared Indian bread, served warm with a delicious traditional finish."},{"name":"Kaju Badam Tikki","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Green Coconut Halwa","desc":"A festive sweet preparation with rich ingredients and an elegant finish."},{"name":"Shahi Mewa Halwa","desc":"A festive sweet preparation with rich ingredients and an elegant finish."}],"Dal • Rice • Pulao":[{"name":"Dal Fry","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Special Punjabi Dal Tadka","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Special Punjabi Dal Makhani","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Kathiyawadi Tuver Dal","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Palak Moong Dal","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Urad Dal","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Moong Chhutti Dal","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Mix Panchratna Dal","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Hyderabadi Dal","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Kathiyawadi Kadhi","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Vegetable Kadhi","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Makai Kadhi","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Bhinda Kadhi","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Swami Vegetable Khichdi","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Steam Jeera Rice","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Plain Rice","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Peas Pulao Rice","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Jeera Rice","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Taj-Laving Rice","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Dry Fruit Rice","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Pineapple Pulao Rice","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Kashmiri Pulao Rice","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Navratna Pulao Rice","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Malaysian Rice","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Italian Risotto Rice","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Mexican Cilantro Rice","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Mexican Corn Pepper Rice","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Mexican Spicy Rice","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Vegetable Biryani with Curd","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Palak Masti Rice with Curd","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Mushroom Vegetable Biryani","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Paneer Vegetable Biryani","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Mexican Curry","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Austrian Curry","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Baked Japanese Greens with Rice & Noodles","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."},{"name":"Exotic Veg. with Cheese Potato Nuts","desc":"Traditional preparation with aromatic spices and a rich, comforting flavour."}],"Services":[{"name":"Counter Decoration","desc":"Professional catering support delivered with care, hospitality and attention to detail."},{"name":"Bombay P.R.O. Couple Service Staff","desc":"Professional catering support delivered with care, hospitality and attention to detail."},{"name":"Good Food Service","desc":"Professional catering support delivered with care, hospitality and attention to detail."},{"name":"Good Staff with Trust","desc":"Professional catering support delivered with care, hospitality and attention to detail."}]};
-const root=document.getElementById('menuRoot'),search=document.getElementById('search'),count=document.getElementById('count');
-let activeCat='all';
-function render(q=''){
- q=q.toLowerCase().trim();root.innerHTML='';let shown=0,total=0;
- Object.entries(DATA).forEach(([title,items])=>{
-   total+=items.length;
-   if(activeCat!=='all' && title!==activeCat)return;
-   const filtered=items.filter(x=>(x.name||'').toLowerCase().includes(q));
-   shown+=filtered.length;if(!filtered.length)return;
-   const card=document.createElement('article');card.className='menu-card';
-   card.innerHTML='<h3>'+title+'</h3><div class="line"></div><div class="items"></div>';
-   const box=card.querySelector('.items');
-   filtered.forEach(x=>{const d=document.createElement('div');d.className='item';d.textContent=x.name;box.appendChild(d)});
-   root.appendChild(card);
- });
- count.textContent=(q?shown:(activeCat==='all'?total:shown))+' items';
-}
-search.addEventListener('input',e=>render(e.target.value));
-document.querySelectorAll('.menu-tab').forEach(tab=>tab.addEventListener('click',()=>{
- document.querySelectorAll('.menu-tab').forEach(x=>x.classList.remove('active'));
- tab.classList.add('active');
- activeCat=tab.dataset.cat;
- search.value='';
- render('');
- document.getElementById('menu').scrollIntoView({behavior:'smooth',block:'start'});
-}));
-render();
+function toggleMenu(){const n=document.querySelector('nav');n.style.display=n.style.display==='flex'?'none':'flex';n.style.position='absolute';n.style.top='80px';n.style.left='0';n.style.right='0';n.style.background='#080808';n.style.padding='20px';n.style.flexDirection='column'}
+function sendWhatsApp(e){e.preventDefault();const n=document.getElementById('name').value,p=document.getElementById('phone').value,ev=document.getElementById('event').value,d=document.getElementById('date').value,m=document.getElementById('message').value;const text=`Bhumi Caterers Enquiry%0A%0AName: ${encodeURIComponent(n)}%0AMobile: ${encodeURIComponent(p)}%0AEvent: ${encodeURIComponent(ev)}%0ADate: ${encodeURIComponent(d)}%0ADetails: ${encodeURIComponent(m)}`;window.open('https://wa.me/919876543210?text='+text,'_blank')}
 </script>
 </body></html>
