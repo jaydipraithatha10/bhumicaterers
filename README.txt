@@ -1,7 +1,6 @@
-BHUMI CATERERS – PREMIUM CATERING DESIGN FINAL
+BHUMI CATERERS – PREMIUM EVENTS + FOOD PHOTO UPDATE
 
-MENU CONTENT: unchanged from the previous complete-menu version.
-DESIGN: upgraded premium luxury catering design only.
-PHOTOS: catering/event/food-service photographs only; supplied menu-card photographs are not used.
-CONTACT: Darshit Kakkad | 9825321216
-All files are in the root; no assets folder.
+MENU: unchanged.
+Added premium event/catering photo sections for Party Plot Events, Gujarati Functions, Marriages & Weddings, Family Celebrations, Premium Catering Service and Grand Food Presentation.
+No supplied menu-card photos are used.
+Contact: Darshit Kakkad | 9825321216
