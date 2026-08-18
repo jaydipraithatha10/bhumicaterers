@@ -60,13 +60,197 @@ footer{background:#0e0203;color:#cbbdb6;padding:25px 5%;display:flex;justify-con
 .gallery figure{overflow:hidden}
 
 @media(max-width:600px){.menu-tabs{margin:-5px 0 30px;padding:10px 2px 14px;gap:10px}.menu-tab{font-size:12px;padding:12px 18px;flex:0 0 auto}.head p{font-size:15px}}
+
+html,body{max-width:100%;overflow-x:hidden}
+.menu-tabs{max-width:100%;overflow-x:auto;overflow-y:hidden;display:flex;flex-wrap:nowrap;scrollbar-width:none}
+.menu-tabs::-webkit-scrollbar{display:none}
+.menu-tab{flex:0 0 auto}
+.hero-in,.section,.about,.dark,.contact,.bhumi-ad{min-width:0;max-width:100%}
+@media(max-width:600px){
+  .hero-in{display:block}
+  .hero{padding:48px 6% 60px}
+  .hero h1{font-size:clamp(48px,14vw,62px);line-height:.95;overflow-wrap:anywhere}
+  .hero p{max-width:100%;font-size:15px;line-height:1.6}
+  .actions{display:grid;grid-template-columns:1fr;gap:12px}
+  .btn{width:100%;box-sizing:border-box;text-align:center}
+}
+
+/* ===== FINAL MOBILE WIDTH SAFETY ===== */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+img, video, svg, canvas, iframe {
+  max-width: 100% !important;
+}
+.top, header, .nav, .hero, .hero-in, .about, .section, .dark,
+.contact, footer, .bhumi-ad, .menu, .menu-card, .gallery, .service-grid,
+.why-grid, .search, .head, .actions {
+  min-width: 0 !important;
+  width: auto;
+  max-width: 100% !important;
+}
+@media (max-width: 600px) {
+  .top {
+    display: block !important;
+    padding: 9px 16px !important;
+    overflow: hidden !important;
+  }
+  .top span, .top a {
+    display: block;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+  .top a { margin-top: 5px; }
+
+  .nav {
+    width: 100% !important;
+    padding: 12px 16px !important;
+    gap: 10px !important;
+    overflow: hidden !important;
+  }
+  .brand {
+    flex: 0 0 auto;
+    font-size: 30px !important;
+  }
+  .call {
+    margin-left: auto !important;
+    flex: 0 0 auto;
+    max-width: 170px !important;
+    overflow-wrap: anywhere;
+  }
+
+  .hero {
+    width: 100% !important;
+    padding: 48px 16px 60px !important;
+    overflow: hidden !important;
+  }
+  .hero-in {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .hero-in > div {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .kicker {
+    max-width: 100% !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+  }
+  h1, .hero h1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: clamp(44px, 14vw, 62px) !important;
+    line-height: .96 !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+  .hero em {
+    display: block;
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+  }
+  .hero p {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    overflow-wrap: anywhere !important;
+  }
+  .actions {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+  .btn {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+  }
+
+  .section, .about, .contact {
+    width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .menu-tabs {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+  }
+  .menu-tab {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+  }
+
+  .menu {
+    width: 100% !important;
+    grid-template-columns: 1fr !important;
+  }
+  .menu-card, .menu-card.full {
+    width: 100% !important;
+    grid-column: auto !important;
+  }
+  .items {
+    grid-template-columns: 1fr !important;
+  }
+  .item {
+    overflow-wrap: anywhere;
+  }
+
+  .gallery, .service-grid, .why-grid {
+    width: 100% !important;
+    grid-template-columns: 1fr !important;
+  }
+  figure, .service, .why-grid > div {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .bhumi-ad {
+    width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    overflow: hidden !important;
+  }
+  .ad-inner {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .ad-inner h1 {
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  footer {
+    width: 100% !important;
+    display: block !important;
+  }
+}
+
 </style>
 </head>
 <body>
 <div class="top"><span>📍 Kakkad Brothers, Dharmendra Road, Thosa Gali, Rajkot</span><a href="tel:+919825321216">☎ Darshitbhai Kakkad: 98253 21216</a></div>
 <header><div class="nav"><a class="brand" href="#home">Bhumi<small>CATERERS</small></a><div class="since">SERVING<br>SINCE<br>2003</div><div class="navlinks"><a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#menu">MENU</a><a href="#services">SERVICES</a><a href="#gallery">GALLERY</a><a href="#contact">CONTACT</a></div><a class="call" href="tel:+919825321216">FOR ENQUIRY<br>98253 21216</a></div></header>
 
-<section class="hero" id="home"><div class="hero-in"><div><div class="kicker">RAJKOT • KATHIYAWADI • PUNJABI • CHINESE</div><h1>Delicious Food</h1><em>for Every Occasion</em><p>Bhumi Caterers brings generous flavours, elegant presentation and dependable catering service to celebrations across Rajkot.</p><div class="actions"><a class="btn primary" href="#menu">Explore Complete Menu</a><a class="btn secondary" href="tel:+919825321216">Call for Enquiry</a></div></div>
+<section class="hero" id="home"><div class="hero-in"><div><div class="kicker">RAJKOT • KATHIYAWADI • PUNJABI • CHINESE</div><h1>Delicious Food</h1><em>for Every Occasion</em><p>Bhumi Caterers brings generous flavours, elegant presentation and dependable catering service to celebrations across Rajkot.</p><div class="actions"><a class="btn primary" href="#menu">Explore Complete Menu</a><a class="btn secondary" href="tel:+919825321216">Call for Enquiry</a></div></div></div></section>
 
 <section class="about" id="about"><div class="kicker">BHUMI CATERERS</div><h2>A Trusted Name in Catering</h2><p>Specialist in Kathiyawadi, Punjabi, Chinese Food & Other Variety Foods. From family functions to grand celebrations, we focus on great food and warm hospitality.</p><div class="pills"><span>Since 2003</span><span>Kathiyawadi</span><span>Punjabi</span><span>Chinese</span><span>Variety Foods</span></div></section>
 
@@ -109,7 +293,7 @@ footer{background:#0e0203;color:#cbbdb6;padding:25px 5%;display:flex;justify-con
 <div class="head"><div class="kicker">BHUMI CATERERS EXPERIENCE</div>
 <h2>Premium Catering Setups</h2><div class="rule"></div>
 <p>Elegant buffet presentation, live counters and professional catering setups designed to make every celebration feel special.</p></div>
-<div class="gallery"><figure><img src="https://nakshatra-caterers.netlify.app/assets/wedding.png" alt="Grand Wedding Buffet Setup" loading="lazy" onerror="this.onerror=null;this.src=\'https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1600&q=85\'"><figcaption>Grand Wedding Buffet Setup</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1600&q=85" alt="Live Catering & Chef Counter" loading="lazy" onerror="this.onerror=null;this.src=\'https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1600&q=85\'"><figcaption>Live Catering & Chef Counter</figcaption></figure><figure><img src="https://www.srimanjunathacaterers.com/_next/image?q=75&url=%2Fimages%2Fbuffet-setup.png&w=3840" alt="Luxury Vegetarian Buffet" loading="lazy" onerror="this.onerror=null;this.src=\'https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1600&q=85\'"><figcaption>Luxury Vegetarian Buffet</figcaption></figure><figure><img src="https://www.srivinayakacatering.in/images/wedding-catering.png" alt="Premium Wedding Catering" loading="lazy" onerror="this.onerror=null;this.src=\'https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1600&q=85\'"><figcaption>Premium Wedding Catering</figcaption></figure><figure><img src="https://sukhsagaruae.com/cdn/shop/files/Untitled_design.png?v=1772775813&width=1500" alt="Chef Serving Premium Buffet" loading="lazy" onerror="this.onerror=null;this.src=\'https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1600&q=85\'"><figcaption>Chef Serving Premium Buffet</figcaption></figure></div>
+<div class="gallery"><figure><img src="gallery-1.png" alt="Grand Wedding Buffet Setup" loading="lazy"><figcaption>Grand Wedding Buffet Setup</figcaption></figure><figure><img src="gallery-2.png" alt="Live Catering & Chef Counter" loading="lazy"><figcaption>Live Catering & Chef Counter</figcaption></figure><figure><img src="gallery-3.png" alt="Luxury Vegetarian Buffet" loading="lazy"><figcaption>Luxury Vegetarian Buffet</figcaption></figure><figure><img src="https://www.srivinayakacatering.in/images/wedding-catering.png" alt="Premium Wedding Catering" loading="lazy" onerror="this.onerror=null;this.src=\'https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1600&q=85\'"><figcaption>Premium Wedding Catering</figcaption></figure><figure><img src="https://sukhsagaruae.com/cdn/shop/files/Untitled_design.png?v=1772775813&width=1500" alt="Chef Serving Premium Buffet" loading="lazy" onerror="this.onerror=null;this.src=\'https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1600&q=85\'"><figcaption>Chef Serving Premium Buffet</figcaption></figure></div>
 </section>
 
 <section class="contact" id="contact"><div><div class="kicker">FOR ENQUIRY</div><h2>Let's Make Your Occasion Delicious.</h2><p>For catering enquiries and bookings, contact Darshitbhai Kakkad.</p></div><div class="card"><strong>98253 21216</strong><a href="tel:+919825321216">☎ Call Now</a><a class="wa" href="https://wa.me/919825321216?text=Hello%20Bhumi%20Caterers%2C%20I%20would%20like%20to%20make%20an%20enquiry.">WhatsApp Enquiry</a><small>Kakkad Brothers, Dharmendra Road, Thosa Gali, Rajkot</small></div></section>
