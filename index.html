@@ -62,6 +62,35 @@ footer{background:#040302;color:#aaa;padding:35px 6%;font-size:11px}.foot{displa
 .wa{position:fixed;right:18px;bottom:18px;width:55px;height:55px;border-radius:50%;background:#20c866;color:#fff;display:grid;place-items:center;font-weight:bold;z-index:100;box-shadow:0 7px 25px #0008}
 @media(max-width:900px){nav{display:none}.heroContent{width:75%}.services{grid-template-columns:1fr 1fr}.about,.contact{grid-template-columns:1fr}.menuGrid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.top{font-size:9px}.top span:nth-child(2){display:none}.hero{height:490px}.heroContent{width:100%;padding:45px 7%}.hero:before{inset:9px}h1{font-size:38px}.hero p{font-size:12px}.heroTags{margin-top:12px}.section{padding:55px 5%}.title{font-size:32px}.services,.menuGrid,.steps,.foot{grid-template-columns:1fr}.service{min-height:145px}.about img{height:270px}.brandStatement h2{font-size:32px}.contact h2{font-size:34px}}
+
+.celebrationImage{
+  width:min(100%,1100px);
+  margin:38px auto 0;
+  aspect-ratio:16/7;
+  overflow:hidden;
+  border:1px solid #7a5925;
+  border-radius:5px;
+  background:#120d08;
+  box-shadow:0 12px 30px rgba(0,0,0,.16);
+}
+.celebrationImage img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+@media(max-width:600px){
+  .celebrationImage{
+    width:100%;
+    aspect-ratio:4/3;
+    margin-top:25px;
+    border-radius:4px;
+  }
+  .celebrationImage img{
+    object-position:center;
+  }
+}
 </style>
 </head>
 <body>
@@ -114,6 +143,12 @@ footer{background:#040302;color:#aaa;padding:35px 6%;font-size:11px}.foot{displa
 <div class="step"><b>03</b><h3>Setup</h3><p>Our service team prepares counters, food presentation and event service.</p></div>
 <div class="step"><b>04</b><h3>Celebrate</h3><p>You enjoy the occasion while our team takes care of the food service.</p></div>
 </div>
+
+<div class="celebrationImage">
+  <img src="https://images.pexels.com/photos/16884249/pexels-photo-16884249.jpeg?auto=compress&cs=tinysrgb&w=1400"
+       alt="Premium Indian catering buffet">
+</div>
+
 <div class="visuals">
 <div class="visual"><img src="https://images.pexels.com/photos/24863057/pexels-photo-24863057.jpeg?auto=compress&cs=tinysrgb&w=1200"><span>Grand Buffet Presentation</span></div>
 <div class="visual"><img src="https://images.pexels.com/photos/12253092/pexels-photo-12253092.jpeg?auto=compress&cs=tinysrgb&w=1200"><span>Professional Catering Service</span></div>

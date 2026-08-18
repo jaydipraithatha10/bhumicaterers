@@ -1,8 +1,7 @@
-BHUMI CATERERS – FULL NEW WEBSITE
+BHUMI CATERERS – RESPONSIVE CELEBRATION IMAGE UPDATE
 
-Rebuilt from the complete-menu source to avoid the previous broken menu layout.
-The COMPLETE MENU is preserved category-by-category and the first category is visible by default.
-Menu tabs use a robust openMenu() function.
-Premium Indian/Gujarati catering design, compact hero, catering-focused photos, professional tagline.
+Added/resized the image below 'From Menu to Celebration'.
+Desktop: wide 16:7 responsive image.
+Mobile: 4:3 responsive image, full width, no overflow/cropping outside the card.
+Menu content remains unchanged.
 Contact: Darshit Kakkad | 9825321216
-No assets folder; all files are in the root.
