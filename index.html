@@ -87,6 +87,19 @@ footer{background:#040302;color:#aaa;padding:42px 6%;font-size:12px}.foot{displa
 .whyGrid b{font:24px Georgia;color:#b1842e}.whyGrid h3{font:18px Georgia;margin:9px 0}.whyGrid p{font-size:12px;color:#777;line-height:1.65}
 @media(max-width:900px){.whyGrid{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.whyGrid{grid-template-columns:1fr}}
+
+.brandStatement{background:linear-gradient(135deg,#0b0906,#1a1209 55%,#0b0906);color:#fff;text-align:center;padding:72px 6%;border-top:1px solid #5a411c;border-bottom:1px solid #5a411c;position:relative;overflow:hidden}
+.brandStatement:before,.brandStatement:after{content:"";position:absolute;width:180px;height:180px;border:1px solid rgba(212,166,74,.18);border-radius:50%;top:50%;transform:translateY(-50%)}
+.brandStatement:before{left:-90px}.brandStatement:after{right:-90px}
+.brandStatementInner{max-width:850px;margin:auto;position:relative;z-index:2}
+.brandStatement .eyebrow{color:var(--gold2)}
+.brandStatement h2{font:42px/1.15 Georgia;margin:12px 0 18px}
+.brandStatement h2 span{color:var(--gold2)}
+.statementLine{width:65px;height:2px;background:linear-gradient(90deg,var(--red2),var(--gold2),var(--red2));margin:0 auto 22px}
+.brandStatement p{max-width:700px;margin:auto;color:#d4cec5;font-size:14px;line-height:1.9}
+.statementTags{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;margin-top:25px}
+.statementTags span{font-size:9px;letter-spacing:1.5px;color:#e9cd88;border:1px solid rgba(212,166,74,.45);padding:8px 11px}
+@media(max-width:600px){.brandStatement{padding:55px 6%}.brandStatement h2{font-size:32px}.brandStatement p{font-size:13px}.statementTags{gap:6px}.statementTags span{font-size:8px;padding:7px 8px}}
 </style>
 </head>
 <body>
@@ -142,15 +155,22 @@ footer{background:#040302;color:#aaa;padding:42px 6%;font-size:12px}.foot{displa
 </div>
 </section>
 
-<section class="section whyBhumi">
-<div class="center"><div class="eyebrow">WHY BHUMI CATERERS</div><h2 class="title">Made For Indian Celebrations</h2><div class="goldline"></div></div>
-<div class="whyGrid">
-<div><b>01</b><h3>Authentic Taste</h3><p>Gujarati and Indian flavours prepared for large celebrations.</p></div>
-<div><b>02</b><h3>Huge Menu Variety</h3><p>A complete digital menu with the items you provided.</p></div>
-<div><b>03</b><h3>Live Counters</h3><p>Fresh preparation and attractive food presentation at your event.</p></div>
-<div><b>04</b><h3>Professional Service</h3><p>Reliable staff and smooth catering execution from setup to service.</p></div>
-</div>
+
+<section class="brandStatement">
+  <div class="brandStatementInner">
+    <div class="eyebrow">THE BHUMI CATERERS EXPERIENCE</div>
+    <h2>Where Every Celebration<br><span>Deserves Exceptional Taste.</span></h2>
+    <div class="statementLine"></div>
+    <p>From traditional Gujarati flavours to grand wedding feasts, we bring together authentic taste, elegant presentation and dependable service — making every occasion truly memorable.</p>
+    <div class="statementTags">
+      <span>AUTHENTIC TASTE</span>
+      <span>PURE VEGETARIAN</span>
+      <span>PREMIUM SERVICE</span>
+      <span>MEMORABLE CELEBRATIONS</span>
+    </div>
+  </div>
 </section>
+
 <section class="section menuWrap" id="menu">
 <div class="center"><div class="eyebrow">COMPLETE DIGITAL MENU</div><h2 class="title">Every Menu Item, Category by Category</h2><div class="goldline"></div>
 <p class="sub" style="color:#aaa">આ menu તમારા આપેલા menu photos માંથી category-wise digital format માં તૈયાર કરેલું છે. Original card photos websiteમાં ઉપયોગમાં લીધા નથી.</p></div>
