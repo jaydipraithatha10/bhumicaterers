@@ -1,7 +1,7 @@
-BHUMI CATERERS COMPLETE MENU PREMIUM WEBSITE
+BHUMI CATERERS – PREMIUM CATERING DESIGN FINAL
 
-Contact Person: Darshit Kakkad
-Mobile: 9825321216
-The website uses premium external catering photographs and does NOT use the supplied menu-card photos.
-The menu is transcribed category-wise from the supplied menu photographs.
-All website files are in the root; there is no assets folder.
+MENU CONTENT: unchanged from the previous complete-menu version.
+DESIGN: upgraded premium luxury catering design only.
+PHOTOS: catering/event/food-service photographs only; supplied menu-card photographs are not used.
+CONTACT: Darshit Kakkad | 9825321216
+All files are in the root; no assets folder.

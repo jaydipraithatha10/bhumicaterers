@@ -6,47 +6,65 @@
 <title>Bhumi Caterers | Premium Catering</title>
 <meta name="description" content="Bhumi Caterers - Premium catering for weddings, functions, corporate events and celebrations.">
 <style>
-:root{--bg:#070707;--panel:#101010;--cream:#f7f2e9;--gold:#d6ad55;--gold2:#f4d991;--muted:#a9a9a9;--line:#4c3a18}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Arial,sans-serif;background:var(--cream);color:#161616}
+:root{--bg:#080604;--panel:#100d09;--cream:#f8f3e9;--gold:#d4a64a;--gold2:#f5d98a;--red:#681f19;--red2:#9e392b;--muted:#a9a39a;--line:#5a411c;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:var(--cream);color:#17120e}
 a{color:inherit;text-decoration:none}
-.top{background:#050505;color:#bbb;padding:8px 5%;display:flex;justify-content:space-between;font-size:12px}
-header{height:78px;position:sticky;top:0;z-index:30;background:rgba(6,6,6,.96);color:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 5%}
-.logo{font:700 25px Georgia;letter-spacing:3px;color:#fff}.logo span{color:var(--gold)}.logo small{display:block;text-align:center;color:var(--gold);font:9px Arial;letter-spacing:4px}
-nav{display:flex;gap:22px;font-size:12px}nav a:hover{color:var(--gold)}
-.btn{display:inline-block;background:var(--gold);color:#101010;padding:13px 21px;border-radius:3px;font-weight:bold;font-size:12px}
-.hero{min-height:650px;position:relative;display:flex;align-items:center;color:#fff;overflow:hidden;background:#000}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#000 5%,rgba(0,0,0,.82) 42%,rgba(0,0,0,.18) 100%)}
-.heroContent{position:relative;z-index:2;width:58%;padding:80px 6%}
-.kicker{color:var(--gold);letter-spacing:3px;font-size:12px;font-weight:bold}
-h1{font:60px/1.03 Georgia;margin:18px 0}h1 span{color:var(--gold)}
-.hero p{color:#ddd;line-height:1.8;max-width:590px;font-size:15px}.actions{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
-.outline{background:transparent;color:#fff;border:1px solid var(--gold)}
-.section{padding:78px 6%}.dark{background:var(--bg);color:#fff}.center{text-align:center}
-.eyebrow{color:#a77a23;letter-spacing:2px;font-size:12px;font-weight:bold}.dark .eyebrow{color:var(--gold)}
-.title{font:40px Georgia;margin:10px 0 15px}.sub{max-width:760px;margin:auto;color:#777;font-size:14px;line-height:1.8}
-.goldline{width:60px;height:2px;background:var(--gold);margin:18px auto 35px}
-.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:35px}
-.service{position:relative;height:250px;overflow:hidden;border-radius:6px;color:#fff;border:1px solid #4b3a1a}
-.service img{width:100%;height:100%;object-fit:cover;transition:.3s}.service:hover img{transform:scale(1.05)}
-.service:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(0,0,0,.9))}
-.service div{position:absolute;z-index:2;left:20px;bottom:18px}.service h3{font:22px Georgia;margin-bottom:5px}.service p{font-size:11px;color:#ddd}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about img{width:100%;height:430px;object-fit:cover;border:1px solid var(--line)}
-.about h2{font:42px Georgia;margin:10px 0 18px}.about p{line-height:1.9;color:#cfcfcf;font-size:14px}
-.points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px;font-size:12px;color:#ddd}.points div:before{content:"✓";color:var(--gold);margin-right:8px}
-.menuWrap{background:#111;color:#fff}.tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:25px auto 35px;max-width:1100px}
-.tab{border:1px solid #5b451b;background:#171717;color:#ddd;border-radius:20px;padding:10px 14px;font-size:11px;cursor:pointer}.tab.active,.tab:hover{background:var(--gold);color:#111}
-.menuPanel{display:none;max-width:1250px;margin:auto}.menuPanel.show{display:block}.menuPanel h3{text-align:center;color:var(--gold2);font:27px Georgia;margin-bottom:20px}
-.menuGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.menuCard{background:#f5efe3;color:#242424;border-radius:5px;border-top:2px solid var(--gold);padding:20px}
-.menuCard ul{columns:1;list-style:none}.menuCard li{font-family:Arial,sans-serif;font-size:13px;line-height:1.5;padding:5px 0;border-bottom:1px solid #e5dac6}.menuCard li:before{content:"◆";font-size:6px;color:#ae812a;margin-right:8px}
-.visuals{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:40px}.visual{height:260px;position:relative;overflow:hidden;border-radius:6px}.visual img{width:100%;height:100%;object-fit:cover}.visual span{position:absolute;bottom:0;left:0;right:0;padding:16px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.85));font:18px Georgia}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:35px}.step{padding:28px;background:#fff;border:1px solid #e7dece;border-radius:5px}.step b{display:block;color:#b1842e;font:25px Georgia;margin-bottom:10px}.step h3{font:18px Georgia;margin-bottom:8px}.step p{font-size:12px;color:#777;line-height:1.6}
-.contact{background:#080808;color:#fff;display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:center}.contact h2{font:43px Georgia;margin:10px 0 18px}.contact p{color:#ccc;line-height:1.8;font-size:14px}
-.contactBox{border:1px solid var(--line);padding:25px;border-radius:5px}.row{display:flex;justify-content:space-between;gap:15px;padding:13px 0;border-bottom:1px solid #2c2314;font-size:13px}.row:last-child{border:0}.row b{color:var(--gold)}
-footer{background:#040404;color:#aaa;padding:38px 6%;font-size:12px}.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}.foot h4{color:#fff;margin-bottom:12px}.foot p{line-height:1.8}.copy{border-top:1px solid #222;margin-top:25px;padding-top:18px;text-align:center}
-.wa{position:fixed;right:18px;bottom:18px;width:55px;height:55px;border-radius:50%;background:#20c866;color:#fff;display:grid;place-items:center;font-weight:bold;z-index:40;box-shadow:0 5px 20px #0008}
+.top{background:#050403;color:#c8bda9;padding:9px 5%;display:flex;justify-content:space-between;font-size:11px;letter-spacing:.4px;border-bottom:1px solid #2b2115}
+header{height:82px;position:sticky;top:0;z-index:30;background:rgba(7,5,3,.97);color:#fff;border-bottom:1px solid #4c3517;display:flex;align-items:center;justify-content:space-between;padding:0 5%;box-shadow:0 5px 25px #0008}
+.logo{font:700 25px Georgia;letter-spacing:3px;color:#fff}.logo span{color:var(--gold)}
+.logo small{display:block;text-align:center;color:#c9a45a;font:9px Arial;letter-spacing:4px;margin-top:3px}
+nav{display:flex;gap:24px;font-size:11px;letter-spacing:1px}nav a{color:#ddd}nav a:hover{color:var(--gold)}
+.btn{display:inline-block;background:linear-gradient(135deg,#f0cf7c,#b98228);color:#120d07;padding:13px 22px;border-radius:3px;font-weight:800;font-size:11px;letter-spacing:1px;box-shadow:0 8px 25px #0005}
+.hero{min-height:690px;position:relative;display:flex;align-items:center;color:#fff;overflow:hidden;background:#000}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(1.08) contrast(1.04)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050403 0%,rgba(5,4,3,.88) 35%,rgba(5,4,3,.28) 72%,rgba(5,4,3,.52) 100%),linear-gradient(0deg,rgba(0,0,0,.55),transparent 45%,rgba(0,0,0,.2))}
+.hero:before{content:"";position:absolute;inset:18px;border:1px solid rgba(235,197,113,.35);z-index:2;pointer-events:none}
+.heroContent{position:relative;z-index:3;width:62%;padding:95px 7%}
+.kicker{color:var(--gold2);letter-spacing:4px;font-size:11px;font-weight:bold}
+h1{font:64px/1.02 Georgia;margin:19px 0 22px;text-shadow:0 4px 30px #000}
+h1 span{color:var(--gold2)}
+.hero p{color:#e4ded5;line-height:1.85;max-width:610px;font-size:15px}
+.actions{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.outline{background:transparent;color:#fff;border:1px solid #d1a34b;box-shadow:none}
+.section{padding:88px 6%}.dark{background:var(--bg);color:#fff}.center{text-align:center}
+.eyebrow{color:#a87822;letter-spacing:3px;font-size:11px;font-weight:bold}.dark .eyebrow{color:var(--gold)}
+.title{font:43px Georgia;margin:11px 0 15px}.sub{max-width:790px;margin:auto;color:#777;font-size:14px;line-height:1.85}
+.goldline{width:72px;height:2px;background:linear-gradient(90deg,var(--red2),var(--gold),var(--red2));margin:19px auto 38px}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:17px;margin-top:38px}
+.service{position:relative;height:285px;overflow:hidden;border-radius:4px;color:#fff;border:1px solid #8a642a;background:#111;box-shadow:0 12px 35px #0002}
+.service img{width:100%;height:100%;object-fit:cover;transition:.55s;filter:saturate(1.1) contrast(1.05)}.service:hover img{transform:scale(1.08)}
+.service:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 25%,rgba(0,0,0,.9))}
+.service div{position:absolute;z-index:2;left:21px;right:15px;bottom:20px}.service h3{font:23px Georgia;margin-bottom:6px}.service p{font-size:11px;color:#ddd}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about img{width:100%;height:450px;object-fit:cover;border:1px solid #745322;box-shadow:20px 20px 0 #281a0e}
+.about h2{font:44px Georgia;margin:10px 0 18px}.about p{line-height:1.95;color:#cfc7bb;font-size:14px}
+.points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px;font-size:12px;color:#ddd}.points div:before{content:"✓";color:var(--gold);margin-right:8px}
+.menuWrap{background:#0c0a08;color:#fff;border-top:1px solid #5b421d;border-bottom:1px solid #5b421d}
+.tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:25px auto 35px;max-width:1100px}
+.tab{border:1px solid #5b451b;background:#17130f;color:#ddd;border-radius:20px;padding:10px 14px;font-size:11px;cursor:pointer;transition:.2s}
+.tab.active,.tab:hover{background:linear-gradient(135deg,#e2bd6a,#9b6d1e);color:#111;border-color:#e8c976}
+.menuPanel{display:none;max-width:1250px;margin:auto}.menuPanel.show{display:block}
+.menuPanel h3{text-align:center;color:var(--gold2);font:28px Georgia;margin-bottom:21px}
+.menuGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.menuCard{background:linear-gradient(145deg,#fbf6ed,#eee3d0);color:#24201b;border-radius:4px;border:1px solid #c69b4c;border-top:3px solid var(--red2);padding:20px;box-shadow:0 12px 25px #0003}
+.menuCard ul{columns:1;list-style:none}.menuCard li{font-family:Arial,sans-serif;font-size:13px;line-height:1.5;padding:5px 0;border-bottom:1px solid #e2d6c4}
+.menuCard li:before{content:"◆";font-size:6px;color:#9d7025;margin-right:8px}
+.visuals{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:42px}
+.visual{height:280px;position:relative;overflow:hidden;border-radius:4px;border:1px solid #8c6528;box-shadow:0 15px 30px #0002}.visual img{width:100%;height:100%;object-fit:cover;transition:.5s}.visual:hover img{transform:scale(1.06)}
+.visual span{position:absolute;bottom:0;left:0;right:0;padding:19px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.9));font:20px Georgia}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:38px}
+.step{padding:30px;background:#fff;border:1px solid #dfd1bd;border-top:3px solid var(--gold);border-radius:4px;box-shadow:0 10px 25px #0001}
+.step b{display:block;color:#b1842e;font:27px Georgia;margin-bottom:10px}.step h3{font:19px Georgia;margin-bottom:8px}.step p{font-size:12px;color:#777;line-height:1.65}
+.contact{background:radial-gradient(circle at 85% 30%,#3c2318,#080604 50%);color:#fff;display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:center}
+.contact h2{font:45px Georgia;margin:10px 0 18px}.contact p{color:#ccc;line-height:1.8;font-size:14px}
+.contactBox{border:1px solid #745322;background:#0e0b08cc;padding:26px;border-radius:4px;box-shadow:0 15px 40px #0006}
+.row{display:flex;justify-content:space-between;gap:15px;padding:14px 0;border-bottom:1px solid #2c2314;font-size:13px}.row:last-child{border:0}.row b{color:var(--gold)}
+footer{background:#040302;color:#aaa;padding:42px 6%;font-size:12px}.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}.foot h4{color:#fff;margin-bottom:12px}.foot p{line-height:1.8}.copy{border-top:1px solid #222;margin-top:28px;padding-top:18px;text-align:center}
+.wa{position:fixed;right:18px;bottom:18px;width:57px;height:57px;border-radius:50%;background:#20c866;color:#fff;display:grid;place-items:center;font-weight:bold;z-index:40;box-shadow:0 8px 28px #0008;border:2px solid #fff}
 @media(max-width:900px){nav{display:none}.heroContent{width:80%}.services{grid-template-columns:1fr 1fr}.about,.contact{grid-template-columns:1fr}.menuGrid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.top span:nth-child(2){display:none}header{height:70px}.logo{font-size:20px}.hero{min-height:680px}.heroContent{width:100%;padding:60px 6% 180px}h1{font-size:41px}.services,.menuGrid,.visuals,.steps,.foot{grid-template-columns:1fr}.section{padding:55px 5%}.title{font-size:32px}.about img{height:280px}}
+@media(max-width:600px){.top span:nth-child(2){display:none}header{height:70px}.logo{font-size:20px}.hero{min-height:680px}.heroContent{width:100%;padding:65px 7% 180px}h1{font-size:42px}.services,.menuGrid,.visuals,.steps,.foot{grid-template-columns:1fr}.section{padding:58px 5%}.title{font-size:33px}.about img{height:280px}.hero:before{inset:10px}}
 </style>
 </head>
 <body>
@@ -100,9 +118,9 @@ footer{background:#040404;color:#aaa;padding:38px 6%;font-size:12px}.foot{displa
 <div class="step"><b>04</b><h3>Celebrate</h3><p>You enjoy the occasion while our team takes care of the food service.</p></div>
 </div>
 <div class="visuals">
-<div class="visual"><img src="https://images.pexels.com/photos/24863057/pexels-photo-24863057.jpeg?auto=compress&cs=tinysrgb&w=1200"><span>Premium Buffet Presentation</span></div>
-<div class="visual"><img src="https://images.pexels.com/photos/12253092/pexels-photo-12253092.jpeg?auto=compress&cs=tinysrgb&w=1200"><span>Professional Catering Service</span></div>
-<div class="visual"><img src="https://images.pexels.com/photos/4959845/pexels-photo-4959845.jpeg?auto=compress&cs=tinysrgb&w=1200"><span>Celebration Setup</span></div>
+<div class="visual"><img src="https://images.pexels.com/photos/24863057/pexels-photo-24863057.jpeg?auto=compress&cs=tinysrgb&w=1200"><span>Grand Buffet Catering</span></div>
+<div class="visual"><img src="https://images.pexels.com/photos/12253092/pexels-photo-12253092.jpeg?auto=compress&cs=tinysrgb&w=1200"><span>Professional Catering Team</span></div>
+<div class="visual"><img src="https://images.pexels.com/photos/4959845/pexels-photo-4959845.jpeg?auto=compress&cs=tinysrgb&w=1200"><span>Luxury Event Catering</span></div>
 </div>
 </section>
 
