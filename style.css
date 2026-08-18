@@ -1,1 +1,64 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fbf7ef;color:#2d0b0e;font-family:"DM Sans",sans-serif}.topbar{background:#230608;color:#fff;padding:11px 5%;display:flex;justify-content:space-between;gap:15px;font-size:14px}.topbar a{color:#fff;text-decoration:none}.nav{position:sticky;top:0;z-index:20;background:rgba(251,247,239,.96);backdrop-filter:blur(12px);border-bottom:1px solid #e4d5b5;display:flex;align-items:center;justify-content:space-between;padding:14px 5%;gap:20px}.brand{text-decoration:none;color:#4b0c10;line-height:.85}.brand span{display:block;font:800 32px "Playfair Display",serif}.brand small{letter-spacing:5px;color:#bd8b20;font-weight:700}.links{display:flex;gap:28px}.links a{color:#351316;text-decoration:none;font-weight:600;font-size:14px}.call,.btn{border-radius:999px;text-decoration:none;font-weight:700}.call{background:#5c0d12;color:#fff;padding:12px 22px}.hero{min-height:650px;padding:80px 7%;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:70px;background:radial-gradient(circle at 80% 25%,#7d2228 0,#4e0c11 35%,#240608 75%);color:white}.since,.eyebrow{letter-spacing:3px;font-weight:800;color:#d5a12d;font-size:12px}.hero h1{font:800 clamp(50px,7vw,92px)/.98 "Playfair Display",serif;margin:18px 0}.hero h1 em{color:#e0ac37;font-weight:600}.hero p{font-size:19px;line-height:1.8;max-width:600px;color:#f5ebe3}.hero-actions{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}.btn{padding:15px 25px}.gold{background:#d5a12d;color:#260608}.outline{border:1px solid #d5a12d;color:#fff}.hero-card{background:#fff;padding:12px;border-radius:26px;box-shadow:0 25px 70px #120305}.dish-photo{height:420px;border-radius:18px;background-size:cover;background-position:center}.hero-card-text{color:#2d0b0e;padding:16px 8px 7px;display:flex;justify-content:space-between;gap:15px}.hero-card-text span{color:#76605b}.intro,.section,.contact{padding:90px 7%}.intro{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;border-bottom:1px solid #eadcc4}.intro h2,.section-head h2,.contact h2{font:800 clamp(38px,5vw,62px)/1.05 "Playfair Display",serif;margin:12px 0}.intro p,.section-head p,.contact p{color:#725e59;line-height:1.8;font-size:17px}.section-head{text-align:center;max-width:850px;margin:0 auto 45px}.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.menu-card{background:#fff;border:1px solid #eadcc4;border-radius:20px;padding:28px;position:relative;box-shadow:0 8px 30px rgba(50,20,10,.05)}.menu-card .num{color:#c8952c;font-weight:800;font-size:13px}.menu-card h3{font:700 27px "Playfair Display",serif;margin:10px 0 14px;color:#580e13}.menu-card p{color:#6e5b57;line-height:1.8;margin:0;font-size:14px}.dark-section{background:#28070a;color:#fff;padding:90px 7%}.dark-section .section-head p{color:#cbb7af}.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service-grid>div{border:1px solid #633238;border-radius:18px;padding:28px;background:#350a0e}.service-grid b{color:#d5a12d}.service-grid h3{font:700 25px "Playfair Display",serif}.service-grid p{color:#d6c5bf;line-height:1.7}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.gallery img{width:100%;height:270px;object-fit:cover;border-radius:18px;display:block}.contact{background:#d5a12d;display:grid;grid-template-columns:1fr .75fr;gap:70px;align-items:center}.contact p{color:#4f351f}.contact-card{background:#2a070a;color:#fff;border-radius:25px;padding:30px;display:flex;flex-direction:column;gap:12px;box-shadow:0 20px 45px rgba(50,10,0,.2)}.contact-card strong{font:700 27px "Playfair Display",serif}.contact-card a{color:#fff;text-decoration:none;font-size:22px;font-weight:700}.contact-card .whatsapp{display:inline-block;background:#d5a12d;color:#260608;padding:13px 18px;border-radius:999px;text-align:center;font-size:15px;margin-top:5px}.contact-card small{color:#d8c5bd;line-height:1.6}footer{background:#170305;color:#d9c7c1;padding:28px 7%;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:13px}footer strong{color:#fff;letter-spacing:2px}@media(max-width:900px){.links{display:none}.hero{grid-template-columns:1fr;padding-top:55px}.hero-card{max-width:600px}.intro,.contact{grid-template-columns:1fr;gap:30px}.menu-grid{grid-template-columns:repeat(2,1fr)}.service-grid{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.topbar{flex-direction:column;font-size:12px}.hero{min-height:auto;padding:55px 6%}.hero h1{font-size:50px}.hero p{font-size:16px}.menu-grid,.service-grid,.gallery{grid-template-columns:1fr}.section,.intro,.contact,.dark-section{padding:65px 6%}.dish-photo{height:300px}.gallery img{height:230px}.nav{padding:12px 5%}}
+
+/* ===== PREMIUM BHUMI CATERERS FINISH ===== */
+:root{--lux-black:#090909;--lux-black2:#141414;--lux-gold:#d7aa4a;--lux-gold2:#f5d58a}
+.top{background:linear-gradient(90deg,#050505,#15110a,#050505);border-bottom:1px solid rgba(215,170,74,.28)}
+header{background:rgba(8,8,8,.96);border-bottom:1px solid rgba(215,170,74,.35)}
+.brand{color:var(--lux-gold2)}
+.brand small{color:var(--lux-gold)}
+.since{border-color:rgba(215,170,74,.28);color:var(--lux-gold2)}
+.navlinks a{color:#f4eee3}
+.navlinks a:hover{color:var(--lux-gold2)}
+.call{background:transparent;border:1px solid var(--lux-gold);color:var(--lux-gold2);transition:.25s}
+.call:hover{background:var(--lux-gold);color:#111}
+.hero{background:radial-gradient(circle at 82% 25%,rgba(215,170,74,.18),transparent 25%),linear-gradient(120deg,#050505 0%,#0d0d0d 50%,#1c150a 100%);border-bottom:1px solid rgba(215,170,74,.25)}
+.hero h1{text-shadow:0 5px 25px rgba(0,0,0,.45)}
+.hero-photo{border:1px solid rgba(215,170,74,.55);background:#0b0b0b;box-shadow:0 30px 90px rgba(0,0,0,.55)}
+.hero-caption{background:#0b0b0b;color:#f5e7ca}.hero-caption span{color:#c9a75f}
+.about{background:linear-gradient(180deg,#fffdf8,#f6f0e5)}
+.menu-card{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}.menu-card:hover{transform:translateY(-4px);border-color:#d0a54c;box-shadow:0 18px 45px rgba(70,40,5,.12)}
+.dark{background:linear-gradient(135deg,#060606,#121212 55%,#1a1409);border-top:1px solid rgba(215,170,74,.2);border-bottom:1px solid rgba(215,170,74,.2)}
+.service{border-color:rgba(215,170,74,.25);background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.01));transition:.25s}.service:hover{transform:translateY(-4px);border-color:rgba(215,170,74,.7);box-shadow:0 15px 35px rgba(0,0,0,.25)}
+#gallery{background:linear-gradient(180deg,#0a0a0a,#11100d);max-width:none;color:#fff;padding-left:5%;padding-right:5%}
+#gallery .head h2{color:#f7e5bc}#gallery .head p{color:#bfb6a7}#gallery .kicker{color:var(--lux-gold2)}
+.premium-gallery{max-width:1400px;margin:auto;grid-template-columns:repeat(3,1fr);gap:22px}
+.premium-gallery figure{position:relative;background:linear-gradient(145deg,#181818,#0c0c0c);padding:0;border:1px solid rgba(215,170,74,.35);border-radius:14px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.35);transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.premium-gallery figure:hover{transform:translateY(-7px);border-color:rgba(245,213,138,.9);box-shadow:0 28px 65px rgba(0,0,0,.5)}
+.premium-gallery figure img{height:310px;object-fit:cover;display:block;filter:saturate(1.05) contrast(1.04);transition:transform .45s ease}.premium-gallery figure:hover img{transform:scale(1.04)}
+.premium-gallery .featured-setup:after{content:"";position:absolute;left:0;right:0;top:0;height:45%;background:linear-gradient(180deg,rgba(0,0,0,.15),transparent)}
+.setup-tag{position:absolute;top:18px;left:18px;z-index:2;border:1px solid rgba(245,213,138,.65);background:rgba(5,5,5,.72);backdrop-filter:blur(7px);color:#f5d58a;padding:7px 10px;border-radius:999px;font-size:9px;font-weight:800;letter-spacing:1.4px}
+.premium-gallery figcaption{padding:17px 18px 4px;color:#f4d489;font:700 21px "Playfair Display",serif}.premium-gallery figure p{margin:5px 18px 20px;color:#bdb4a6;font-size:13px;line-height:1.6}
+.premium-gallery figure:not(.featured-setup){opacity:.92}.premium-gallery figure:not(.featured-setup) img{height:240px}.premium-gallery figure:not(.featured-setup) figcaption{font-size:16px;padding-bottom:14px}
+.contact{background:linear-gradient(135deg,#d0a044,#f0c86d,#c99738)}
+footer{background:#050505;border-top:1px solid rgba(215,170,74,.3)}
+@media(max-width:950px){.premium-gallery{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.premium-gallery{grid-template-columns:1fr;gap:18px}.premium-gallery figure img,.premium-gallery figure:not(.featured-setup) img{height:255px}.premium-gallery figcaption{font-size:20px}.premium-gallery figure p{font-size:13px}}
+
+/* ===== PREMIUM BHUMI CATERERS FINISH ===== */
+:root{--lux-black:#090909;--lux-black2:#141414;--lux-gold:#d7aa4a;--lux-gold2:#f5d58a}
+.top{background:linear-gradient(90deg,#050505,#15110a,#050505);border-bottom:1px solid rgba(215,170,74,.28)}
+header{background:rgba(8,8,8,.96);border-bottom:1px solid rgba(215,170,74,.35)}
+.brand{color:var(--lux-gold2)}.brand small{color:var(--lux-gold)}
+.since{border-color:rgba(215,170,74,.28);color:var(--lux-gold2)}
+.navlinks a{color:#f4eee3}.navlinks a:hover{color:var(--lux-gold2)}
+.call{background:transparent;border:1px solid var(--lux-gold);color:var(--lux-gold2);transition:.25s}.call:hover{background:var(--lux-gold);color:#111}
+.hero{background:radial-gradient(circle at 82% 25%,rgba(215,170,74,.18),transparent 25%),linear-gradient(120deg,#050505 0%,#0d0d0d 50%,#1c150a 100%);border-bottom:1px solid rgba(215,170,74,.25)}
+.hero h1{text-shadow:0 5px 25px rgba(0,0,0,.45)}.hero-photo{border:1px solid rgba(215,170,74,.55);background:#0b0b0b;box-shadow:0 30px 90px rgba(0,0,0,.55)}
+.hero-caption{background:#0b0b0b;color:#f5e7ca}.hero-caption span{color:#c9a75f}
+.about{background:linear-gradient(180deg,#fffdf8,#f6f0e5)}
+.menu-card{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}.menu-card:hover{transform:translateY(-4px);border-color:#d0a54c;box-shadow:0 18px 45px rgba(70,40,5,.12)}
+.dark{background:linear-gradient(135deg,#060606,#121212 55%,#1a1409);border-top:1px solid rgba(215,170,74,.2);border-bottom:1px solid rgba(215,170,74,.2)}
+.service{border-color:rgba(215,170,74,.25);background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.01));transition:.25s}.service:hover{transform:translateY(-4px);border-color:rgba(215,170,74,.7);box-shadow:0 15px 35px rgba(0,0,0,.25)}
+#gallery{background:linear-gradient(180deg,#0a0a0a,#11100d);max-width:none;color:#fff;padding-left:5%;padding-right:5%}
+#gallery .head h2{color:#f7e5bc}#gallery .head p{color:#bfb6a7}#gallery .kicker{color:var(--lux-gold2)}
+.premium-gallery{max-width:1400px;margin:auto;grid-template-columns:repeat(3,1fr);gap:22px}
+.premium-gallery figure{position:relative;background:linear-gradient(145deg,#181818,#0c0c0c);padding:0;border:1px solid rgba(215,170,74,.35);border-radius:14px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.35);transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.premium-gallery figure:hover{transform:translateY(-7px);border-color:rgba(245,213,138,.9);box-shadow:0 28px 65px rgba(0,0,0,.5)}
+.premium-gallery figure img{height:310px;object-fit:cover;display:block;filter:saturate(1.05) contrast(1.04);transition:transform .45s ease}.premium-gallery figure:hover img{transform:scale(1.04)}
+.premium-gallery .featured-setup:after{content:"";position:absolute;left:0;right:0;top:0;height:45%;background:linear-gradient(180deg,rgba(0,0,0,.15),transparent)}
+.setup-tag{position:absolute;top:18px;left:18px;z-index:2;border:1px solid rgba(245,213,138,.65);background:rgba(5,5,5,.72);backdrop-filter:blur(7px);color:#f5d58a;padding:7px 10px;border-radius:999px;font-size:9px;font-weight:800;letter-spacing:1.4px}
+.premium-gallery figcaption{padding:17px 18px 4px;color:#f4d489;font:700 21px "Playfair Display",serif}.premium-gallery figure p{margin:5px 18px 20px;color:#bdb4a6;font-size:13px;line-height:1.6}
+.premium-gallery figure:not(.featured-setup){opacity:.92}.premium-gallery figure:not(.featured-setup) img{height:240px}.premium-gallery figure:not(.featured-setup) figcaption{font-size:16px;padding-bottom:14px}
+.contact{background:linear-gradient(135deg,#d0a044,#f0c86d,#c99738)}footer{background:#050505;border-top:1px solid rgba(215,170,74,.3)}
+@media(max-width:950px){.premium-gallery{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.premium-gallery{grid-template-columns:1fr;gap:18px}.premium-gallery figure img,.premium-gallery figure:not(.featured-setup) img{height:255px}.premium-gallery figcaption{font-size:20px}.premium-gallery figure p{font-size:13px}}
