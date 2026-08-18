@@ -34,9 +34,9 @@ h1{font:52px/1.05 Georgia;margin:15px 0 17px}h1 span{color:var(--gold2)}
 .goldline{width:65px;height:2px;margin:16px auto 30px;background:linear-gradient(90deg,var(--brown),var(--gold2),var(--brown))}
 .services{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:32px}
 .service{position:relative;min-height:175px;overflow:hidden;background:linear-gradient(145deg,#1d150d,#0a0805);border:1px solid #60471f;border-radius:4px;padding:25px;color:#fff;display:flex;align-items:flex-end}
-.service img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.service:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 15%,rgba(0,0,0,.9))}
+.service img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover}.service:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 15%,rgba(0,0,0,.9))}
 .service div{position:relative;z-index:2}.service h3{font:20px Georgia;margin-bottom:6px}.service p{font-size:10px;color:#d8d1c6}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about{display:grid;grid-template-columns:1fr;gap:30px;align-items:center;max-width:900px;margin:auto}
 .about img{width:100%;height:380px;object-fit:cover;border:1px solid #765522}
 .about h2{font:40px Georgia;margin:9px 0 15px}.about p{font-size:13px;line-height:1.85;color:#cfc7bb}
 .points{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px;color:#ddd;font-size:11px}.points div:before{content:"✓";color:var(--gold);margin-right:7px}
@@ -64,9 +64,11 @@ footer{background:#040302;color:#aaa;padding:35px 6%;font-size:11px}.foot{displa
 @media(max-width:600px){.top{font-size:9px}.top span:nth-child(2){display:none}.hero{height:490px}.heroContent{width:100%;padding:45px 7%}.hero:before{inset:9px}h1{font-size:38px}.hero p{font-size:12px}.heroTags{margin-top:12px}.section{padding:55px 5%}.title{font-size:32px}.services,.menuGrid,.steps,.foot{grid-template-columns:1fr}.service{min-height:145px}.about img{height:270px}.brandStatement h2{font-size:32px}.contact h2{font-size:34px}}
 
 .celebrationImage{
-  width:min(100%,1100px);
-  margin:38px auto 0;
-  aspect-ratio:16/7;
+  display:block;
+  width:100%;
+  max-width:1100px;
+  margin:32px auto 0;
+  aspect-ratio:16 / 7;
   overflow:hidden;
   border:1px solid #7a5925;
   border-radius:5px;
@@ -74,21 +76,19 @@ footer{background:#040302;color:#aaa;padding:35px 6%;font-size:11px}.foot{displa
   box-shadow:0 12px 30px rgba(0,0,0,.16);
 }
 .celebrationImage img{
-  display:block;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:center;
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:none !important;
+  object-fit:cover !important;
+  object-position:center !important;
 }
 @media(max-width:600px){
   .celebrationImage{
     width:100%;
-    aspect-ratio:4/3;
-    margin-top:25px;
-    border-radius:4px;
-  }
-  .celebrationImage img{
-    object-position:center;
+    max-width:100%;
+    aspect-ratio:4 / 3;
+    margin-top:24px;
   }
 }
 </style>
@@ -114,14 +114,14 @@ footer{background:#040302;color:#aaa;padding:35px 6%;font-size:11px}.foot{displa
 <p class="sub">Elegant presentation, experienced service and a menu that can be customized around your occasion.</p>
 <div class="services">
 <div class="service"><img src="https://images.pexels.com/photos/24863057/pexels-photo-24863057.jpeg?auto=compress&cs=tinysrgb&w=1200"><div><h3>Wedding Catering</h3><p>Grand buffet & celebration dining</p></div></div>
-<div class="service"><img src="https://images.pexels.com/photos/4959845/pexels-photo-4959845.jpeg?auto=compress&cs=tinysrgb&w=1200"><div><h3>Grand Buffet</h3><p>Beautiful setup & wide variety</p></div></div>
-<div class="service"><img src="https://images.pexels.com/photos/12253092/pexels-photo-12253092.jpeg?auto=compress&cs=tinysrgb&w=1200"><div><h3>Live Food Counters</h3><p>Freshly prepared at your event</p></div></div>
-<div class="service"><img src="https://images.pexels.com/photos/7648322/pexels-photo-7648322.jpeg?auto=compress&cs=tinysrgb&w=1200"><div><h3>Professional Catering</h3><p>Trained team & smooth execution</p></div></div>
+<div class="service"><div><h3>Grand Buffet</h3><p>Beautiful setup & wide variety</p></div></div>
+<div class="service"><div><h3>Live Food Counters</h3><p>Freshly prepared at your event</p></div></div>
+<div class="service"><div><h3>Professional Catering</h3><p>Trained team & smooth execution</p></div></div>
 </div>
 </section>
 
 <section class="section dark" id="about">
-<div class="about"><img src="https://images.pexels.com/photos/4007053/pexels-photo-4007053.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Premium catering food"><div>
+<div class="about"><div>
 <div class="eyebrow">ABOUT BHUMI CATERERS</div><h2>One Caterer. Every Celebration.</h2>
 <p>Bhumi Caterers specializes in Kathiyawadi, Punjabi, Gujarati, Chinese, Continental, South Indian and a wide variety of vegetarian foods. Your supplied menu has been converted into a fresh digital menu — the original menu-card photographs are not used.</p>
 <div class="points"><div>Pure vegetarian catering</div><div>Customized menus</div><div>Live food counters</div><div>Counter decoration</div><div>Professional service staff</div><div>Good food service</div></div>
@@ -149,14 +149,9 @@ footer{background:#040302;color:#aaa;padding:35px 6%;font-size:11px}.foot{displa
        alt="Premium Indian catering buffet">
 </div>
 
-<div class="visuals">
-<div class="visual"><img src="https://images.pexels.com/photos/24863057/pexels-photo-24863057.jpeg?auto=compress&cs=tinysrgb&w=1200"><span>Grand Buffet Presentation</span></div>
-<div class="visual"><img src="https://images.pexels.com/photos/12253092/pexels-photo-12253092.jpeg?auto=compress&cs=tinysrgb&w=1200"><span>Professional Catering Service</span></div>
-<div class="visual"><img src="https://images.pexels.com/photos/4959845/pexels-photo-4959845.jpeg?auto=compress&cs=tinysrgb&w=1200"><span>Celebration Setup</span></div>
-</div>
 </section>
 
-<section class="section contact" id="contact">
+<section class="section contact id="contact">
 <div><div class="eyebrow">BOOK YOUR CATERING</div><h2>Let's Make Your Event Special.</h2><p>For menu planning, event catering and customized packages, contact Bhumi Caterers directly.</p><div class="actions"><a class="btn" href="https://wa.me/919825321216?text=Hello%20Bhumi%20Caterers,%20I%20want%20to%20discuss%20catering." target="_blank">WHATSAPP DARSHIT →</a></div></div>
 <div class="contactBox"><div class="row"><b>CONTACT PERSON</b><span>Darshit Kakkad</span></div><div class="row"><b>MOBILE</b><span>9825321216</span></div><div class="row"><b>LOCATION</b><span>Rajkot, Gujarat</span></div><div class="row"><b>SPECIALITY</b><span>Kathiyawadi • Punjabi • Chinese • Vegetarian</span></div></div>
 </section>

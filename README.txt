@@ -1,7 +1,8 @@
-BHUMI CATERERS – RESPONSIVE CELEBRATION IMAGE UPDATE
+BHUMI CATERERS – IMAGE RESPONSIVE FIX
 
-Added/resized the image below 'From Menu to Celebration'.
-Desktop: wide 16:7 responsive image.
-Mobile: 4:3 responsive image, full width, no overflow/cropping outside the card.
-Menu content remains unchanged.
+Fixed the From Menu to Celebration image on mobile and desktop.
+Removed the extra visual gallery that was causing the giant image shown in the screenshot.
+Only 3 main photos remain: hero, one service photo, and celebration photo.
+Celebration image is responsive: 16:7 desktop and 4:3 mobile, full width with no overflow.
+Complete menu remains unchanged.
 Contact: Darshit Kakkad | 9825321216
